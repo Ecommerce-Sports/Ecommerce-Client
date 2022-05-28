@@ -1,0 +1,7 @@
+@import url(/src/style/login-page.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
