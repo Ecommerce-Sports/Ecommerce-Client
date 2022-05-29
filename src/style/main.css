@@ -1,4 +1,5 @@
-@import url(/src/style/login-page.css);
+@import url(login-page.css);
+@import url(performance.css);
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap');

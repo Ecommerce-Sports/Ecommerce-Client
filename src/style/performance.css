@@ -1,0 +1,61 @@
+header {
+    background-color: white;
+    position: sticky;
+    overflow: auto;
+    z-index: 101;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px 0 grey;
+    display: flex;
+}
+
+header > .leftNavbar {
+    display: flex;
+    width: 85%;
+}
+
+header > .leftNavbar > .fa-bars {
+    margin: auto 30px auto 30px;
+    font-size: 24px;
+}
+
+header > .leftNavbar > .navbarLogo {
+    width: 120px;
+    height: max-content;
+    margin: 16px 0 16px 0;
+}
+
+header > .rightNavbar {
+    display: flex;
+    width: 15%;
+}
+
+header > .rightNavbar > .fa-bell {
+    margin: auto 0 auto auto;
+    font-size: 20px;
+}
+
+header > .rightNavbar > .profileBox {
+    margin: auto;
+    box-shadow: 0px 2px 2px 1px grey;
+    border-radius: 3px;
+    display: flex;
+    padding: 2px;
+}
+
+header > .rightNavbar > .profileBox > .fa-circle {
+    margin: 5px 10px 5px 15px;
+    font-size: 20px;
+}
+
+header > .rightNavbar > .profileBox > p {
+    margin: auto 25px auto 5px;
+    font-size: 14px;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 30px;
+    font-size: 24px;
+}
