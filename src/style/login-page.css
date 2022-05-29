@@ -1,4 +1,4 @@
-.container {
+.loginBox {
     width: 350px;
     max-height: 500px;
     box-shadow: 0 4px 8px 0 grey;
@@ -13,47 +13,48 @@
     top: 50%;
 }
 
-.titleBox {
+.loginBox > .titleBox {
     color: green;
     font-weight: 400;
 }
 
-.logoText {
+.loginBox > .logoText {
     max-width: 50%;
 }
 
-.sloganLine {
+.loginBox > .sloganLine {
     background-color: #61c156;
     margin: 0;
     text-align: center;
     padding: 8px;
 }
 
-.sloganText {
+.loginBox > .sloganLine > .sloganText {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 20px;
 }
 
-.formLogin {
+.loginBox > .formLogin {
     margin-top: 20px;
 }
 
-::placeholder {
+.loginBox > .formLogin ::placeholder {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     color: lightgray;
 }
 
-.email, .password {
+.loginBox > .formLogin .email,
+.loginBox > .formLogin .password {
     margin-bottom: 7px;
     padding: 5px 10px 5px 10px;
     width: 70%;
     border-radius: 5px;
 }
 
-.login {
+.loginBox > .formLogin > .login {
     margin: 5px 0 20px 0;
     width: 70%;
     background-color: #61c156;
@@ -65,11 +66,6 @@
     font-weight: 800;
 }
 
-.login:hover {
+.loginBox > .formLogin > .login:hover {
     cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    font-weight: 400;
 }
