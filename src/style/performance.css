@@ -97,6 +97,7 @@ menu > div i:hover,
 
 .peformance > .incomeBox {
     display: flex;
+    height: 30%;
 }
 
 .peformance > .incomeBox > .incomeBoxPreview {
@@ -125,6 +126,7 @@ menu > div i:hover,
 
 .peformance > .statusBox {
     display: flex;
+    height: 25%;
 }
 
 .peformance > .statusBox > .statusBoxPreview {
@@ -184,18 +186,54 @@ menu > div i:hover,
     font-size: 64px;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-clock-rotate-left {
+.peformance > .statusBox > .statusBoxPreview > .fa-clock-rotate-left,
+.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #pending {
     color: purple;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-circle-check {
+.peformance > .statusBox > .statusBoxPreview > .fa-circle-check,
+.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #success {
     color: gold;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-triangle-exclamation {
+.peformance > .statusBox > .statusBoxPreview > .fa-triangle-exclamation,
+.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #expired {
     color: orange;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-circle-xmark {
+.peformance > .statusBox > .statusBoxPreview > .fa-circle-xmark,
+.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #failed {
     color: darkred;
+}
+
+.peformance > .recentOrderBox {
+    margin: 15px auto 0 auto;
+    height: 45%;
+    width: 99%;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 0 grey;
+}
+
+.peformance > .recentOrderBox > .recentOrderTitle {
+    display: flex;
+}
+
+.peformance > .recentOrderBox > .recentOrderTitle > p {
+    width: 97%;
+    margin: auto 0 auto 30px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.peformance > .recentOrderBox > .recentOrderTitle > i {
+    width: 3%;
+    font-size: 28px;
+    margin: 20px;
+}
+
+.peformance > .recentOrderBox > .recentOrderTable {
+    overflow: auto;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
 }
