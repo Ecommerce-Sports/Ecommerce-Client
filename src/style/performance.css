@@ -54,8 +54,42 @@ header > .rightNavbar > .profileBox > p {
 }
 
 menu {
+    float: left;
+    width: 75px;
+    background-color: #61c156;
+    height: 720px;
     display: flex;
     flex-direction: column;
-    max-width: 30px;
+}
+
+menu > div {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+menu > div, 
+.fa-arrow-right-from-bracket {
+    text-align: center;
     font-size: 24px;
+}
+
+menu > div > i, 
+.fa-arrow-right-from-bracket {
+    padding: 15px;
+    color: white;
+}
+
+menu > div > .fa-arrow-right-from-bracket {
+    height: 10%;
+}
+
+menu i:hover {
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+}
+
+.peformance {
+    float: right;
 }
