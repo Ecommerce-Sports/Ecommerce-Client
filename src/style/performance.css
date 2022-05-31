@@ -6,28 +6,28 @@ header {
     box-shadow: 0 0 10px 0 grey;
     display: flex;
     width: 100%;
-    height: 6.2vh;
+    height: 60px;
 }
 
 header > .leftNavbar {
     display: flex;
-    width: 85%;
+    width: 87%;
 }
 
 header > .leftNavbar > .fa-bars {
-    margin: auto 30px auto 30px;
     font-size: 24px;
+    margin: auto 30px auto 30px;
 }
 
 header > .leftNavbar > .navbarLogo {
-    width: 120px;
-    height: max-content;
-    margin: 16px 0 16px 0;
+    max-width: 120px;
+    margin: auto 0 auto 0;
+
 }
 
 header > .rightNavbar {
     display: flex;
-    width: 15%;
+    width: 13%;
 }
 
 header > .rightNavbar > .fa-bell {
@@ -55,9 +55,9 @@ header > .rightNavbar > .profileBox > p {
 
 menu {
     float: left;
-    width: 75px;
+    width: 4%;
     background-color: #61c156;
-    height: 93.8vh;
+    height: 93.5vh;
     display: flex;
     flex-direction: column;
 }
@@ -78,13 +78,12 @@ menu > div i,
 .fa-arrow-right-from-bracket {
     padding: 15px;
     color: white;
+    width: 100%;
+    height: 60px;
 }
 
-menu > div > .fa-arrow-right-from-bracket {
-    height: 5%;
-}
-
-menu > div i:hover {
+menu > div i:hover,
+.fa-arrow-right-from-bracket:hover {
     background-color: white;
     color: grey;
     cursor: pointer;
@@ -92,4 +91,111 @@ menu > div i:hover {
 
 .peformance {
     float: right;
+    width: 96%;
+    padding: 0 30px 0 30px;
+}
+
+.peformance > .incomeBox {
+    display: flex;
+}
+
+.peformance > .incomeBox > .incomeBoxPreview {
+    width: 32%;
+    margin: 20px auto 20px auto;
+    box-shadow: 0 3px 7px 0 grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.peformance > .incomeBox > .incomeBoxPreview > .incomeTitle {
+    background-color: #61c156;
+    padding: 18px 0;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.peformance > .incomeBox > .incomeBoxPreview > .incomeDetail {
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.peformance > .statusBox {
+    display: flex;
+}
+
+.peformance > .statusBox > .statusBoxPreview {
+    width: 24%;
+    margin: 5px auto 5px auto;
+    box-shadow: 0 3px 7px 0 grey;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    background-color: white;
+}
+
+.peformance > .statusBox .statusBoxPreview > .statusColorPending,
+.peformance > .statusBox .statusBoxPreview > .statusColorSuccess,
+.peformance > .statusBox .statusBoxPreview > .statusColorExpired,
+.peformance > .statusBox .statusBoxPreview > .statusColorFailed {
+    width: 5%;
+    border-radius: 10px 0 0 10px;
+}
+
+.peformance > .statusBox .statusBoxPreview > .statusColorPending {
+    background-color: purple;
+}
+
+.peformance > .statusBox .statusBoxPreview > .statusColorSuccess {
+    background-color: gold;
+}
+
+.peformance > .statusBox .statusBoxPreview > .statusColorExpired {
+    background-color: orange;
+}
+
+.peformance > .statusBox .statusBoxPreview > .statusColorFailed {
+    background-color: darkred;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .statusDetail {
+    width: 50%;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .statusDetail > .statusDetailTitle {
+    margin: 20px;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .statusDetail > .statusDetailInfo {
+    margin: 10px auto 40px auto;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .fa-clock-rotate-left,
+.peformance > .statusBox > .statusBoxPreview > .fa-circle-check,
+.peformance > .statusBox > .statusBoxPreview > .fa-triangle-exclamation,
+.peformance > .statusBox > .statusBoxPreview > .fa-circle-xmark {
+    width: 40%;
+    margin: auto;
+    font-size: 64px;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .fa-clock-rotate-left {
+    color: purple;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .fa-circle-check {
+    color: gold;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .fa-triangle-exclamation {
+    color: orange;
+}
+
+.peformance > .statusBox > .statusBoxPreview > .fa-circle-xmark {
+    color: darkred;
 }
