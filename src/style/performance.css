@@ -1,12 +1,12 @@
 header {
     background-color: white;
     position: sticky;
-    overflow: auto;
     z-index: 101;
     top: 0;
-    width: 100%;
     box-shadow: 0 0 10px 0 grey;
     display: flex;
+    width: 100%;
+    height: 6.2vh;
 }
 
 header > .leftNavbar {
@@ -57,7 +57,7 @@ menu {
     float: left;
     width: 75px;
     background-color: #61c156;
-    height: 720px;
+    height: 93.8vh;
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +65,7 @@ menu {
 menu > div {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 95%;
 }
 
 menu > div, 
@@ -74,17 +74,17 @@ menu > div,
     font-size: 24px;
 }
 
-menu > div > i, 
+menu > div i, 
 .fa-arrow-right-from-bracket {
     padding: 15px;
     color: white;
 }
 
 menu > div > .fa-arrow-right-from-bracket {
-    height: 10%;
+    height: 5%;
 }
 
-menu i:hover {
+menu > div i:hover {
     background-color: white;
     color: grey;
     cursor: pointer;
