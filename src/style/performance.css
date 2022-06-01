@@ -102,7 +102,7 @@ menu > div i:hover,
 
 .peformance > .income-box > .income-box-preview {
     width: 32%;
-    margin: 20px auto 20px auto;
+    margin: 20px auto 15px auto;
     box-shadow: 0 3px 7px 0 grey;
     border-radius: 10px;
     text-align: center;
@@ -113,8 +113,9 @@ menu > div i:hover,
     padding: 18px 0;
     border-radius: 10px 10px 0 0;
     color: white;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .peformance > .income-box > .income-box-preview > .income-detail {
@@ -169,6 +170,7 @@ menu > div i:hover,
 
 .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title {
     margin: 20px;
+    font-weight: 500;
 }
 
 .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-info {
@@ -208,10 +210,11 @@ menu > div i:hover,
 
 .peformance > .recent-order-box {
     margin: 15px auto 0 auto;
-    height: 45%;
+    max-height: 450px;
     width: 99%;
     border-radius: 10px;
     box-shadow: 0 3px 7px 0 grey;
+    overflow: auto;
 }
 
 .peformance > .recent-order-box > .recent-order-title {
@@ -221,8 +224,8 @@ menu > div i:hover,
 .peformance > .recent-order-box > .recent-order-title > p {
     width: 97%;
     margin: auto 0 auto 30px;
-    font-weight: 700;
-    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 .peformance > .recent-order-box > .recent-order-title > i {
@@ -232,8 +235,14 @@ menu > div i:hover,
 }
 
 .peformance > .recent-order-box > .recent-order-table {
-    overflow: auto;
-    max-height: 80%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.peformance > .recent-order-box > .recent-order-table  td {
+    padding: 10px;
+}
+
+.peformance > .recent-order-box > .recent-order-table > thead {
+    font-weight: 700;
 }
