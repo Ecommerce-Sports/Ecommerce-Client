@@ -9,33 +9,33 @@ header {
     height: 60px;
 }
 
-header > .leftNavbar {
+header > .left-navbar {
     display: flex;
     width: 87%;
 }
 
-header > .leftNavbar > .fa-bars {
+header > .left-navbar > .fa-bars {
     font-size: 24px;
     margin: auto 30px auto 30px;
 }
 
-header > .leftNavbar > .navbarLogo {
+header > .left-navbar > .navbar-logo {
     max-width: 120px;
     margin: auto 0 auto 0;
 
 }
 
-header > .rightNavbar {
+header > .right-navbar {
     display: flex;
     width: 13%;
 }
 
-header > .rightNavbar > .fa-bell {
+header > .right-navbar > .fa-bell {
     margin: auto 0 auto auto;
     font-size: 20px;
 }
 
-header > .rightNavbar > .profileBox {
+header > .right-navbar > .profile-box {
     margin: auto;
     box-shadow: 0px 2px 2px 1px grey;
     border-radius: 3px;
@@ -43,12 +43,12 @@ header > .rightNavbar > .profileBox {
     padding: 2px;
 }
 
-header > .rightNavbar > .profileBox > .fa-circle {
+header > .right-navbar > .profile-box > .fa-circle {
     margin: 5px 10px 5px 15px;
     font-size: 20px;
 }
 
-header > .rightNavbar > .profileBox > p {
+header > .right-navbar > .profile-box > p {
     margin: auto 25px auto 5px;
     font-size: 14px;
 }
@@ -95,12 +95,12 @@ menu > div i:hover,
     padding: 0 30px 0 30px;
 }
 
-.peformance > .incomeBox {
+.peformance > .income-box {
     display: flex;
     height: 30%;
 }
 
-.peformance > .incomeBox > .incomeBoxPreview {
+.peformance > .income-box > .income-box-preview {
     width: 32%;
     margin: 20px auto 20px auto;
     box-shadow: 0 3px 7px 0 grey;
@@ -108,7 +108,7 @@ menu > div i:hover,
     text-align: center;
 }
 
-.peformance > .incomeBox > .incomeBoxPreview > .incomeTitle {
+.peformance > .income-box > .income-box-preview > .income-title {
     background-color: #61c156;
     padding: 18px 0;
     border-radius: 10px 10px 0 0;
@@ -117,19 +117,19 @@ menu > div i:hover,
     font-size: 20px;
 }
 
-.peformance > .incomeBox > .incomeBoxPreview > .incomeDetail {
+.peformance > .income-box > .income-box-preview > .income-detail {
     margin: 30px auto;
     font-weight: 700;
     font-size: 32px;
     text-align: center;
 }
 
-.peformance > .statusBox {
+.peformance > .status-box {
     display: flex;
     height: 25%;
 }
 
-.peformance > .statusBox > .statusBoxPreview {
+.peformance > .status-box > .status-box-preview {
     width: 24%;
     margin: 5px auto 5px auto;
     box-shadow: 0 3px 7px 0 grey;
@@ -139,74 +139,74 @@ menu > div i:hover,
     background-color: white;
 }
 
-.peformance > .statusBox .statusBoxPreview > .statusColorPending,
-.peformance > .statusBox .statusBoxPreview > .statusColorSuccess,
-.peformance > .statusBox .statusBoxPreview > .statusColorExpired,
-.peformance > .statusBox .statusBoxPreview > .statusColorFailed {
+.peformance > .status-box > .status-box-preview > .status-color-pending,
+.peformance > .status-box > .status-box-preview > .status-color-success,
+.peformance > .status-box > .status-box-preview > .status-color-expired,
+.peformance > .status-box > .status-box-preview > .status-color-failed {
     width: 5%;
     border-radius: 10px 0 0 10px;
 }
 
-.peformance > .statusBox .statusBoxPreview > .statusColorPending {
+.peformance > .status-box > .status-box-preview > .status-color-pending {
     background-color: purple;
 }
 
-.peformance > .statusBox .statusBoxPreview > .statusColorSuccess {
+.peformance > .status-box > .status-box-preview > .status-color-success {
     background-color: gold;
 }
 
-.peformance > .statusBox .statusBoxPreview > .statusColorExpired {
+.peformance > .status-box > .status-box-preview > .status-color-expired {
     background-color: orange;
 }
 
-.peformance > .statusBox .statusBoxPreview > .statusColorFailed {
+.peformance > .status-box > .status-box-preview > .status-color-failed {
     background-color: darkred;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .statusDetail {
+.peformance > .status-box > .status-box-preview > .status-detail {
     width: 50%;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .statusDetail > .statusDetailTitle {
+.peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title {
     margin: 20px;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .statusDetail > .statusDetailInfo {
+.peformance > .status-box > .status-box-preview > .status-detail > .status-detail-info {
     margin: 10px auto 40px auto;
     font-weight: 700;
     font-size: 40px;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-clock-rotate-left,
-.peformance > .statusBox > .statusBoxPreview > .fa-circle-check,
-.peformance > .statusBox > .statusBoxPreview > .fa-triangle-exclamation,
-.peformance > .statusBox > .statusBoxPreview > .fa-circle-xmark {
+.peformance > .status-box > .status-box-preview > .fa-clock-rotate-left,
+.peformance > .status-box > .status-box-preview > .fa-circle-check,
+.peformance > .status-box > .status-box-preview > .fa-triangle-exclamation,
+.peformance > .status-box > .status-box-preview > .fa-circle-xmark {
     width: 40%;
     margin: auto;
     font-size: 64px;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-clock-rotate-left,
-.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #pending {
+.peformance > .status-box > .status-box-preview > .fa-clock-rotate-left,
+.peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #pending {
     color: purple;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-circle-check,
-.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #success {
+.peformance > .status-box > .status-box-preview > .fa-circle-check,
+.peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #success {
     color: gold;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-triangle-exclamation,
-.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #expired {
+.peformance > .status-box > .status-box-preview > .fa-triangle-exclamation,
+.peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #expired {
     color: orange;
 }
 
-.peformance > .statusBox > .statusBoxPreview > .fa-circle-xmark,
-.peformance > .recentOrderBox > .recentOrderTable > tbody > tr > td > #failed {
+.peformance > .status-box > .status-box-preview > .fa-circle-xmark,
+.peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #failed {
     color: darkred;
 }
 
-.peformance > .recentOrderBox {
+.peformance > .recent-order-box {
     margin: 15px auto 0 auto;
     height: 45%;
     width: 99%;
@@ -214,24 +214,24 @@ menu > div i:hover,
     box-shadow: 0 3px 7px 0 grey;
 }
 
-.peformance > .recentOrderBox > .recentOrderTitle {
+.peformance > .recent-order-box > .recent-order-title {
     display: flex;
 }
 
-.peformance > .recentOrderBox > .recentOrderTitle > p {
+.peformance > .recent-order-box > .recent-order-title > p {
     width: 97%;
     margin: auto 0 auto 30px;
     font-weight: 700;
     font-size: 24px;
 }
 
-.peformance > .recentOrderBox > .recentOrderTitle > i {
+.peformance > .recent-order-box > .recent-order-title > i {
     width: 3%;
     font-size: 28px;
     margin: 20px;
 }
 
-.peformance > .recentOrderBox > .recentOrderTable {
+.peformance > .recent-order-box > .recent-order-table {
     overflow: auto;
     max-height: 80%;
     display: flex;
