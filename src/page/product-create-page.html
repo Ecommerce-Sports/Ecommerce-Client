@@ -75,45 +75,42 @@
             </li>
         </div>
     </nav>
-    <main class="product close">
-        <div class="product-box">
-            <div class="head-bar-product">
-                <p class="head-bar-title">PRODUCT</p>
-                <div class="search-bar">
-                    <input class="search-product" type="search" name="search" placeholder="Search Product... ." id="">
-                    <button class="search-button" >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
-                <button class="create-product">
-                    <a href="product-create-page.html">
-                        <i class="fa-solid fa-plus"></i>
-                        <p>CREATE</p>
-                    </a>
-                </button>
+    <main class="product-create close">
+        <div class="product-create-box">
+            <div class="head-bar-product-create">
+                <p class="head-bar-title">CREATE PRODUCT</p>
             </div>
-            <div class="body-list-product">
-                <table class="list-product">
-                    <thead>
-                        <td>NO.</td>
-                        <td>IMAGE</td>
-                        <td>NAME</td>
-                        <td>CATEGORY</td>
-                        <td>ACTION</td>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><img src="/src/img/properti/adidas.png" alt="Product Image"></td>
-                            <td>Sepatu All Star</td>
-                            <td>Street</td>
-                            <td>
-                                <a href="#"><button class="edit"><i class="fa-solid fa-pen"></i></button></a>
-                                <a href="#"><button class="delete"><i class="fa-solid fa-trash"></i></button></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="body-product-create">
+                <form class="form-product-craete" action="/src/page/product-page.html">
+                    <p class="title">IMAGE</p>
+                    <div class="image-view-upload">
+                        <div class="image-view">
+                            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                            <p><img id="output" width="150px" height="150px"></p>
+                        </div>
+                        <div class="image-upload">
+                            <button><label for="file" style="cursor: pointer;"><i class="fa-solid fa-file-arrow-up"></i>Upload Image</label></button>
+                        </div>
+                    </div>
+                    <p class="title">PRODUCT NAME</p>
+                    <input class="product-name" type="text" name="product-name" id="" placeholder="Ex. Adidas Mythical Shoes - Black">
+                    <div class="detail-product">
+                        <div class="detail-product-left">
+                            <p class="title">CATEGORY</p>
+                            <input class="product-category" type="text" name="product-category" id="" placeholder="Ex. Football">
+                            <p class="title">PRICE</p>
+                            <input class="product-price" type="number" name="product-price" id="" placeholder="Ex. 5000000">
+                        </div>
+                        <div class="detail-product-right">
+                            <p class="title">STOCK</p>
+                            <input class="product-stock" type="number" name="product-stock" id="" placeholder="Ex. 50">
+                            <p class="title">DISCOUNT (%)</p>
+                            <input class="product-discount" type="number" name="product-discount" id="" placeholder="Ex. 20">
+                        </div>
+                    </div>
+                    <p class="title">DESCRIPTION</p>
+                    <input class="product-description" type="text" name="product-description" id="">
+                </form>
             </div>
         </div>
         <footer>
