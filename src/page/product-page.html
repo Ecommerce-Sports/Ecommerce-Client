@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Server Site</title>
+    <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/product.css">
+    <script src="https://kit.fontawesome.com/d8f6166e99.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/src/img/tokopaedi-logo.png" type="image/x-icon" alt="tokopaedi-logo">
+</head>
+<body>
+    <header>
+        <div class="left-navbar">
+            <i class="fa-solid fa-bars"></i>
+            <img class="navbar-logo" src="/src/img/tokopaedi-text.png" alt="tokopaedi-text">
+        </div>
+        <div class="right-navbar">
+            <i class="fa-regular fa-bell"></i>
+            <div class="profile-box">
+                <i class="fa-solid fa-circle" style="color: #61c156;"></i>
+                <p>Admin</p>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar close">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="performance-page.html">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="text nav-text">Peformance</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="product-page.html">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="text nav-text">Product</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <span class="text nav-text">Category</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="text nav-text">Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span class="text nav-text">Customer</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                            <span class="text nav-text">Advertisement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-content">
+             <li class="">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="text nav-text">Logout</span>
+                </a>
+            </li>
+        </div>
+    </nav>
+    <main class="product">
+        <div class="product-box">
+            <div class="head-bar-product">
+                <p class="head-bar-title">PRODUCT</p>
+                <div class="search-bar">
+                    <input class="search-product" type="search" name="search" placeholder="Search Product... ." id="">
+                    <button class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <button class="create-product">
+                    <i class="fa-solid fa-plus"></i>
+                    <p>CREATE</p>
+                </button>
+            </div>
+            <div class="body-list-product">
+                <div class="table-title">
+                    <table>
+                        <thead>
+                            <td>NO.</td>
+                            <td>IMAGE</td>
+                            <td>NAME</td>
+                            <td>CATEGORY</td>
+                            <td>ACTION</td>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-list">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td>Sepatu All Start</td>
+                                <td>Street</td>
+                                <td>
+                                    <div><i class="fa-solid fa-pen"></i></div>
+                                    <div><i class="fa-solid fa-trash"></i></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/src/script/sidebar.js"></script>
+</body>
+</html>
