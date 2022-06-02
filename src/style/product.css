@@ -83,3 +83,42 @@
     font-size: 16px;
 }
 
+.product > .product-box > .body-list-product {
+    margin: 20px 5px 20px 20px;
+    max-height: 712px;
+    height: 100vw;
+    overflow: auto;
+}
+
+.product > .product-box > .body-list-product > .list-product  {
+    width: 100%;
+    text-align: center;
+}
+
+.product > .product-box > .body-list-product > .list-product > thead td {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.product > .product-box > .body-list-product > .list-product > tbody > tr > td > img {
+    max-width: 100px;
+    margin: 10px 0 10px 0;
+}
+
+.product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit,
+.product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit {
+    background-color: #61c156;
+}
+
+.product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete {
+    background-color: red;
+}
