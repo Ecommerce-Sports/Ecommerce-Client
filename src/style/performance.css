@@ -56,16 +56,68 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar {
     float: left;
-    width: 10%;
+    width: 15%;
     background-color: #61c156;
     height: 93.5vh;
     display: flex;
     flex-direction: column;
 }
 
+.sidebar > .menu-bar {
+    height: 91.7%;
+}
+
+.sidebar > .menu-bar > .menu > .menu-link > .nav-link {
+    list-style: none;
+}
+
+.sidebar > .menu-bar > .menu > .menu-link > .nav-link > a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar > .menu-bar > .menu > .menu-link > .nav-link > a:hover {
+    color: grey;
+    background-color: white;
+}
+
+.sidebar > .menu-bar > .menu > .menu-link > .nav-link > a > i {
+    padding: 0 20px 0 10px;
+}
+
+.sidebar > .bottom-content {
+    height: 8.3%;
+}
+
+.sidebar > .bottom-content > li {
+    list-style: none;
+}
+
+.sidebar > .bottom-content > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar > .bottom-content > li > a:hover {
+    color: grey;
+    background-color: white;
+}
+
+.sidebar > .bottom-content > li > a > i {
+    padding: 0 10px 0 10px;
+}
+
 .peformance {
     float: right;
-    width: 90%;
+    width: 85%;
     padding: 0 30px 0 30px;
 }
 
@@ -102,6 +154,12 @@ header > .right-navbar > .profile-box > p {
 .peformance > .status-box {
     display: flex;
     height: 25%;
+}
+
+.sidebar.close ~ .home {
+    left: 78px;
+    height: 100%;
+    width: calc(100% - 78px);
 }
 
 .peformance > .status-box > .status-box-preview {
