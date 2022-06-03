@@ -75,50 +75,41 @@
             </li>
         </div>
     </nav>
-    <main class="product-create">
-        <div class="product-create-box">
-            <div class="head-bar-product-create">
-                <p class="head-bar-title"><span class="create">CREATE</span><span class="edit" hidden>EDIT</span> PRODUCT</p>
+    <main class="category">
+        <div class="add-category-box">
+            <div class="head-bar-category-create">
+                <p class="head-bar-title">ADD CATEGORY</p>
             </div>
-            <div class="body-product-create">
-                <form class="form-product-create" action="/src/page/product-page.html" method="post">
-                    <p class="title">IMAGE</p>
+            <div class="body-category-create">
+                <form action="category-page.html" id="">
                     <div class="image-view-upload">
-                        <div class="image-view">
-                            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-                            <p><img id="output" width="150px" height="150px"></p>
-                        </div>
-                        <div class="image-upload">
-                            <button disabled="action"><label for="file" style="cursor: pointer;"><i class="fa-solid fa-file-arrow-up"></i>Upload Image</label></button>
-                        </div>
+                        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                        <p><img id="output" width="140px" height="140px"></p>
+                        <button class="category-image-upload" disabled="action"><label for="file" style="cursor: pointer;"><i class="fa-solid fa-file-arrow-up"></i>Upload Image</label></button>
                     </div>
-                    <p class="title">PRODUCT NAME</p>
-                    <input class="product-name" type="text" name="product-name" id="" placeholder="Ex. Adidas Mythical Shoes - Black">
-                    <div class="detail-product">
-                        <div class="detail-product-left">
-                            <p class="title">CATEGORY</p>
-                            <input class="product-category" type="text" name="product-category" id="" placeholder="Ex. Football">
-                            <p class="title">PRICE</p>
-                            <input class="product-price" type="number" name="product-price" id="" placeholder="Ex. 5000000">
+                    <div class="category-upload">
+                        <div class="category-name">
+                            <p>NAME</p>
+                            <input class="add-category-name" type="text" name="add-category-name" id="">
                         </div>
-                        <div class="detail-product-right">
-                            <p class="title">STOCK</p>
-                            <input class="product-stock" type="number" name="product-stock" id="" placeholder="Ex. 50">
-                            <p class="title">DISCOUNT (%)</p>
-                            <input class="product-discount" type="number" name="product-discount" id="" placeholder="Ex. 20">
-                        </div>
+                        <button class="add-category-action" type="submit">
+                            <i class="fa-solid fa-plus"></i>
+                            <p>ADD</p>
+                        </button>
+                        <button class="reset-category-action" type="reset">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                            <p>RESET</p>
+                        </button>
                     </div>
-                    <p class="title">DESCRIPTION</p>
-                    <textarea class="product-description" name="product-description" id="" cols="30" rows="10"></textarea>
-                    <button class="form-save" type="submit" id="">
-                        <i class="fa-solid fa-floppy-disk"></i>
-                        <p>save</p>
-                    </button>
-                    <button class="form-reset" type="reset" id="">
-                        <i class="fa-solid fa-arrow-rotate-left"></i>
-                        <p>reset</p>
-                    </button>
                 </form>
+            </div>
+        </div>
+        <div class="category-list-box">
+            <div class="head-bar-category-list">
+                <p class="head-bar-title">CATEGORY</p>
+            </div>
+            <div class="body-category-list">
+
             </div>
         </div>
         <footer>
