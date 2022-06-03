@@ -78,7 +78,7 @@
     <main class="product-create close">
         <div class="product-create-box">
             <div class="head-bar-product-create">
-                <p class="head-bar-title">CREATE PRODUCT</p>
+                <p class="head-bar-title"><span class="create">CREATE</span><span class="edit" hidden>EDIT</span> PRODUCT</p>
             </div>
             <div class="body-product-create">
                 <form class="form-product-craete" action="/src/page/product-page.html">
@@ -109,7 +109,15 @@
                         </div>
                     </div>
                     <p class="title">DESCRIPTION</p>
-                    <input class="product-description" type="text" name="product-description" id="">
+                    <textarea class="product-description" name="product-description" id="" cols="30" rows="10"></textarea>
+                    <button class="form-save" type="submit" id="">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        <p>save</p>
+                    </button>
+                    <button class="form-reset" type="reset" id="">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        <p>reset</p>
+                    </button>
                 </form>
             </div>
         </div>

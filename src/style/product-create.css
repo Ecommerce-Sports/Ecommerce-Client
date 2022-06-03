@@ -16,22 +16,23 @@
     background-color: white;
     width: 100%;
     height: 85vh;
+    max-height: 85vh;
+    overflow: auto;
 }
 
 .product-create > .product-create-box > .head-bar-product-create {
     background-color: #61c156;
     border-radius: 10px 10px 0 0;
-    display: flex;
     width: 100%;
 }
 
-.product-create > .product-create-box > .head-bar-product-create > .head-bar-title {
+.product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+.product-create > .product-create-box > .head-bar-product-create > .head-bar-title span {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    margin: 15px 0 15px 40px;
-    width: 10%;
+    padding: 15px 0 15px 20px;
 }
 
 .product-create > .product-create-box > .body-product-create {
@@ -82,7 +83,51 @@
     display: flex;
 }
 
-.product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left,
-.product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+.product-create > .product-create-box > .body-product-create > form > .detail-product div {
     width: 50%;
+}
+
+.product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left {
+    margin-right: 10px;
+}
+
+.product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+    margin-left: 10px;
+}
+
+.product-create > .product-create-box > .body-product-create > form input {
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.product-create > .product-create-box > .body-product-create > form > .product-description {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px;
+    border-width: 2px;
+}
+
+.product-create > .product-create-box > .body-product-create > form > button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #61c156;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+}
+
+.product-create > .product-create-box > .body-product-create > form > button > i {
+    float: left;
+    width: 40%;
+}
+
+.product-create > .product-create-box > .body-product-create > form > button > p {
+    float: right;
+    width: 60%;
 }
