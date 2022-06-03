@@ -132,3 +132,13 @@
     max-width: 100px;
     object-fit: scale-down;
 }
+
+.category > .category-list-box > .body-category-list > .category-list > tbody button {
+    padding: 8px;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 40px;
+    cursor: pointer;
+}

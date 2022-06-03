@@ -3,6 +3,9 @@
 @import url(product.css);
 @import url(product-create.css);
 @import url(category.css);
+@import url(orders.css);
+@import url(customerlist.css);
+@import url(banner.css);
 
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
