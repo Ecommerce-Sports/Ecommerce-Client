@@ -112,3 +112,23 @@
     height: 53vh;
 }
 
+.category > .category-list-box > .body-category-list {
+    padding: 10px;
+    height: 47vh;
+    overflow: auto;
+}
+
+.category > .category-list-box > .body-category-list >.category-list {
+    width: 100%;
+    text-align: center;
+}
+
+.category > .category-list-box > .body-category-list > .category-list > thead {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.category > .category-list-box > .body-category-list > .category-list > tbody img {
+    max-width: 100px;
+    object-fit: scale-down;
+}
