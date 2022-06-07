@@ -1,3 +1,3 @@
 # Ecommerce-Client
 
-Kita akan develop Frontend disini
+Ini adalah Customer Website
