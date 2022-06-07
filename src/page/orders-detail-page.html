@@ -75,46 +75,58 @@
             </li>
         </div>
     </nav>
-    <main class="banner">
-        <div class="add-banner-box">
-            <div class="head-bar-banner-create">
-                <p class="head-bar-title">ADD BANNER</p>
+    <main class="orders-detail">
+        <div class="orders-detail-box">
+            <div class="head-bar-orders-detail">
+                <p class="head-bar-title">ORDERS DETAIL</p>
             </div>
-            <div class="body-banner-create">
-                <form action="banner-page.html">
-                    <div class="image-view-upload">
-                        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-                        <p><img id="output" width="140px" height="140px"></p>
-                    </div>
-                    <div class="add-banner-action">
-                        <button class="banner-image-upload" disabled="action"><label for="file" style="cursor: pointer;"><i class="fa-solid fa-file-arrow-up"></i>UPLOAD</label></button>
-                        <button class="reset-banner-action" type="reset">
-                            <i class="fa-solid fa-arrow-rotate-left"></i>
-                            <p>RESET</p>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="banner-list-box">
-            <div class="head-bar-banner-list">
-                <p class="head-bar-title">BANNER</p>
-            </div>
-            <div class="body-banner-list">
-                <table class="banner-list">
-                    <thead>
-                        <td>NO.</td>
-                        <td>IMAGE</td>
-                        <td>ACTION</td>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><img src="/src/img/properti/adidas.png" alt="Banner Image"></td>
-                            <td><button class="delete"><i class="fa-solid fa-trash"></i></button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="body-orders-detail">
+                <ul>
+                    <li>
+                        <p class="detail-name">No. Invoice</p>
+                        <p class="detail-description" id="">INV-ABCDEF123G</p>
+                    </li>
+                    <li>
+                        <p class="detail-name">Customer</p>
+                        <p class="detail-description" id="">Jhon Doe</p>
+                    </li>
+                    <li>
+                        <p class="detail-name">Status</p>
+                        <span class="detail-description" id="">
+                            <i class="fa-solid fa-circle" id="success"></i>
+                            <p class="status-detail">success</p>
+                        </span>
+                    </li>
+                    <li>
+                        <p class="detail-name">Orders</p>
+                        <ul class="detail-description" id="">
+                            <li>
+                                <p id="">Nama Barang 1 (x1)</p>
+                                <p id="">Rp. 1.999.000</p>
+                            </li>
+                            <li>
+                                <p id="">Nama Barang 1 (x1)</p>
+                                <p id="">Rp. 1.999.000</p>
+                            </li>
+                            <li>
+                                <p id="">Nama Barang 1 (x1)</p>
+                                <p id="">Rp. 1.999.000</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="detail-name">Total</p>
+                        <p class="detail-description" id="">Rp. 4.799.000</p>
+                    </li>
+                    <li>
+                        <p class="detail-name">Address</p>
+                        <p class="detail-description" id="">Jl. Mawar GG MElati no 69, Surabaya</p>
+                    </li>
+                    <li>
+                        <p class="detail-name">Courier</p>
+                        <p class="detail-description" id="">JNE Express</p>
+                    </li>
+                </ul>
             </div>
         </div>
         <footer>

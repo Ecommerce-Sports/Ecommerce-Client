@@ -6,8 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Server Site</title>
     <link rel="stylesheet" href="/src/style/main.css">
+    <script src="https://kit.fontawesome.com/d8f6166e99.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/src/img/tokopaedi-logo.png" type="image/x-icon" alt="tokopaedi-logo">
 </head>
 <body>
-    
+    <header>
+        <div class="left-navbar">
+            <i class="fa-solid fa-bars"></i>
+            <img class="navbar-logo" src="/src/img/tokopaedi-text.png" alt="tokopaedi-text">
+        </div>
+        <div class="right-navbar">
+            <i class="fa-regular fa-bell"></i>
+            <div class="profile-box">
+                <i class="fa-solid fa-circle" style="color: #61c156;"></i>
+                <p>Admin</p>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar close">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="performance-page.html">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="text nav-text">Peformance</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="product-page.html">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="text nav-text">Product</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="category-page.html">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <span class="text nav-text">Category</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="orders-page.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="text nav-text">Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="customerlist-page.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span class="text nav-text">Customer</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="banner-page.html">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                            <span class="text nav-text">Advertisement</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-content">
+             <li class="">
+                <a href="login-page.html">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="text nav-text">Logout</span>
+                </a>
+            </li>
+        </div>
+    </nav>
+    <main class="customerlist">
+        <div class="customerlist-box">
+            <div class="head-bar-customerlist">
+                <p class="head-bar-title">CUSTOMER</p>
+                <div class="search-bar">
+                    <input class="search-customer" type="search" name="search" placeholder="Search Order List... ." id="">
+                    <button class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-customerlist">
+                <table class="list-customer">
+                    <thead>
+                        <td>NO.</td>
+                        <td>CUSTOMER NAME</td>
+                        <td>EMAIL</td>
+                        <td>JOIN DATE</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Jhon Doe</td>
+                            <td>jhon.doe@gmail.com</td>
+                            <td>Jumat, 27 Mei 2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            Admin Server Site &#169; 2022, Tokopaedi
+        </footer>
+    </main>
+    <script src="/src/script/sidebar.js"></script>
 </body>
 </html>
