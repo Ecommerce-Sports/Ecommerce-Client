@@ -51,7 +51,7 @@
 }
 
 .header-home-page > .header-search {
-    width: 50vw;
+    width: 60vw;
 }
 
 .header-home-page > .header-search > .search-box {
@@ -82,4 +82,50 @@
     background-color: grey;
     color: white;
     border-color: transparent;
+}
+
+.header-home-page > .header-action {
+    width: 10vw;
+    display: flex;
+}
+
+.header-home-page > .header-action > div {
+    width: 33%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-home-page > .header-profile {
+    width: 10vw;
+    text-align: center;
+}
+
+.header-home-page > .header-profile > .profile-box {
+    margin: 0 15px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-home-page > .header-profile > .profile-box:hover {
+    background-color: lightgray;
+}
+
+.header-home-page > .header-profile > .profile-box > .profile-picture,
+.header-home-page > .header-profile > .profile-box > .profile-navbar {
+    width: 25%;
+}
+
+.header-home-page > .header-profile > .profile-box > .profile-picture img {
+    max-width: 20px;
+    border-radius: 25px;
+}
+
+.header-home-page > .header-profile > .profile-box > .profile-navbar .fa-bars {
+    color: gray;
+    font-size: 20px;
 }
