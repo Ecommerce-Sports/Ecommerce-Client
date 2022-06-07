@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+}
+
+.header-home-page {
+    width: 100vw;
+    height: 7.5vh;
+    background-color: white;
+    box-shadow: 0 0 10px 0 #61c156;
+    align-items: center;
+    display: flex;
+    position: sticky;
+}
+
+.header-home-page > .header-logo {
+    width: 12%;
+    text-align: center;
+}
+
+.header-home-page > .header-logo img {
+    max-width: 150px;
+    padding: 10px 0;
+}
+
+.header-home-page > .header-category {
+    width: 8%;
+}
+
+.header-home-page > .header-category > .category-toggle {
+    background-color: white;
+    color: #61c156;
+    margin: 0 10px;
+    padding: 6px 0;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header-home-page > .header-category > .category-toggle p {
+    width: 70%;
+}
+
+.header-home-page > .header-category > .category-toggle i {
+    padding: 0 10px;
+}
+
+.header-home-page > .header-search {
+    width: 50vw;
+}
+
+.header-home-page > .header-search > .search-box {
+    margin: 0 10px;
+}
+
+.header-home-page > .header-search > .search-box input,
+.header-home-page > .header-search > .search-box button {
+    padding: 6px 10px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+.header-home-page > .header-search > .search-box input {
+    width: 80%;
+    border-radius: 9px 0 0 9px;
+    border-width: 2px 0 2px 2px;
+}
+
+.header-home-page > .header-search > .search-box button {
+    width: 19%;
+    border-radius: 0 9px 9px 0;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.header-home-page > .header-search > .search-box button:hover {
+    background-color: grey;
+    color: white;
+    border-color: transparent;
+}
