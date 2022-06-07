@@ -1,0 +1,64 @@
+.body-home-page {
+    padding: 20px;
+}
+
+.body-home-page > .banner-home-box {
+    position: relative;
+    margin: auto;
+}
+
+.body-home-page > .banner-home-box > .banner-image {
+    text-align: center;
+    display: none;
+}
+
+.body-home-page > .banner-home-box > .banner-image img {
+    width: 90vw;
+    height: 85vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.body-home-page > .banner-home-box #fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 3}
+}
+
+.body-home-page > .banner-description p {
+    color: white;
+    position: absolute;
+}
+
+.body-home-page > .banner-description > .banner-text p {
+    margin: -300px 0 0 150px;
+    font-weight: 900;
+    font-size: 80px;
+    max-width: 600px;
+}
+
+.body-home-page > .banner-description > .banner-text-description p {
+    margin: -120px 0 0 150px;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.body-home-page > .banner-description > .banner-action button {
+    margin: -85px 0 0 240px;
+    padding: 10px;
+    width: 130px;
+    position: absolute;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: #61c156;
+    color: white;
+    box-shadow: 0 3px 7px 0 darkgrey;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}

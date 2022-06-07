@@ -1,3 +1,5 @@
+@import url(home.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -7,7 +9,7 @@
     font-family: 'Raleway',sans-serif;
 }
 
-.header-home-page {
+header {
     width: 100vw;
     height: 7.5vh;
     background-color: white;
@@ -15,23 +17,25 @@
     align-items: center;
     display: flex;
     position: sticky;
+    z-index: 101;
+    top: 0;
 }
 
-.header-home-page > .header-logo {
+header > .header-logo {
     width: 12%;
     text-align: center;
 }
 
-.header-home-page > .header-logo img {
+header > .header-logo img {
     max-width: 150px;
     padding: 10px 0;
 }
 
-.header-home-page > .header-category {
+header > .header-category {
     width: 8%;
 }
 
-.header-home-page > .header-category > .category-toggle {
+header > .header-category > .category-toggle {
     background-color: white;
     color: #61c156;
     margin: 0 10px;
@@ -42,90 +46,91 @@
     font-weight: 600;
 }
 
-.header-home-page > .header-category > .category-toggle p {
+header > .header-category > .category-toggle p {
     width: 70%;
 }
 
-.header-home-page > .header-category > .category-toggle i {
+header > .header-category > .category-toggle i {
     padding: 0 10px;
 }
 
-.header-home-page > .header-search {
+header > .header-search {
     width: 60vw;
 }
 
-.header-home-page > .header-search > .search-box {
+header > .header-search > .search-box {
     margin: 0 10px;
 }
 
-.header-home-page > .header-search > .search-box input,
-.header-home-page > .header-search > .search-box button {
+header > .header-search > .search-box input,
+header > .header-search > .search-box button {
     padding: 6px 10px;
     border-style: solid;
     border-color: lightgrey;
 }
 
-.header-home-page > .header-search > .search-box input {
+header > .header-search > .search-box input {
     width: 80%;
     border-radius: 9px 0 0 9px;
     border-width: 2px 0 2px 2px;
 }
 
-.header-home-page > .header-search > .search-box button {
+header > .header-search > .search-box button {
     width: 19%;
     border-radius: 0 9px 9px 0;
     margin-left: -4px;
     cursor: pointer;
 }
 
-.header-home-page > .header-search > .search-box button:hover {
+header > .header-search > .search-box button:hover {
     background-color: grey;
     color: white;
     border-color: transparent;
 }
 
-.header-home-page > .header-action {
+header > .header-action {
     width: 10vw;
     display: flex;
 }
 
-.header-home-page > .header-action > div {
+header > .header-action > div {
     width: 33%;
     text-align: center;
     font-size: 20px;
     cursor: pointer;
 }
 
-.header-home-page > .header-profile {
+header > .header-profile {
     width: 10vw;
     text-align: center;
 }
 
-.header-home-page > .header-profile > .profile-box {
+header > .header-profile > .profile-box {
     margin: 0 15px;
     padding: 4px;
     background-color: white;
     border-radius: 9px;
     display: flex;
+    font-weight: 600;
     align-items: center;
     cursor: pointer;
 }
 
-.header-home-page > .header-profile > .profile-box:hover {
+header > .header-profile > .profile-box:hover {
     background-color: lightgray;
 }
 
-.header-home-page > .header-profile > .profile-box > .profile-picture,
-.header-home-page > .header-profile > .profile-box > .profile-navbar {
+header > .header-profile > .profile-box > .profile-picture,
+header > .header-profile > .profile-box > .profile-navbar {
     width: 25%;
 }
 
-.header-home-page > .header-profile > .profile-box > .profile-picture img {
+header > .header-profile > .profile-box > .profile-picture img {
     max-width: 20px;
     border-radius: 25px;
 }
 
-.header-home-page > .header-profile > .profile-box > .profile-navbar .fa-bars {
+header > .header-profile > .profile-box > .profile-navbar .fa-bars {
     color: gray;
     font-size: 20px;
 }
