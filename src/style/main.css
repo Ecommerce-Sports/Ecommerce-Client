@@ -135,7 +135,65 @@ header > .header-profile > .profile-box > .profile-navbar .fa-bars {
     color: gray;
     font-size: 20px;
 }
+
 body {
     width: 100%;
     height: 100%;
+}
+
+footer {
+    position: static;
+    bottom: 0vh;
+    width: 100%;
+    background-color: #61c156;
+}
+
+footer > .footer-list {
+    display: flex;
+    height: 90%;
+    padding: 40px 15vw;
+}
+
+footer > .footer-list > div {
+    width: 33%;
+}
+
+footer > .footer-list h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer > .footer-list > .about-team,
+footer > .footer-list > .footer-category {
+    padding-left: 10%;
+}
+
+footer > .footer-list > .about-team .about-list,
+footer > .footer-list > .footer-category .footer-category-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+}
+
+
+footer > .footer-list > .about-team .about-list a,
+footer > .footer-list > .footer-category .footer-category-list a {
+    text-decoration: none;
+    color: white;
+    margin: 3px 0;
+}
+
+footer > .footer-list > .footer-logo {
+    text-align: center;
+}
+
+footer > .footer-list > .footer-logo img {
+    width: 10vw;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
 }

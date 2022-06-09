@@ -198,3 +198,17 @@
     height: 3px;
 }
 
+.body-home-page > .product > .product-list {
+    max-width: 100%;
+    height: 135vh;
+    padding: 0 1.5vw;
+}
+
+.body-home-page > .product > .product-more {
+    text-align: center;
+}
+
+.body-home-page > .product a {
+    text-decoration: none;
+    color: black;
+}
