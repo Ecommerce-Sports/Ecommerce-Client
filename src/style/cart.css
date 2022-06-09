@@ -1,0 +1,19 @@
+.cart-page {
+    width: 100%;
+    height: 100vh;
+    padding: 0 18vw;
+}
+
+.cart-page > .cart-box {
+    float: left;
+    height: 50px;
+    width: 70%;
+    background-color: black;
+}
+
+.cart-page > .cost-box {
+    float: right;
+    height: 50px;
+    width: 30%;
+    background-color: bisque;
+}
