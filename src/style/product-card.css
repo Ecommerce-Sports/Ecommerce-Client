@@ -1,13 +1,11 @@
 .product-card {
-    position: relative;
     margin: 3vh 1vw;
-    float: left;
 }  
    
-.product-card .card {  
+.product-card .card {
     position: relative;  
     width: 240px;  
-    height: 360px;  
+    height: 340px;  
     background: white;
     box-shadow: 0 3px 7px 0 gray;  
     border-radius: 20px;  
@@ -62,7 +60,7 @@
 }  
    
 .product-card .card:hover .contentBx {  
-    height: 180px;  
+    height: 160px;
 }
 
 .product-card .card .contentBx > div {
