@@ -1,0 +1,213 @@
+.detail-product-page {
+    padding: 3vh 12vw;
+    width: 100%;
+    display: flex;
+}
+
+.detail-product-page > .product-detail {
+    width: 70%;
+}
+
+.detail-product-page > .product-detail > .detail-image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.detail-product-page > .product-detail > .product-description, 
+.detail-product-page > .product-detail > .product-response,
+.detail-product-page > .product-detail > .product-comment {
+    margin: 3vh 0;
+}
+
+.detail-product-page > .product-detail > .product-description p {
+    margin-top: 1vh;
+    text-align: justify;
+}
+
+.detail-product-page > .product-detail > .product-response > .product-rating,
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image > .comment-product-ratting {
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+.detail-product-page > .product-detail > .product-response > .product-rating span,
+.detail-product-page > .product-detail > .product-response > .product-rating p,
+.detail-product-page > .product-detail > .product-response > .product-rating i {
+    margin: 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.detail-product-page > .product-detail > .product-response > .product-rating i {
+    color: gold;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box {
+    margin: 1vh 0;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 0 grey;
+    background-color: white;
+    display: flex;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image {
+    width: 10%;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image .comment-product-ratting span,
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image .comment-product-ratting p,
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image .comment-product-ratting i {
+    margin: 0 2px;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-image .comment-product-ratting i {
+    color: gold;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-description {
+    width: 90%;
+}
+
+.detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-description p {
+    text-align: justify;
+    margin-top: 1vh;
+    font-size: 15px;
+}
+
+.detail-product-page > aside {
+    width: 30%;
+    padding: 0 2vw;
+}
+
+.detail-product-page > aside > h1 {
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 4vh;
+}
+
+.detail-product-page > aside > h2 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 3vh;
+}
+
+.detail-product-page > aside > .product-size {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.detail-product-page > aside > .product-size > p {
+    width: 15%;
+}
+
+.detail-product-page > aside > .product-size > div span {
+    padding: 8px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.detail-product-page > aside > .product-size > div span:hover {
+    background-color: grey;
+    color: white;
+}
+
+.detail-product-page > aside > .product-size > div .or {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0;
+    cursor: default;
+}
+
+.detail-product-page > aside > .product-size > div .or:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.detail-product-page > aside > .product-size > div .input {
+    background-color: transparent;
+    padding: 0;
+}
+
+.detail-product-page > aside > .product-size > div .input input {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    text-align: center;
+}
+
+.detail-product-page > aside > p {
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+.detail-product-page > aside > p #ready {
+    color: #61c156;
+}
+
+.detail-product-page > aside > p #notReady {
+    color: red;
+}
+
+.detail-product-page > aside > .product-choose {
+    width: 100%;
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.detail-product-page > aside > .product-choose > p {
+    width: 25%;
+}
+
+.detail-product-page > aside > .product-choose > .product-detail-choose button {
+    border-style: none;
+    background-color: white;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.detail-product-page > aside > .product-choose > .product-detail-choose input {
+    width: 50px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    text-align: center;
+}
+
+.detail-product-page > aside > .product-detail-action button {
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.detail-product-page > aside > .product-detail-action .addtocart-button {
+    background-color: #61c156;
+    color: white;
+    font-weight: 700;
+    padding: 15px 45px;
+}
+
+.detail-product-page > aside > .product-detail-action .wishlist-button {
+    background-color: whitesmoke;
+    color: red;
+}
