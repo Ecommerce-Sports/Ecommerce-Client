@@ -16,3 +16,14 @@ const showSlides = () => {
 }
 
 showSlides();
+
+//side nav bar
+function openNav() {
+    document.getElementById("mySidenav").style.width = "450px";
+    document.getElementsByTagName("main").style.marginRight = "450px";
+}
+  
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementsByTagName("main").style.marginRight= "0";
+}

@@ -148,6 +148,119 @@ body {
     width: 100%;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 5px 1px grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10vh;
+}
+
+.sidenav > .closebtn {
+    text-decoration: none;
+    margin-left: 87%;
+    background-color: white;
+    color: grey;
+    box-shadow: 0 3px 7px 0 grey;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.sidenav > .nav-profile-box {
+    background-color: white;
+    box-shadow: 0 3px 7px 0 grey;
+    margin: 30px 18px;
+    border-radius: 5px;
+}
+
+.sidenav > .nav-profile-box img {
+    width: 100px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.sidenav > .nav-profile-box > .profile {
+    display: flex;
+}
+
+.sidenav > .nav-profile-box > .profile > .profile-detail {
+    margin: 15px;
+}
+
+.sidenav > .nav-profile-box > .profile > .profile-detail p {
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.sidenav > .nav-profile-box > a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidenav > .nav-profile-box > a .profile-action {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sidenav > .nav-profile-box > a .profile-action i {
+    width: 42%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.sidenav > .nav-profile-box > a .profile-action p {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidenav > .navbar-action,
+.sidenav > .navbar-logout {
+    padding: 0 20px;
+}
+
+.sidenav > .navbar-action {
+    height: 65%;
+}
+
+.sidenav > .navbar-action a {
+    margin: 5px 0;
+}
+
+.sidenav > .navbar-action a,
+.sidenav > .navbar-logout a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sidenav > .navbar-action a:hover,
+.sidenav > .navbar-logout a:hover {
+    background-color: lightgrey;
+}
+
+.sidenav > .navbar-action a p,
+.sidenav > .navbar-logout a p {
+    width: 88%;
+    text-align: right;
+}
+
+.sidenav > .navbar-action a i,
+.sidenav > .navbar-logout a i {
+    width: 12%;
+    text-align: center;
+}
+
 footer {
     width: 100%;
     margin-top: 10px;

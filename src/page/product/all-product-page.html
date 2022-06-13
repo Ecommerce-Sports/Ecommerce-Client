@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="header-profile">
-            <div class="profile-box">
+            <div class="profile-box" onclick="openNav()">
                 <div class="profile-picture">
                     <img src="/src/img/properti/profile-picture.png" alt="profile-picture">
                 </div>
@@ -51,7 +51,51 @@
             </div>
         </div>
     </header>
-    <main class="all-product-page">
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        <div class="nav-profile-box">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="/src/img/properti/profile-picture.png" alt="profile-image">
+                </div>
+                <div class="profile-detail">
+                    <h2 id="">Username</h2>
+                    <p>Join Date : <span id="">18 Feb 2022</span></p>
+                </div>
+            </div>
+            <a href="#">
+                <div class="profile-action">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Edit Profil</p>
+                </div>
+            </a>
+        </div>
+        <div class="navbar-action">
+            <a href="/src/page/product/wishlist-page.html">
+                <p>Wishlist</p>
+                <i class="fa-solid fa-heart-circle-plus"></i>
+            </a>
+            <a href="/src/page/payment/cart-page.html">
+                <p>Keranjang</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="/src/page/product/all-product-page.html">
+                <p>Product</p>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="#">
+                <p>Pengaturan</p>
+                <i class="fa-solid fa-gear"></i>
+            </a>
+        </div>
+        <div class="navbar-logout">
+            <a href="/src/page/login/login-page.html">
+                <p>Keluar</p>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </div>
+    </nav>
+    <main class="all-product-page" onclick="closeNav()">
         <div class="all-product-category">
             <p class="category-title">Sepakbola</p>
             <div class="product-selected-box">
@@ -297,7 +341,7 @@
             </div>
         </div>
     </main>
-    <main class="all-product-ready-page">
+    <main class="all-product-ready-page" onclick="closeNav()">
         <div class="product">
             <div class="product-title">
                 <p>All Product</p>
@@ -403,4 +447,5 @@
         </div>
         <p>&#169; 2022, CPSG-57 Project Capstone Dicoding Academy Indonesia</p>
     </footer>
+    <script src="/src/script/index.js"></script>
 </body>
