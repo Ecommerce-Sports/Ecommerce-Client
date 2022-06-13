@@ -112,9 +112,17 @@
     width: 15%;
 }
 
+.detail-product-page > aside > .product-size > div {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+}
+
 .detail-product-page > aside > .product-size > div span {
-    padding: 8px 10px;
-    margin: 0 5px;
+    width: 30px;
+    padding: 8px 0;
+    margin-right: 10px;
     border-radius: 5px;
     background-color: lightgrey;
     font-size: 12px;
