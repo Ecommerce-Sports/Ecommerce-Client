@@ -27,3 +27,11 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight= "0";
 }
+
+//checkbox select all
+function toggle(source) {
+    checkboxes = document.getElementsByName('foo');
+    for(let i=0, n=checkboxes.length; i<n; i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
