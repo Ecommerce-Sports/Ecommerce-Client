@@ -1,12 +1,12 @@
 .cart-page {
     display: flex;
-    padding: 0 15vw;
+    padding: 0 13vw;
     min-height: 58.6vh;
     margin-top: 3vh;
 }
 
 .cart-page > .cart-box {
-    width: 70%;
+    width: 75%;
 }
 
 .cart-page > .cart-box > .cart-title > h2 {
@@ -34,6 +34,10 @@
     margin: 10px 0;
 }
 
+.cart-page > .cart-box > .cart-list > .product-list-box:hover {
+    background-color: whitesmoke;
+}
+
 .cart-page > .cart-box > .cart-list > .product-list-box > input {
     width: 20px;
     height: 20px;
@@ -51,6 +55,11 @@
 
 .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list {
     width: 75%;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > a {
+    text-decoration: none;
+    color: black;
 }
 
 .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list h3 {
@@ -88,7 +97,7 @@
 
 .cart-page > .cost-box {
     margin-left: 20px;
-    width: 30%;
+    width: 25%;
     border-radius: 10px;
     box-shadow: 0 3px 7px 0 grey;
     height: max-content;
