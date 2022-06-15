@@ -154,16 +154,135 @@ header > .header-search > .search-box button:hover {
 header > .header-action {
     width: 10vw;
     display: flex;
+    align-items: center;
 }
 
 header > .header-action > div {
     width: 33%;
     text-align: center;
     font-size: 20px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header > .header-action > div:hover {
+    background-color: lightgrey;
 }
 
 header > .header-action > div i {
     color: black;
+}
+
+header > .header-action > .notification-action {
+    display: inline-block;
+}
+
+header > .header-action > .notification-action .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px 0 grey;
+    height: 320px;
+    width: 280px;
+    margin-left: -5.5vw;
+    z-index: 101;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-title {
+    width: 100%;
+    text-align: left;
+    padding: 13px;
+    box-shadow: 0 1px 4px 0 grey;
+    height: 15%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list {
+    height: 35%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-title {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 13px;
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action {
+    display: flex;
+    width: 100%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a {
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a i {
+    font-size: 30px;
+    padding: 10px 0;
+    color: #61c156;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a:hover {
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a p {
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list {
+    height: 50%;
+    width: 100%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-title {
+    text-align: left;
+    padding: 5px 13px;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body {
+    height: 84%;
+    overflow: auto;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body > a {
+    text-decoration: none;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box {
+    margin: 2px 0;
+    text-align: left;
+    padding: 5px;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box:hover {
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box p {
+    font-size: 12px;
+    color: grey;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box h5 {
+    color: black;
+    margin: 3px 0;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box .invoice {
+    font-size: 14px;
+}
+
+header > .header-action > .notification-action:hover .dropdown-content {
+    display: block;
 }
 
 header > .header-profile {
@@ -173,7 +292,7 @@ header > .header-profile {
 
 header > .header-profile > .profile-box {
     margin: 0 15px;
-    padding: 4px;
+    padding: 10px 4px;
     background-color: white;
     border-radius: 9px;
     display: flex;
@@ -209,14 +328,14 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 15;
+    z-index: 102;
     top: 0;
     right: 0;
     background-color: white;
     box-shadow: 0 0 5px 1px grey;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 10vh;
+    padding-top: 3vh;
 }
 
 .sidenav > .closebtn {
