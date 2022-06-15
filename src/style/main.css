@@ -69,11 +69,17 @@ header > .left-navbar > .navbar-logo {
 header > .right-navbar {
     display: flex;
     width: 13%;
+    align-items: center;
 }
 
-header > .right-navbar > .fa-bell {
+header > .right-navbar a {
+    text-decoration: none;
+}
+
+header > .right-navbar .fa-bell {
     margin: auto 0 auto auto;
     font-size: 20px;
+    color: black;
 }
 
 header > .right-navbar > .profile-box {
