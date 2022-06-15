@@ -35,3 +35,9 @@ function toggle(source) {
         checkboxes[i].checked = source.checked;
     }
 }
+
+//uploadImage
+function loadFile(event) {
+    const image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
