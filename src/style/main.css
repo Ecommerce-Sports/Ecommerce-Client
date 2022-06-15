@@ -61,7 +61,7 @@ header > .header-category > .category-toggle > .dropbtn {
     text-decoration: none;
     color: #4f9e4f;
     padding: 15px 0;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 header > .header-category > .category-toggle:hover .dropbtn {
@@ -75,7 +75,7 @@ header > .header-category > .category-toggle .dropdown-content {
     color: #4f9e4f;
     position: absolute;
     background-color: white;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0 3px 5px 0 grey;
     height: 320px;
     width: 140px;
@@ -182,7 +182,7 @@ header > .header-action > .notification-action .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 3px 7px 0 grey;
     height: 320px;
     width: 280px;
@@ -196,6 +196,7 @@ header > .header-action > .notification-action .dropdown-content > .notification
     padding: 13px;
     box-shadow: 0 1px 4px 0 grey;
     height: 15%;
+    border-radius: 10px 10px 0 0;
 }
 
 header > .header-action > .notification-action .dropdown-content > .order-list {
@@ -224,7 +225,7 @@ header > .header-action > .notification-action .dropdown-content > .order-list >
 header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a i {
     font-size: 30px;
     padding: 10px 0;
-    color: #61c156;
+    color: #4f9e4f;
 }
 
 header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a:hover {
@@ -273,7 +274,7 @@ header > .header-action > .notification-action .dropdown-content > .notification
 }
 
 header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box h5 {
-    color: black;
+    color: #4f9e4f;
     margin: 3px 0;
 }
 
