@@ -186,7 +186,7 @@ header > .header-action > .notification-action .dropdown-content {
     box-shadow: 0 3px 7px 0 grey;
     height: 320px;
     width: 280px;
-    margin-left: -5.5vw;
+    margin: 1vh 0 0 -5.5vw;
     z-index: 101;
 }
 
@@ -283,6 +283,7 @@ header > .header-action > .notification-action .dropdown-content > .notification
 
 header > .header-action > .notification-action:hover .dropdown-content {
     display: block;
+    transition: 0.5s;
 }
 
 header > .header-profile {
@@ -408,7 +409,7 @@ body {
 }
 
 .sidenav > .navbar-action {
-    height: 65%;
+    height: 67%;
 }
 
 .sidenav > .navbar-action a {
