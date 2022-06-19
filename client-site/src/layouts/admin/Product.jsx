@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Header, Sidebar} from "../../components";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { Link } from 'react-router-dom';
@@ -11,13 +11,9 @@ const Product = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const products = useSelector(state => state.products);
-    
-    useEffect(()=> {
-        ScriptNavbar()
-        dispatch(fetchProducts())
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
 
+    const [search, setSearch] = useState("")
+    
     const handleDeleteProduct = (e) => {
         dispatch(deleteProduct(e.id))
     }
@@ -25,6 +21,13 @@ const Product = () => {
     const toEditpage = (e) => {
         navigate(`/edit-product/${e.id}`)
     }
+
+    useEffect(()=> {
+        if(!localStorage.token) navigate("/login")
+        ScriptNavbar()
+        dispatch(fetchProducts(localStorage.token, "name", search))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [search]);
 
   return (
     <>
@@ -35,10 +38,7 @@ const Product = () => {
             <div className="head-bar-product">
                 <p className="head-bar-title">PRODUCT</p>
                 <div className="search-bar">
-                    <input className="search-product" type="search" name="search" placeholder="Search Product... ." id="" />
-                    <button className="search-button" >
-                        <i className="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <input onChange={(e)=> setSearch(e.target.value)} value={search} className="search-product" type="search" name="search" placeholder="Search Product... ." id="" />
                 </div>
                 <button className="create-product">
                     <Link to="/add-product">

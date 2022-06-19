@@ -3,10 +3,12 @@ import {Header, Sidebar} from "../../components";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCategories, addCategory, deleteCategory } from '../../redux/action';
+import { useNavigate } from 'react-router-dom';
 import '../../style/main.css';
 
 const Category = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const categories = useSelector(state => state.categories);
 
     const [image, setImage] = useState(null);
@@ -47,9 +49,10 @@ const Category = () => {
     }
 
     useEffect(()=> {
+        if(!localStorage.token) navigate("/login")
         ScriptNavbar()
-        dispatch(fetchCategories())
-    }, []);
+        dispatch(fetchCategories(localStorage.token))
+    }, [dispatch, navigate]);
 
   return (
     <>

@@ -1,7 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.clear();
+        navigate("/login")
+    }
+
   return (
     <nav className="sidebar close">
         <div className="menu-bar">
@@ -48,7 +55,7 @@ const Sidebar = () => {
         </div>
         <div className="bottom-content">
             <li className="">
-                <a href="login-page.html">
+                <a onClick={handleLogout}>
                     <i className="fa-solid fa-arrow-right-from-bracket"></i>
                     <span className="text nav-text">Logout</span>
                 </a>

@@ -1,18 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCustomerList } from '../../redux/action';
+import { useNavigate } from 'react-router-dom';
 import '../../style/main.css';
 
 const CustomerList = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const customer = useSelector(state => state.customerList);
 
+    const [search, setSearch] = useState("")
+
     useEffect(()=> {
+        if(!localStorage.token) navigate("/login");
         ScriptNavbar()
-        dispatch(fetchCustomerList())
-    }, []);
+        dispatch(fetchCustomerList(localStorage.token, "name", search))
+    }, [dispatch, navigate, search]);
 
   return (
     <>
@@ -23,7 +28,7 @@ const CustomerList = () => {
             <div className="head-bar-customerlist">
                 <p className="head-bar-title">CUSTOMER</p>
                 <div className="search-bar">
-                    <input className="search-customer" type="search" name="search" placeholder="Search Order List... ." id="" />
+                    <input onChange={(e)=> setSearch(e.target.value)} value={search} className="search-customer" type="search" name="search" placeholder="Search Customer List... ." id="" />
                     <button className="search-button">
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </button>

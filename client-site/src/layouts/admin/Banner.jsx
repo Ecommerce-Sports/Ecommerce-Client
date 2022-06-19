@@ -3,10 +3,12 @@ import {Header, Sidebar} from "../../components";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBanner, addBanner, deleteBanner } from '../../redux/action';
+import { useNavigate } from 'react-router-dom';
 import '../../style/main.css';
 
 const Banner = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const banners = useSelector(state => state.banners);
 
     const [image, setImage] = useState(null);
@@ -46,8 +48,9 @@ const Banner = () => {
     }
 
     useEffect(()=> {
+        if(!localStorage.token) navigate("/login");
         ScriptNavbar();
-        dispatch(fetchBanner());
+        dispatch(fetchBanner(localStorage.token));
     }, []);
 
   return (

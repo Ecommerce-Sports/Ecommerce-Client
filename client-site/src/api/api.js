@@ -2,10 +2,13 @@ import axios from 'axios';
 const baseUrl = `http://localhost:3000`;
 
 const app = {
-    get: async (url) => {
+    get: async (url, token, params, filter) => {
         const response = await axios.request({
+            headers: {
+                token: token,
+            },
             method: "GET",
-            url: `${baseUrl}/${url}`
+            url: `${baseUrl}/${url}?${params}=${filter}`
         });
         return response;
     },

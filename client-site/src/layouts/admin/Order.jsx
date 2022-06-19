@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useNavigate } from 'react-router-dom';
@@ -11,10 +11,13 @@ const Order = () => {
     const navigate = useNavigate()
     const orders = useSelector(state => state.orders);
 
+    const [search, setSearch] = useState("")
+
     useEffect(()=> {
-        ScriptNavbar()
-        dispatch(fetchOrders())
-    }, []);
+        if(!localStorage.token) navigate("/login");
+        ScriptNavbar();
+        dispatch(fetchOrders(localStorage.token, "invoice", search))
+    }, [dispatch, navigate, search]);
 
   return (
     <>
@@ -25,10 +28,7 @@ const Order = () => {
             <div className="head-bar-orders">
                 <p className="head-bar-title">ORDERS</p>
                 <div className="search-bar">
-                    <input className="search-orders" type="search" name="search" placeholder="Search Order List... ." id="" />
-                    <button className="search-button">
-                        <i className="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <input value={search} onChange={(e)=> setSearch(e.target.value)} className="search-orders" type="search" name="search" placeholder="Search Order List... ." id="" />
                 </div>
             </div>
             <div className="body-list-orders">

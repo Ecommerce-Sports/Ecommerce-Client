@@ -21,10 +21,10 @@ import {
 // import swal from 'sweetalert';
 import api from "../api/api";
 
-export const fetchProducts = () => {
+export const fetchProducts = (token, params, filter) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("product");
+      const response = await api.get("product", token, params, filter);
       if (response) {
         dispatch({ type: FETCH_PRODUCT, payload: response.data });
       }
@@ -87,10 +87,10 @@ export const deleteProduct = (id) => {
   };
 };
 
-export const fetchCategories = () => {
+export const fetchCategories = (token) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("category");
+      const response = await api.get("category", token);
       if (response) {
         dispatch({ type: FETCH_CATEGORY, payload: response.data });
       }
@@ -128,10 +128,10 @@ export const deleteCategory = (id) => {
     };
 };
 
-export const fetchOrders = () => {
+export const fetchOrders = (token, params, filter) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("order");
+      const response = await api.get("order", token, params, filter);
       if (response) {
         dispatch({ type: FETCH_ORDER, payload: response.data });
       }
@@ -145,7 +145,6 @@ export const getOneOrder = (id) => {
     return async (dispatch) => {
       try {
         const response = await api.get(`order/${id}`);
-        console.log(response, `<<<< response`);
         if (response) {
           dispatch({ type: GET_ONE_ORDER, payload: response.data });
         }
@@ -155,10 +154,10 @@ export const getOneOrder = (id) => {
     };
 };
 
-export const fetchCustomerList = () => {
+export const fetchCustomerList = (token, params, filter) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("customer");
+      const response = await api.get("customer", token, params, filter);
       if (response) {
         dispatch({ type: FETCH_CUSTOMER_LIST, payload: response.data });
       }
@@ -168,10 +167,10 @@ export const fetchCustomerList = () => {
   };
 };
 
-export const fetchBanner = () => {
+export const fetchBanner = (token) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("banner");
+      const response = await api.get("banner", token);
       if (response) {
         dispatch({ type: FECTH_BANNER, payload: response.data });
       }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../../style/main.css'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -28,8 +28,8 @@ const Login = () => {
       }
     })
     .then((res) => {
-      console.log(res, `<<< res`);
       if(res.data.token) {
+        localStorage.setItem('token', res.data.token)
         navigate("/")
       }
     })

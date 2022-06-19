@@ -151,6 +151,7 @@ header > .right-navbar > .profile-box > p {
 .sidebar > .bottom-content > li > a:hover {
     color: grey;
     background-color: white;
+    cursor: pointer;
 }
 
 .sidebar > .bottom-content > li > a > i {
