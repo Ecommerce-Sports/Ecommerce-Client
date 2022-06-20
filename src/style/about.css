@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 7.5vh;
+    background-color: white;
+    box-shadow: 0 0 10px 0 #4f9e4f;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    z-index: 101;
+    top: 0;
+}
+
+header > .header-logo {
+    width: 100%;
+    text-align: center;
+}
+
+header > .header-logo img {
+    max-width: 150px;
+    padding: 10px 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;    
+    color: #4f9e4f;
+    font-size: 30px;
+}
+.box-statistic{
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    text-align: center;
+    margin: 40px;
+}
+
+.box-profile .card-profile {
+    display: flex;
+    width: 100%;
+    height: 100%;    
+    text-align: center;        
+    padding: 2% 10%;    
+}
+
+.box-profile > .card-profile > .image{
+    width: 50%;    
+}
+
+.box-profile > .card-profile > .image img{
+    width: 100%;    
+}
+.text{
+    padding-top: 20px;
+    width : 50%; 
+    text-align: justify;   
+    color: black;
+}
+
+/* slogan */
+
+.title > .slogan-line {
+    width: 100%;
+    height: 25vh;
+    background-color: #4f9e4f;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.title > .slogan-line > .slogan-image {
+    margin-left: 2%;
+    width: 15%;
+}
+
+.title > .slogan-line > .slogan-image img {
+    height: 16vh;
+}
+
+.title > .slogan-line > .slogan-text {
+    width: 45%;
+}
+
+.title > .slogan-line > .slogan-text p {
+    font-weight: 900;
+    color: white;
+    font-size: 8vh;
+}
+
+.title > .slogan-line > .slogan-with {
+    width: 5%;
+}
+
+.title > .slogan-line > .slogan-with p {
+    font-weight: 500;
+    color: white;
+    font-size: 2.5vh;
+}
+
+.title > .slogan-line > .slogan-logo {
+    width: 30%;
+}
+
+.title > .slogan-line > .slogan-logo img {
+    height: 10vh;
+}
+
+/* Galeri */
+.gallery {
+    padding: 0;        
+    display: flex;        
+    grid-template-columns: auto auto auto auto;
+    /* display: grid; */
+    text-align: center;    
+    margin-right: 100px;
+  }
+  
+  .galeri-card {
+    width: 100%;
+    height: auto;
+    grid-column: span 8;
+    margin: 10px 0;
+    border-radius: 15px;    
+  }
+  
+  .head-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .body-card {
+    padding: 10px 15px;
+  }
+  
+  .body-card h1 {
+    margin: 0;    
+  }
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #61c156;
+}
+
+footer > .footer-list {
+    display: flex;
+    height: 90%;
+    padding: 40px 15vw;
+}
+
+footer > .footer-list > div {
+    width: 33%;
+}
+
+footer > .footer-list h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer > .footer-list > .about-team,
+footer > .footer-list > .footer-category {
+    padding-left: 10%;
+}
+
+footer > .footer-list > .about-team .about-list,
+footer > .footer-list > .footer-category .footer-category-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+}
+
+
+footer > .footer-list > .about-team .about-list a,
+footer > .footer-list > .footer-category .footer-category-list a {
+    text-decoration: none;
+    color: white;
+    margin: 3px 0;
+}
+
+footer > .footer-list > .footer-logo {
+    text-align: center;
+}
+
+footer > .footer-list > .footer-logo img {
+    width: 10vw;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+/* Media Screen */
+@media screen and (min-width: 550px) {
+    .galeri-card {
+    grid-column: span 2;      
+  }      
+  
+  @media screen and (min-width: 760px) {      
+    .galeri-card {
+    width: 350px;
+    margin: 0 10px;
+  }
+  
+  @media screen and (min-width: 960px) {      
+  } 
+}
