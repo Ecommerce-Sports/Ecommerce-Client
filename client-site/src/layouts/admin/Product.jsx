@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {Header, Sidebar} from "../../components";
+import {Header, Sidebar} from "../../components/admin";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts, deleteProduct } from '../../redux/action';
 import { useNavigate } from 'react-router-dom';
-import '../../style/main.css';
+import '../../style/admin/main.css';
 
 const Product = () => {
     const navigate = useNavigate();

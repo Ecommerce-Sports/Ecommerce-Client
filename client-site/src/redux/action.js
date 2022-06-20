@@ -24,7 +24,7 @@ import api from "../api/api";
 export const fetchProducts = (token, params, filter) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("product", token, params, filter);
+      const response = await api.get("admin/product", token, params, filter);
       if (response) {
         dispatch({ type: FETCH_PRODUCT, payload: response.data });
       }
@@ -37,7 +37,7 @@ export const fetchProducts = (token, params, filter) => {
 export const getOneProducts = (id) => {
   return async (dispatch) => {
     try {
-      const response = await api.get(`product/${id}`);
+      const response = await api.get(`admin/product/${id}`);
       if (response) {
         dispatch({ type: GET_ONE_PRODUCT, payload: response.data });
       }
@@ -50,7 +50,7 @@ export const getOneProducts = (id) => {
 export const addProduct = (payload) => {
   return async (dispatch) => {
     try {
-      const response = await api.post("product", payload);
+      const response = await api.post("admin/product", payload);
       if (response) {
         dispatch({ type: ADD_PRODUCT, payload: response.data });
       }
@@ -63,7 +63,7 @@ export const addProduct = (payload) => {
 export const changeProduct = (payload, id) => {
   return async (dispatch) => {
     try {
-      const response = await api.put(`product/${id}`, payload);
+      const response = await api.put(`admin/product/${id}`, payload);
       if (response) {
         dispatch({ type: CHANGE_PRODUCT, payload: response.data });
       }
@@ -76,7 +76,7 @@ export const changeProduct = (payload, id) => {
 export const deleteProduct = (id) => {
   return async (dispatch) => {
     try {
-      const response = await api.delete(`product/${id}`);
+      const response = await api.delete(`admin/product/${id}`);
       if (response) {
         dispatch({ type: DELETE_PRODUCT });
         dispatch(fetchProducts());
@@ -90,7 +90,7 @@ export const deleteProduct = (id) => {
 export const fetchCategories = (token) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("category", token);
+      const response = await api.get("admin/category", token);
       if (response) {
         dispatch({ type: FETCH_CATEGORY, payload: response.data });
       }
@@ -103,7 +103,7 @@ export const fetchCategories = (token) => {
 export const addCategory = (payload) => {
     return async (dispatch) => {
       try {
-        const response = await api.post("category", payload);
+        const response = await api.post("admin/category", payload);
         if (response) {
           dispatch({ type: ADD_CATEGORY, payload: response.data });
           dispatch(fetchCategories());
@@ -117,7 +117,7 @@ export const addCategory = (payload) => {
 export const deleteCategory = (id) => {
     return async (dispatch) => {
       try {
-        const response = await api.delete(`category/${id}`);
+        const response = await api.delete(`admin/category/${id}`);
         if (response) {
           dispatch({ type: DELETE_CATEGORY });
           dispatch(fetchCategories());
@@ -131,7 +131,7 @@ export const deleteCategory = (id) => {
 export const fetchOrders = (token, params, filter) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("order", token, params, filter);
+      const response = await api.get("admin/order", token, params, filter);
       if (response) {
         dispatch({ type: FETCH_ORDER, payload: response.data });
       }
@@ -144,7 +144,7 @@ export const fetchOrders = (token, params, filter) => {
 export const getOneOrder = (id) => {
     return async (dispatch) => {
       try {
-        const response = await api.get(`order/${id}`);
+        const response = await api.get(`admin/order/${id}`);
         if (response) {
           dispatch({ type: GET_ONE_ORDER, payload: response.data });
         }
@@ -157,7 +157,7 @@ export const getOneOrder = (id) => {
 export const fetchCustomerList = (token, params, filter) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("customer", token, params, filter);
+      const response = await api.get("admin/customer", token, params, filter);
       if (response) {
         dispatch({ type: FETCH_CUSTOMER_LIST, payload: response.data });
       }
@@ -170,7 +170,7 @@ export const fetchCustomerList = (token, params, filter) => {
 export const fetchBanner = (token) => {
   return async (dispatch) => {
     try {
-      const response = await api.get("banner", token);
+      const response = await api.get("admin/banner", token);
       if (response) {
         dispatch({ type: FECTH_BANNER, payload: response.data });
       }
@@ -183,7 +183,7 @@ export const fetchBanner = (token) => {
 export const addBanner = (payload) => {
     return async (dispatch) => {
       try {
-        const response = await api.post("banner", payload);
+        const response = await api.post("admin/banner", payload);
         if (response) {
           dispatch({ type: ADD_BANNER, payload: response.data });
           dispatch(fetchBanner());
@@ -197,7 +197,7 @@ export const addBanner = (payload) => {
 export const deleteBanner = (id) => {
     return async (dispatch) => {
       try {
-        const response = await api.delete(`banner/${id}`);
+        const response = await api.delete(`admin/banner/${id}`);
         if (response) {
           dispatch({ type: DELETE_BANNER });
           dispatch(fetchBanner());

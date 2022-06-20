@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import {Header, Sidebar} from "../../components";
+import {Header, Sidebar} from "../../components/admin";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBanner, addBanner, deleteBanner } from '../../redux/action';
 import { useNavigate } from 'react-router-dom';
-import '../../style/main.css';
+import '../../style/admin/main.css';
 
 const Banner = () => {
     const dispatch = useDispatch();

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import {Header, Sidebar} from "../../components";
+import {Header, Sidebar} from "../../components/admin";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { getOneProducts, changeProduct } from '../../redux/action';
 import api from "../../api/api"; 
-import '../../style/main.css';
+import '../../style/admin/main.css';
 
 const EditProduct = () => {
     const dispatch = useDispatch();

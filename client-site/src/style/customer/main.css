@@ -1,0 +1,509 @@
+/* @import url(login-register.css); */
+@import url(home.css);
+/* @import url(cart.css);
+@import url(wishlist.css);
+@import url(allproduct.css);
+@import url(detail-product.css);
+@import url(product-category.css);
+@import url(setting.css);
+@import url(orderlist.css); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 7.5vh;
+    background-color: white;
+    box-shadow: 0 0 10px 0 #4f9e4f;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    z-index: 101;
+    top: 0;
+}
+
+header > .header-logo {
+    width: 12%;
+    text-align: center;
+}
+
+header > .header-logo img {
+    max-width: 150px;
+    padding: 10px 0;
+}
+
+header > .header-category {
+    width: 8%;
+    height: 100%;
+}
+
+header > .header-category > .category-toggle {
+    background-color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    width: 140px;
+    height: 100%;
+    padding: 10px 0;
+}
+
+header > .header-category > .category-toggle > .dropbtn {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: #4f9e4f;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+header > .header-category > .category-toggle:hover .dropbtn {
+    background-color: white;
+    color: #4f9e4f;
+    box-shadow: 0 0 5px 0 grey;
+}
+
+header > .header-category > .category-toggle .dropdown-content {
+    display: none;
+    color: #4f9e4f;
+    position: absolute;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 5px 0 grey;
+    height: 320px;
+    width: 140px;
+    margin-top: -2px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 101;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+header > .header-category > .category-toggle .dropdown-content::-webkit-scrollbar {
+    display: none;
+}
+
+header > .header-category > .category-toggle .dropdown-content a {
+    color: #4f9e4f;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 15px 10px;
+}
+
+header > .header-category > .category-toggle .dropdown-content a:hover {
+    background-color: #61c156;
+    color: white;
+    border-radius: 5px;
+}
+
+header > .header-category > .category-toggle:hover .dropdown-content {
+    display: block;
+}
+
+header > .header-category > .category-toggle p {
+    width: 70%;
+}
+
+header > .header-category > .category-toggle i {
+    padding: 0 10px;
+}
+
+header > .header-search {
+    width: 60%;
+}
+
+header > .header-search > .search-box {
+    margin: 0 10px;
+}
+
+header > .header-search > .search-box input,
+header > .header-search > .search-box button {
+    padding: 6px 10px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+header > .header-search > .search-box input {
+    width: 80%;
+    border-radius: 9px 0 0 9px;
+    border-width: 2px 0 2px 2px;
+}
+
+header > .header-search > .search-box button {
+    width: 19%;
+    border-radius: 0 9px 9px 0;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+header > .header-search > .search-box button:hover {
+    background-color: grey;
+    color: white;
+    border-color: transparent;
+}
+
+header > .header-action {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+header > .header-action > div {
+    width: 33%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header > .header-action > div:hover {
+    background-color: lightgrey;
+}
+
+header > .header-action > div i {
+    color: black;
+}
+
+header > .header-action > .notification-action {
+    display: inline-block;
+}
+
+header > .header-action > .notification-action .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 0 grey;
+    height: 320px;
+    width: 280px;
+    margin: 1vh 0 0 -5.5vw;
+    z-index: 101;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-title {
+    width: 100%;
+    text-align: left;
+    padding: 13px;
+    box-shadow: 0 1px 4px 0 grey;
+    height: 15%;
+    border-radius: 10px 10px 0 0;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list {
+    height: 35%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-title {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 13px;
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action {
+    display: flex;
+    width: 100%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a {
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a i {
+    font-size: 30px;
+    padding: 10px 0;
+    color: #4f9e4f;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a:hover {
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .order-list > .order-list-action a p {
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list {
+    height: 50%;
+    width: 100%;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-title {
+    text-align: left;
+    padding: 5px 13px;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body {
+    height: 84%;
+    overflow: auto;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body > a {
+    text-decoration: none;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box {
+    margin: 2px 0;
+    text-align: left;
+    padding: 5px;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box:hover {
+    background-color: whitesmoke;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box p {
+    font-size: 12px;
+    color: grey;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box h5 {
+    color: #4f9e4f;
+    margin: 3px 0;
+}
+
+header > .header-action > .notification-action .dropdown-content > .notification-list .notification-list-body .notification-list-box .invoice {
+    font-size: 14px;
+}
+
+header > .header-action > .notification-action:hover .dropdown-content {
+    display: block;
+    transition: 0.5s;
+}
+
+header > .header-profile {
+    width: 10vw;
+    text-align: center;
+}
+
+header > .header-profile > .profile-box {
+    margin: 0 15px;
+    padding: 10px 4px;
+    background-color: white;
+    border-radius: 9px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+}
+
+header > .header-profile > .profile-box:hover {
+    background-color: lightgray;
+}
+
+header > .header-profile > .profile-box > .profile-picture,
+header > .header-profile > .profile-box > .profile-navbar {
+    width: 25%;
+}
+
+header > .header-profile > .profile-box > .profile-picture img {
+    max-width: 20px;
+    border-radius: 25px;
+}
+
+header > .header-profile > .profile-box > .profile-navbar .fa-bars {
+    color: gray;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 102;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 5px 1px grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3vh;
+}
+
+.sidenav > .closebtn {
+    text-decoration: none;
+    margin-left: 87%;
+    background-color: white;
+    border-radius: 5px;
+    color: grey;
+    padding: 10px 15px;
+}
+
+.sidenav > .closebtn:hover {
+    background-color: lightgrey;
+    color: white;
+}
+
+.sidenav > .nav-profile-box {
+    background-color: white;
+    box-shadow: 0 3px 7px 0 grey;
+    margin: 30px 18px;
+    border-radius: 5px;
+}
+
+.sidenav > .nav-profile-box img {
+    width: 100px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.sidenav > .nav-profile-box > .profile {
+    display: flex;
+}
+
+.sidenav > .nav-profile-box > .profile > .profile-detail {
+    margin: 15px;
+}
+
+.sidenav > .nav-profile-box > .profile > .profile-detail p {
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.sidenav > .nav-profile-box > a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidenav > .nav-profile-box > a .profile-action {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.sidenav > .nav-profile-box > a:hover .profile-action {
+    background-color: lightgrey;
+}
+
+.sidenav > .nav-profile-box > a .profile-action i {
+    width: 42%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.sidenav > .nav-profile-box > a .profile-action p {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidenav > .navbar-action,
+.sidenav > .navbar-logout {
+    padding: 0 20px;
+}
+
+.sidenav > .navbar-action {
+    height: 67%;
+}
+
+.sidenav > .navbar-action a {
+    margin: 5px 0;
+}
+
+.sidenav > .navbar-action a,
+.sidenav > .navbar-logout a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.sidenav > .navbar-action a:hover,
+.sidenav > .navbar-logout a:hover {
+    background-color: lightgrey;
+    color: white;
+}
+
+.sidenav > .navbar-action a p,
+.sidenav > .navbar-logout a p {
+    width: 88%;
+    text-align: right;
+}
+
+.sidenav > .navbar-action a i,
+.sidenav > .navbar-logout a i {
+    width: 12%;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #61c156;
+}
+
+footer > .footer-list {
+    display: flex;
+    height: 90%;
+    padding: 40px 15vw;
+}
+
+footer > .footer-list > div {
+    width: 33%;
+}
+
+footer > .footer-list h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer > .footer-list > .about-team,
+footer > .footer-list > .footer-category {
+    padding-left: 10%;
+}
+
+footer > .footer-list > .about-team .about-list,
+footer > .footer-list > .footer-category .footer-category-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+}
+
+
+footer > .footer-list > .about-team .about-list a,
+footer > .footer-list > .footer-category .footer-category-list a {
+    text-decoration: none;
+    color: white;
+    margin: 3px 0;
+}
+
+footer > .footer-list > .footer-logo {
+    text-align: center;
+}
+
+footer > .footer-list > .footer-logo img {
+    width: 10vw;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}

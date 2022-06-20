@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import '../../style/main.css'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import '../../style/admin/main.css'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -29,8 +29,13 @@ const Login = () => {
     })
     .then((res) => {
       if(res.data.token) {
+        console.log(res, `<<< res`);
         localStorage.setItem('token', res.data.token)
-        navigate("/")
+        if(res.data.role === 'admin') {
+          navigate("/admin/dashboard")
+        } else {
+          navigate("/")
+        }
       }
     })
   }

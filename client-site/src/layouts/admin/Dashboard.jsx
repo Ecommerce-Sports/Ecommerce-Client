@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import {Header, Sidebar} from "../../components";
+import {Header, Sidebar} from "../../components/admin";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useNavigate } from 'react-router-dom';
-import '../../style/main.css';
+import '../../style/admin/main.css';
 
 const PerformancePage = () => {
     const navigate = useNavigate()

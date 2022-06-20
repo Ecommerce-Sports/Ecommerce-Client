@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import {Header, Sidebar} from "../../components";
+import {Header, Sidebar} from "../../components/admin";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { getOneOrder } from '../../redux/action';
 import { useDispatch, useSelector } from 'react-redux';
-import '../../style/main.css';
+import '../../style/admin/main.css';
 
 const DetailOrder = () => {
     const {id} = useParams();
