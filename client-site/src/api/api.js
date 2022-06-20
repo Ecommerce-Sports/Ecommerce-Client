@@ -13,8 +13,11 @@ const app = {
         return response;
     },
 
-    getOne: async (url) => {
+    getOne: async (url, token) => {
         const response = await axios.request({
+            headers: {
+                token: token,
+            },
             method: "GET",
             url: `${baseUrl}/${url}`
         })
@@ -22,8 +25,11 @@ const app = {
         return response;
     },
 
-    post: async (url, data) => {
+    post: async (url, data, token) => {
         const response = await axios({
+            headers: {
+                token: token,
+            },
             method: "POST",
             url: `${baseUrl}/${url}`,
             data: data
@@ -32,8 +38,11 @@ const app = {
         return response;
     },
 
-    put: async (url, data) => {
+    put: async (url, data, token) => {
         const response = await axios.request({
+            headers: {
+                token: token,
+            },
             method:"PUT",
             url: `${baseUrl}/${url}`,
             data: data
@@ -42,8 +51,11 @@ const app = {
         return response;
     },
 
-    delete: async (url) => {
+    delete: async (url, token) => {
         const response = await axios.request({
+            headers: {
+                token: token,
+            },
             method: 'DELETE',
             url: `${baseUrl}/${url}`
         });

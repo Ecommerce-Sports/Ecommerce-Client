@@ -14,7 +14,7 @@ const DetailOrder = () => {
 
     useEffect(()=> {
         ScriptNavbar();
-        dispatch(getOneOrder(id));
+        dispatch(getOneOrder(id, localStorage.token));
     }, []);
 
     console.log(order, `<<<< order`);

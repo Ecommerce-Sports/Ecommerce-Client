@@ -48,22 +48,22 @@ const EditProduct = () => {
 
     const handleEditProduct = (e) => {
         e.preventDefault();
-        dispatch(changeProduct(submitForm, id));
-        navigate("/product")
+        dispatch(changeProduct(submitForm, id, localStorage.token));
+        navigate("/admin/product")
     }
 
-    const fetchGetone = () => {
-        api.getOne(`product/${id}`)
-        .then((res) => res.json())
-        .then((data) => {
-            console.log(data, `<<<< data`);
-        })
-    }
+    // const fetchGetone = () => {
+    //     api.getOne(`admin/product/${id}`, localStorage.token)
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //         console.log(data, `<<<< data`);
+    //     })
+    // }
 
     useEffect(()=> {
         ScriptNavbar()
-        dispatch(getOneProducts(id));
-        fetchGetone()
+        dispatch(getOneProducts(id, localStorage.token));
+        // fetchGetone()
     }, []);
 
   return (

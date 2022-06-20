@@ -40,11 +40,11 @@ const Banner = () => {
 
     const handleAddBanner = (e) => {
         e.preventDefault();
-        dispatch(addBanner(submitForm));
+        dispatch(addBanner(submitForm, localStorage.token));
     }
 
     const handleDeleteBanner = (e) => {
-        dispatch(deleteBanner(e.id))
+        dispatch(deleteBanner(e.id, localStorage.token))
     }
 
     useEffect(()=> {

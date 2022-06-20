@@ -15,11 +15,11 @@ const Product = () => {
     const [search, setSearch] = useState("")
     
     const handleDeleteProduct = (e) => {
-        dispatch(deleteProduct(e.id))
+        dispatch(deleteProduct(e.id, localStorage.token))
     }
 
     const toEditpage = (e) => {
-        navigate(`/edit-product/${e.id}`)
+        navigate(`/admin/edit-product/${e.id}`)
     }
 
     useEffect(()=> {
@@ -41,7 +41,7 @@ const Product = () => {
                     <input onChange={(e)=> setSearch(e.target.value)} value={search} className="search-product" type="search" name="search" placeholder="Search Product... ." id="" />
                 </div>
                 <button className="create-product">
-                    <Link to="/add-product">
+                    <Link to="/admin/add-product">
                         <i className="fa-solid fa-plus"></i>
                         <p>CREATE</p>
                     </Link>

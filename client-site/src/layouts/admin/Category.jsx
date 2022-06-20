@@ -41,11 +41,11 @@ const Category = () => {
 
     const handleAddCategory = async (e) => {
         e.preventDefault();
-        dispatch(addCategory(submitForm));
+        dispatch(addCategory(submitForm, localStorage.token));
     }
 
     const handleDeleteCategory = (e) => {
-        dispatch(deleteCategory(e.id))
+        dispatch(deleteCategory(e.id, localStorage.token))
     }
 
     useEffect(()=> {

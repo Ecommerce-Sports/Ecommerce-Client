@@ -56,7 +56,7 @@ const Order = () => {
                                     </td>
                                     <td>Rp. {e.total_pembayaran}</td>
                                     <td>
-                                    <button onClick={() => navigate(`/detail-order/${e.id}`)} className="detail"><i className="fa-solid fa-list-ul"></i></button>
+                                    <button onClick={() => navigate(`/admin/detail-order/${e.id}`)} className="detail"><i className="fa-solid fa-list-ul"></i></button>
                                     </td>
                                 </tr>
                             )

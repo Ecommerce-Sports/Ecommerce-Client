@@ -46,8 +46,8 @@ const AddProduct = () => {
     const handleAddProduct = (e) => {
         e.preventDefault();
         console.log(submitForm, `<<< submitForm`);
-        dispatch(addProduct(submitForm));
-        navigate("/product")
+        dispatch(addProduct(submitForm, localStorage.token));
+        navigate("/admin/product")
     }
 
     useEffect(()=> {
