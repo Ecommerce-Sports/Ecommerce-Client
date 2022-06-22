@@ -19,15 +19,15 @@ const PerformancePage = () => {
             <div className="income-box">
                 <div className="income-box-preview">
                     <p className="income-title">MONTHLY REVENUE - BULAN</p>
-                    <p className="income-detail">Rp 5.990.990</p>
+                    <p className="income-detail">Rp <span id=''>0</span></p>
                 </div>
                 <div className="income-box-preview">
                     <p className="income-title">MONTHLY REVENUE - BULAN</p>
-                    <p className="income-detail">Rp 5.990.990</p>
+                    <p className="income-detail">Rp <span id=''>0</span></p>
                 </div>
                 <div className="income-box-preview">
                     <p className="income-title">MONTHLY REVENUE - BULAN</p>
-                    <p className="income-detail">Rp 5.990.990</p>
+                    <p className="income-detail">Rp <span id=''>0</span></p>
                 </div>
             </div>
             <div className="status-box">
@@ -35,7 +35,7 @@ const PerformancePage = () => {
                     <div className="status-color-pending"></div>
                     <div className="status-detail">
                         <p className="status-detail-title">PENDING</p>
-                        <p className="status-detail-info">35</p>
+                        <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
                     <i className="fa-solid fa-clock-rotate-left"></i>
                 </div>
@@ -43,7 +43,7 @@ const PerformancePage = () => {
                     <div className="status-color-success"></div>
                     <div className="status-detail">
                         <p className="status-detail-title">SUCCESS</p>
-                        <p className="status-detail-info">35</p>
+                        <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
                     <i className="fa-regular fa-circle-check"></i>
                 </div>
@@ -51,7 +51,7 @@ const PerformancePage = () => {
                     <div className="status-color-expired"></div>
                     <div className="status-detail">
                         <p className="status-detail-title">EXPIRED</p>
-                        <p className="status-detail-info">35</p>
+                        <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
                     <i className="fa-solid fa-triangle-exclamation"></i>
                 </div>
@@ -59,7 +59,7 @@ const PerformancePage = () => {
                     <div className="status-color-failed"></div>
                     <div className="status-detail">
                         <p className="status-detail-title">FAILED</p>
-                        <p className="status-detail-info">35</p>
+                        <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
                     <i className="fa-regular fa-circle-xmark"></i>
                 </div>
@@ -75,7 +75,7 @@ const PerformancePage = () => {
                             <td>INVOICE Number</td>
                             <td>Customer Name</td>
                             <td>Status</td>
-                            <td>Created at</td>
+                            <td className='cr'>Created at</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -83,25 +83,49 @@ const PerformancePage = () => {
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
                             <td><i className="fa-solid fa-circle" id="success"></i> success</td>
-                            <td>Kamis, 26 Mei 202</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
                             <td><i className="fa-solid fa-circle" id="pending"></i> pending</td>
-                            <td>Kamis, 26 Mei 202</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
                             <td><i className="fa-solid fa-circle" id="failed"></i> failed</td>
-                            <td>Kamis, 26 Mei 202</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
                             <td><i className="fa-solid fa-circle" id="expired"></i> expired</td>
-                            <td>Kamis, 26 Mei 202</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="success"></i> success</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="pending"></i> pending</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="failed"></i> failed</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="expired"></i> expired</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                     </tbody>
                 </table>

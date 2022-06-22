@@ -7,17 +7,18 @@
 .peformance {
     float: right;
     width: 85%;
+    height: 93%;
     padding: 0 30px 0 30px;
 }
 
 .peformance > .income-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     height: 30%;
 }
 
 .peformance > .income-box > .income-box-preview {
-    width: 32%;
-    margin: 20px auto 15px auto;
+    margin: 10px 7px;
     box-shadow: 0 3px 7px 0 grey;
     border-radius: 10px;
     text-align: center;
@@ -41,13 +42,13 @@
 }
 
 .peformance > .status-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     height: 25%;
 }
 
 .peformance > .status-box > .status-box-preview {
-    width: 24%;
-    margin: 5px auto 5px auto;
+    margin: 10px 7px;
     box-shadow: 0 3px 7px 0 grey;
     border-radius: 10px;
     text-align: center;
@@ -124,9 +125,8 @@
 }
 
 .peformance > .recent-order-box {
-    margin: 15px auto 0 auto;
-    height: 100vw;
-    max-height: 450px;
+    margin: 10px 7px;
+    max-height: 380px;
     width: 99%;
     border-radius: 10px;
     box-shadow: 0 3px 7px 0 grey;
