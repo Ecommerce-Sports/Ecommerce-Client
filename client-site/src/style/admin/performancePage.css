@@ -44,7 +44,6 @@
 .peformance > .status-box {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    height: 25%;
 }
 
 .peformance > .status-box > .status-box-preview {
@@ -69,15 +68,15 @@
 }
 
 .peformance > .status-box > .status-box-preview > .status-color-success {
-    background-color: gold;
-}
-
-.peformance > .status-box > .status-box-preview > .status-color-expired {
     background-color: orange;
 }
 
+.peformance > .status-box > .status-box-preview > .status-color-expired {
+    background-color: gold;
+}
+
 .peformance > .status-box > .status-box-preview > .status-color-failed {
-    background-color: darkred;
+    background-color: yellowgreen;
 }
 
 .peformance > .status-box > .status-box-preview > .status-detail {
@@ -95,38 +94,35 @@
     font-size: 40px;
 }
 
-.peformance > .status-box > .status-box-preview > .fa-clock-rotate-left,
-.peformance > .status-box > .status-box-preview > .fa-circle-check,
-.peformance > .status-box > .status-box-preview > .fa-triangle-exclamation,
-.peformance > .status-box > .status-box-preview > .fa-circle-xmark {
+.peformance > .status-box > .status-box-preview > i {
     width: 40%;
     margin: auto;
     font-size: 64px;
 }
 
-.peformance > .status-box > .status-box-preview > .fa-clock-rotate-left,
+.peformance > .status-box > .status-box-preview > .fa-clock,
 .peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #pending {
     color: purple;
 }
 
-.peformance > .status-box > .status-box-preview > .fa-circle-check,
+.peformance > .status-box > .status-box-preview > .fa-arrows-rotate,
 .peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #success {
-    color: gold;
-}
-
-.peformance > .status-box > .status-box-preview > .fa-triangle-exclamation,
-.peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #expired {
     color: orange;
 }
 
-.peformance > .status-box > .status-box-preview > .fa-circle-xmark,
+.peformance > .status-box > .status-box-preview > .fa-truck-fast,
+.peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #expired {
+    color: gold;
+}
+
+.peformance > .status-box > .status-box-preview > .fa-map-location-dot,
 .peformance > .recent-order-box > .recent-order-table > tbody > tr > td > #failed {
-    color: darkred;
+    color: yellowgreen;
 }
 
 .peformance > .recent-order-box {
     margin: 10px 7px;
-    max-height: 380px;
+    max-height: 500px;
     width: 99%;
     border-radius: 10px;
     box-shadow: 0 3px 7px 0 grey;

@@ -39,6 +39,10 @@ footer {
     margin: 15px;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 header {
     background-color: white;
     position: sticky;
@@ -101,9 +105,12 @@ header > .right-navbar > .profile-box > p {
     float: left;
     width: 15%;
     background-color: #61c156;
-    height: 93%;
     display: flex;
     flex-direction: column;
+}
+
+.sidebar, main {
+    height: 93%;
 }
 
 .sidebar > .menu-bar {
@@ -174,11 +181,18 @@ header > .right-navbar > .profile-box > p {
 
 /* Laptop L */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-    
+    .product > .product-box > .head-bar-product > .create-product > a i {
+        margin: auto 0 auto 25%;
+    }
+
+    .peformance > .recent-order-box {
+        height: 430px;
+    }
 }
 
 /* Laptop */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* header */
     header > .left-navbar {
         width: 80%;
     }
@@ -186,10 +200,58 @@ header > .right-navbar > .profile-box > p {
     header > .right-navbar {
         width: 20%;
     }
+
+    /* Main */
+
+    .peformance > .income-box > .income-box-preview > .income-title,
+    .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title ,
+    .peformance > .recent-order-box > .recent-order-title > p {
+        font-size: 14px;
+    }
+
+    .peformance > .status-box > .status-box-preview > i {
+        font-size: 46px;
+    }
+
+    .peformance > .recent-order-box {
+        height: 400px;
+    }
+
+    .product > .product-box > .head-bar-product > .head-bar-title {
+        font-size: 18px;
+        width: 20%;
+    }
+
+    .product > .product-box > .head-bar-product > .search-bar {
+        width: 60%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product {
+        width: 20%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a i {
+        margin: auto 0 auto 25%;
+        font-size: 14px;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a p {
+        font-size: 14px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > thead td,
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td {
+        font-size: 16px;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px)  {
+    body {
+        overflow-y: auto;
+    }
+
+    /* header */
     header > .left-navbar {
         width: 70%;
     }
@@ -198,25 +260,89 @@ header > .right-navbar > .profile-box > p {
         width: 30%;
     }
 
-    .sidebar {
-        height: 116%;
-    }
+    /* sidebar */
 
     .sidebar > .menu-bar {
         height: 95%;
+    }
+
+    /* main */
+    .peformance > .income-box > .income-box-preview > .income-detail {
+        margin: 15px auto;
+        font-size: 24px;
     }
 
     .peformance > .status-box {
         grid-template-columns: auto auto;
     }
 
+    .peformance > .status-box > .status-box-preview > .status-detail {
+        width: 70%;
+    }
+
+    .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title {
+        margin: 10px;
+    }
+
+    .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-info {
+        margin: 10px auto;
+    }
+
+    .peformance > .recent-order-box {
+        height: 380px;
+    }
+
+    .peformance > .status-box > .status-box-preview > i {
+        font-size: 32px;
+        width: 30%;
+    }
+
     .peformance > .recent-order-box td {
         font-size: 14px;
+    }
+
+    .peformance > .income-box > .income-box-preview > .income-title,
+    .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title ,
+    .peformance > .recent-order-box > .recent-order-title > p {
+        font-size: 14px;
+    }
+
+    .product > .product-box > .head-bar-product > .head-bar-title {
+        font-size: 18px;
+        width: 20%;
+    }
+
+    .product > .product-box > .head-bar-product > .search-bar {
+        width: 70%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product {
+        width: 10%;
+        margin: 15px 30px;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a i {
+        margin: auto 0 auto 35%;
+        font-size: 14px;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a p {
+        display: none;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > thead td,
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td {
+        font-size: 16px;
     }
 }
 
 /* Mobile L */
 @media screen and (min-width: 376px) and (max-width: 425px)  {
+    body {
+        overflow-y: auto;
+    }
+
+    /* header */
     header > .left-navbar {
         width: 60%;
     }
@@ -229,6 +355,18 @@ header > .right-navbar > .profile-box > p {
         display: none;
     }
 
+    /* sidebar */
+    .sidebar, .sidebar.close {
+        width: 0;
+        display: none;
+        float: none;
+    }
+
+    .sidebar > .menu-bar {
+        height: 96%;
+    }
+
+    /* main */
     .peformance > .income-box {
         grid-template-columns: auto;
         margin: 5px 0;
@@ -243,17 +381,8 @@ header > .right-navbar > .profile-box > p {
         width: 335px;
     }
 
-    .sidebar {
-        width: 0;
-        display: none;
-        float: none;
-    }
-
-    .sidebar > .menu-bar {
-        height: 96%;
-    }
-
-    .peformance {
+    .peformance,
+    .product {
         width: 100%;
         padding: 0;
         float: none;
@@ -275,10 +404,77 @@ header > .right-navbar > .profile-box > p {
     .peformance > .recent-order-box td {
         font-size: 14px;
     }
+
+    .peformance > .income-box > .income-box-preview > .income-title,
+    .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title ,
+    .peformance > .recent-order-box > .recent-order-title > p {
+        font-size: 14px;
+    }
+
+    .product > .product-box {
+        margin-top: 20px;
+    }
+
+    .product > .product-box > .head-bar-product > .head-bar-title {
+        width: 20%;
+        margin: auto 15px;
+        font-size: 14px;
+    }
+
+    .product > .product-box > .head-bar-product > .search-bar {
+        width: 70%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product {
+        width: 10%;
+        margin: auto 10px;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a i {
+        margin: auto 0 auto 20%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a p {
+        display: none;
+    }
+
+    .product > .product-box > .body-list-product {
+        margin: 10px 5px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > thead td {
+        font-size: 14px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td {
+        font-size: 12px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td > img {
+        max-width: 70px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit,
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete {
+        padding: 5px 4px;
+        margin: 1px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit i,
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete i {
+        font-size: 10px;
+    }
 }
 
 /* Mobile M & S */
 @media screen and (max-width: 375px) {
+    body {
+        overflow-y: auto;
+    }
+
+    /* header */
     header > .left-navbar {
         width: 50%;
     }
@@ -294,7 +490,19 @@ header > .right-navbar > .profile-box > p {
     header > .right-navbar > .profile-box {
         margin: auto 20px;
     }
+    
+    /* sidebar */
+    .sidebar {
+        width: 0;
+        display: none;
+        float: none;
+    }
 
+    .sidebar > .menu-bar {
+        height: 96%;
+    }
+
+    /* main */
     .peformance > .income-box {
         grid-template-columns: auto;
     }
@@ -313,17 +521,8 @@ header > .right-navbar > .profile-box > p {
         width: 285px;
     }
 
-    .sidebar {
-        width: 0;
-        display: none;
-        float: none;
-    }
-
-    .sidebar > .menu-bar {
-        height: 96%;
-    }
-
-    .peformance {
+    .peformance,
+    .product {
         width: 100%;
         padding: 0;
         float: none;
@@ -344,5 +543,67 @@ header > .right-navbar > .profile-box > p {
 
     .peformance > .recent-order-box td {
         font-size: 12px;
+    }
+
+    .peformance > .income-box > .income-box-preview > .income-title,
+    .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title ,
+    .peformance > .recent-order-box > .recent-order-title > p {
+        font-size: 14px;
+    }
+
+    .product > .product-box {
+        margin-top: 20px;
+    }
+
+    .product > .product-box > .head-bar-product > .head-bar-title {
+        width: 20%;
+        margin: auto 15px;
+        font-size: 12px;
+    }
+
+    .product > .product-box > .head-bar-product > .search-bar {
+        width: 65%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product {
+        width: 15%;
+        margin: auto 10px;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a i {
+        margin: auto 0 auto 25%;
+    }
+
+    .product > .product-box > .head-bar-product > .create-product > a p {
+        display: none;
+    }
+
+    .product > .product-box > .body-list-product {
+        margin: 10px 5px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > thead td {
+        font-size: 12px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td {
+        font-size: 10px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td > img {
+        max-width: 50px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit,
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete {
+        padding: 5px 4px;
+        margin: 1px;
+    }
+
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit i,
+    .product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete i {
+        font-size: 10px;
     }
 }

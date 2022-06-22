@@ -39,6 +39,9 @@ const Product = () => {
                 <p className="head-bar-title">PRODUCT</p>
                 <div className="search-bar">
                     <input onChange={(e)=> setSearch(e.target.value)} value={search} className="search-product" type="search" name="search" placeholder="Search Product... ." id="" />
+                    <button className="search-button">
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
                 <button className="create-product">
                     <Link to="/admin/add-product">
@@ -77,9 +80,6 @@ const Product = () => {
                 </table>
             </div>
         </div>
-        <footer>
-            Admin Server Site &#169; 2022, Tokopaedi
-        </footer>
     </main>
     </>
   )

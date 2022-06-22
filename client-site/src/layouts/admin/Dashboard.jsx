@@ -34,34 +34,34 @@ const PerformancePage = () => {
                 <div className="status-box-preview">
                     <div className="status-color-pending"></div>
                     <div className="status-detail">
-                        <p className="status-detail-title">PENDING</p>
+                        <p className="status-detail-title">MENUNGGU KONFIRMASI</p>
                         <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
-                    <i className="fa-solid fa-clock-rotate-left"></i>
+                    <i className="fa-regular fa-clock"></i>
                 </div>
                 <div className="status-box-preview">
                     <div className="status-color-success"></div>
                     <div className="status-detail">
-                        <p className="status-detail-title">SUCCESS</p>
+                        <p className="status-detail-title">PESANAN DIPROSES</p>
                         <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
-                    <i className="fa-regular fa-circle-check"></i>
+                    <i className="fa-solid fa-arrows-rotate"></i>
                 </div>
                 <div className="status-box-preview">
                     <div className="status-color-expired"></div>
                     <div className="status-detail">
-                        <p className="status-detail-title">EXPIRED</p>
+                        <p className="status-detail-title">PESANAN DIKIRIM</p>
                         <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
-                    <i className="fa-solid fa-triangle-exclamation"></i>
+                    <i className="fa-solid fa-truck-fast"></i>
                 </div>
                 <div className="status-box-preview">
                     <div className="status-color-failed"></div>
                     <div className="status-detail">
-                        <p className="status-detail-title">FAILED</p>
+                        <p className="status-detail-title">SAMPAI TUJUAN</p>
                         <p className="status-detail-info"><span id=''>0</span></p>
                     </div>
-                    <i className="fa-regular fa-circle-xmark"></i>
+                    <i className="fa-solid fa-map-location-dot"></i>
                 </div>
             </div>
             <div className="recent-order-box">
@@ -82,57 +82,54 @@ const PerformancePage = () => {
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="success"></i> success</td>
+                            <td><i className="fa-solid fa-circle" id="success"></i> Pesanan Diproses</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="pending"></i> pending</td>
+                            <td><i className="fa-solid fa-circle" id="pending"></i> Menunggu Kofirmasi</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="failed"></i> failed</td>
+                            <td><i className="fa-solid fa-circle" id="failed"></i> Sampai Tujuan</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="expired"></i> expired</td>
+                            <td><i className="fa-solid fa-circle" id="expired"></i> Sedang Dikirim</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="success"></i> success</td>
+                            <td><i className="fa-solid fa-circle" id="success"></i> Pesanan Diproses</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="pending"></i> pending</td>
+                            <td><i className="fa-solid fa-circle" id="pending"></i> Menunggu Kofirmasi</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="failed"></i> failed</td>
+                            <td><i className="fa-solid fa-circle" id="failed"></i> Sampai Tujuan</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                         <tr>
                             <td>INV-ABCDEF123G</td>
                             <td>Jhon Doe</td>
-                            <td><i className="fa-solid fa-circle" id="expired"></i> expired</td>
+                            <td><i className="fa-solid fa-circle" id="expired"></i> Sedang Dikirim</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <footer>
-                Admin Server Site &#169; 2022, Tokopaedi
-            </footer>
         </main>
     </>
   )

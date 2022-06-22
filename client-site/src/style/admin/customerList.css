@@ -31,12 +31,12 @@
     font-weight: 700;
     font-size: 20px;
     margin: 15px 0 15px 40px;
-    width: 10%;
+    width: 15%;
 }
 
 .customerlist > .customerlist-box > .head-bar-customerlist > .search-bar {
     display: flex;
-    width: 80%;
+    width: 75%;
     margin: 15px 0;
 }
 
