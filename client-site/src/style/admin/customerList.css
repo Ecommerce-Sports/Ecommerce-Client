@@ -79,3 +79,18 @@
 .customerlist > .customerlist-box > .body-customerlist > .list-customer > tbody tr td {
     padding: 10px;
 }
+
+/* Mobile L */
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+
+}
+
+/* Mobile M */
+@media only screen and (max-width: 375px) {
+
+}
+
+/* Mobile S */
+@media only screen and (max-width: 320px) {
+    
+}
