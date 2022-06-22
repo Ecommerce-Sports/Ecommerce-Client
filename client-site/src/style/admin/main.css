@@ -22,6 +22,7 @@
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -95,18 +96,18 @@ header > .right-navbar > .profile-box > p {
 }
 
 .sidebar {
-    position: fixed;
+    position: absolute;
     z-index: 100;
     float: left;
     width: 15%;
     background-color: #61c156;
-    height: 93.5vh;
+    height: 93%;
     display: flex;
     flex-direction: column;
 }
 
 .sidebar > .menu-bar {
-    height: 91.7%;
+    height: 92%;
 }
 
 .sidebar > .menu-bar > .menu > .menu-link > .nav-link {
@@ -129,10 +130,6 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar > .menu-bar > .menu > .menu-link > .nav-link > a > i {
     padding: 0 30px 0 10px;
-}
-
-.sidebar > .bottom-content {
-    height: 8.3%;
 }
 
 .sidebar > .bottom-content > li {
@@ -168,4 +165,184 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar.close > .bottom-content > li > a > span {
     visibility: hidden ;
+}
+
+/* 4K */
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+}
+
+/* Laptop L */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    
+}
+
+/* Laptop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header > .left-navbar {
+        width: 80%;
+    }
+
+    header > .right-navbar {
+        width: 20%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px)  {
+    header > .left-navbar {
+        width: 70%;
+    }
+
+    header > .right-navbar {
+        width: 30%;
+    }
+
+    .sidebar {
+        height: 116%;
+    }
+
+    .sidebar > .menu-bar {
+        height: 95%;
+    }
+
+    .peformance > .status-box {
+        grid-template-columns: auto auto;
+    }
+
+    .peformance > .recent-order-box td {
+        font-size: 14px;
+    }
+}
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px)  {
+    header > .left-navbar {
+        width: 60%;
+    }
+
+    header > .right-navbar {
+        width: 40%;
+    }
+
+    header > .right-navbar > .profile-box > p {
+        display: none;
+    }
+
+    .peformance > .income-box {
+        grid-template-columns: auto;
+        margin: 5px 0;
+    }
+
+    .peformance > .status-box {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .peformance > .status-box > .status-box-preview {
+        width: 335px;
+    }
+
+    .sidebar {
+        width: 0;
+        display: none;
+        float: none;
+    }
+
+    .sidebar > .menu-bar {
+        height: 96%;
+    }
+
+    .peformance {
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+
+    .peformance > .income-box {
+        width: 100%;
+    }
+
+    .peformance > .recent-order-box .cr {
+        display: none;
+    }
+
+    .peformance > .recent-order-box > .recent-order-title p {
+        width: 70%;
+    }
+
+    .peformance > .recent-order-box td {
+        font-size: 14px;
+    }
+}
+
+/* Mobile M & S */
+@media screen and (max-width: 375px) {
+    header > .left-navbar {
+        width: 50%;
+    }
+
+    header > .right-navbar {
+        width: 50%;
+    }
+
+    header > .right-navbar > .profile-box > p {
+        display: none;
+    }
+
+    header > .right-navbar > .profile-box {
+        margin: auto 20px;
+    }
+
+    .peformance > .income-box {
+        grid-template-columns: auto;
+    }
+
+    .peformance > .income-box {
+        grid-template-columns: auto;
+        margin: 5px 0;
+    }
+
+    .peformance > .status-box {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .peformance > .status-box > .status-box-preview {
+        width: 285px;
+    }
+
+    .sidebar {
+        width: 0;
+        display: none;
+        float: none;
+    }
+
+    .sidebar > .menu-bar {
+        height: 96%;
+    }
+
+    .peformance {
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+
+    .peformance > .income-box {
+        width: 100%;
+    }
+
+    .peformance > .recent-order-box .cr {
+        display: none;
+    }
+
+    .peformance > .recent-order-box > .recent-order-title p {
+        width: 60%;
+    }
+
+    .peformance > .recent-order-box td {
+        font-size: 12px;
+    }
 }
