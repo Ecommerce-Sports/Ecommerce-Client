@@ -446,6 +446,21 @@ header > .right-navbar > .profile-box > p {
 
     .orders-detail > .orders-detail-box > .body-orders-detail > ul > li {
         font-size: 16px;
+    }   
+
+    .customerlist > .customerlist-box > .head-bar-customerlist > .head-bar-title {
+        width: 20%;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .customerlist > .customerlist-box > .head-bar-customerlist > .search-bar {
+        width: 70%;
+    }
+
+    .customerlist > .customerlist-box > .body-customerlist > .list-customer > thead td,
+    .customerlist > .customerlist-box > .body-customerlist > .list-customer > tbody tr td {
+        font-size: 16px;
     }
 }
 
@@ -498,7 +513,8 @@ header > .right-navbar > .profile-box > p {
     .product,
     .category,
     .orders,
-    .orders-detail {
+    .orders-detail,
+    .customerlist {
         width: 100%;
         padding: 0;
         float: none;
@@ -713,6 +729,31 @@ header > .right-navbar > .profile-box > p {
     .orders-detail > .orders-detail-box > .head-bar-orders-detail > .head-bar-title {
         font-size: 18px;
     }
+
+    .customerlist > .customerlist-box > .head-bar-customerlist > .head-bar-title {
+        width: 30%;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .customerlist > .customerlist-box > .head-bar-customerlist > .search-bar {
+        width: 60%;
+    }
+
+    .customerlist > .customerlist-box > .body-customerlist > .list-customer > thead td,
+    .customerlist > .customerlist-box > .body-customerlist > .list-customer > tbody tr td {
+        font-size: 14px;
+    }
+
+    .customerlist > .customerlist-box {
+        height: auto;
+        min-height: 88vh;
+        margin-top: 20px;
+    }
+
+    .customerlist > .customerlist-box > .body-customerlist {
+        margin-left: 5px;
+    }
 }
 
 /* Mobile M & S */
@@ -772,7 +813,8 @@ header > .right-navbar > .profile-box > p {
     .product,
     .category,
     .orders,
-    .orders-detail {
+    .orders-detail,
+    .customerlist {
         width: 100%;
         padding: 0;
         float: none;
@@ -982,5 +1024,30 @@ header > .right-navbar > .profile-box > p {
 
     .orders-detail > .orders-detail-box > .head-bar-orders-detail > .head-bar-title {
         font-size: 16px;
+    }
+
+    .customerlist > .customerlist-box > .head-bar-customerlist > .head-bar-title {
+        width: 30%;
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .customerlist > .customerlist-box > .head-bar-customerlist > .search-bar {
+        width: 60%;
+    }
+
+    .customerlist > .customerlist-box > .body-customerlist > .list-customer > thead td,
+    .customerlist > .customerlist-box > .body-customerlist > .list-customer > tbody tr td {
+        font-size: 12px;
+    }
+
+    .customerlist > .customerlist-box {
+        height: auto;
+        min-height: 88vh;
+        margin-top: 20px;
+    }
+
+    .customerlist > .customerlist-box > .body-customerlist {
+        margin-left: 5px;
     }
 }
