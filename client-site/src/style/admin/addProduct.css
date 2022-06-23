@@ -7,7 +7,7 @@
 .product-create {
     width: 85%;
     float: right;
-    padding: 30px 30px 0 30px;
+    /* padding: 30px 30px 0 30px; */
 }
 
 .product-create > .product-create-box {
@@ -17,7 +17,8 @@
     width: 100%;
     height: 85vh;
     max-height: 85vh;
-    overflow: auto;
+    overflow: auto;   
+    margin: 10px; 
 }
 
 .product-create > .product-create-box > .head-bar-product-create {
@@ -53,7 +54,7 @@
     border-radius: 10px;
     border-style: solid;
     border-color: lightgray;
-    margin: 0 30px 0 0;
+    /* margin: 0 30px 0 0; */
 }
 
 .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-view img {
@@ -120,6 +121,7 @@
     color: white;
     cursor: pointer;
     width: 100px;
+    margin : 10px;
 }
 
 .product-create > .product-create-box > .body-product-create > form > button > i {
@@ -130,4 +132,202 @@
 .product-create > .product-create-box > .body-product-create > form > button > p {
     float: right;
     width: 60%;
+}
+
+/* 4K */
+@media only screen and (max-width: 2560px) and (min-width: 1441px){
+
+}
+
+/* Laptop L */
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {    
+    
+}
+
+/* Laptop */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span,
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label,
+    .product-create > .product-create-box > .body-product-create > form > .title, 
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > .title,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > .title{        
+        font-size: 14px;    
+    }
+
+    .product-create > .product-create-box{
+        margin-right: 40px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > input,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input{
+        font-size: 12px;
+    }
+}
+
+    
+
+/* Mobile L */
+@media only screen and (max-width: 425px) and (min-width: 376px) {    
+    .product-create{
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span,
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > input,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input,
+    .product-create > .product-create-box > .body-product-create > form > .title, 
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > .title,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > .title{        
+        font-size: 12px;    
+    } 
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input{        
+        flex-direction: column;        
+    }
+    
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right{
+        margin-left: 0px;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -50px;
+        font-size: 8px;        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 2px;
+        padding-right: 2px;        
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload{
+        flex-direction: column;        
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -28px;
+        margin-top: 10px;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-view{
+        width: 50%;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right{
+        width: 100%;
+    }
+
+}
+
+/* Mobile M & S */
+@media only screen and (max-width: 375px) {
+    .product-create{
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span,
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > input,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input,
+    .product-create > .product-create-box > .body-product-create > form > .title, 
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > .title,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > .title{        
+        font-size: 12px;    
+    } 
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input{        
+        flex-direction: column;        
+    }
+    
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right{
+        margin-left: 0px;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -50px;
+        font-size: 8px;        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 2px;
+        padding-right: 2px;        
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload{
+        flex-direction: column;        
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -28px;
+        margin-top: 10px;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-view{
+        width: 60%;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 325px) {    
+    .product-create{
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span,
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > input,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input,
+    .product-create > .product-create-box > .body-product-create > form > .title, 
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > .title,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > .title{        
+        font-size: 10px;    
+    } 
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input{        
+        flex-direction: column;        
+    }
+    
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right{
+        margin-left: 0px;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -50px;
+        font-size: 8px;        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 2px;
+        padding-right: 2px;        
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload{
+        flex-direction: column;        
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -28px;
+        margin-top: 10px;
+    }
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-view{
+        text-align: center;
+              
+    }
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right{
+        width: 100%;
+    }
 }
