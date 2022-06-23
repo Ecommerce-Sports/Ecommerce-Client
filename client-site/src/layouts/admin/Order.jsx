@@ -29,6 +29,9 @@ const Order = () => {
                 <p className="head-bar-title">ORDERS</p>
                 <div className="search-bar">
                     <input value={search} onChange={(e)=> setSearch(e.target.value)} className="search-orders" type="search" name="search" placeholder="Search Order List... ." id="" />
+                    <button className="search-button">
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
             </div>
             <div className="body-list-orders">
@@ -37,9 +40,9 @@ const Order = () => {
                         <tr>
                             <td>NO.</td>
                             <td>INVOICE</td>
-                            <td>CUSTOMER NAME</td>
+                            <td>CUSTOMER</td>
                             <td>STATUS</td>
-                            <td>GRAND TOTAL</td>
+                            <td>TOTAL</td>
                             <td>DETAIL</td>
                         </tr>
                     </thead>
@@ -65,9 +68,6 @@ const Order = () => {
                 </table>
             </div>
         </div>
-        <footer>
-            Admin Server Site &#169; 2022, Tokopaedi
-        </footer>
     </main>
     </>
   )

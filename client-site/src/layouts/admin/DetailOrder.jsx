@@ -64,7 +64,7 @@ const DetailOrder = () => {
                     </li>
                     <li>
                         <p className="detail-name">Total</p>
-                        <p className="detail-description" id="">{order.total_pembayaran}</p>
+                        <p className="detail-description" id="">Rp. {order.total_pembayaran}</p>
                     </li>
                     <li>
                         <p className="detail-name">Address</p>
@@ -77,9 +77,6 @@ const DetailOrder = () => {
                 </ul>
             </div>
         </div>
-        <footer>
-            Admin Server Site &#169; 2022, Tokopaedi
-        </footer>
     </main>
     </>
   )

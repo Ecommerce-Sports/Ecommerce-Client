@@ -192,6 +192,10 @@ header > .right-navbar > .profile-box > p {
     .product > .product-box > .body-list-product {
         max-height: 680px;
     }
+
+    .category > .add-category-box > .body-category-create > form {
+        padding: 20px 0;
+    }
 }
 
 /* Laptop */
@@ -250,6 +254,37 @@ header > .right-navbar > .profile-box > p {
     .product > .product-box > .body-list-product > .list-product > thead td,
     .product > .product-box > .body-list-product > .list-product > tbody > tr > td {
         font-size: 16px;
+    }
+
+    .category > .add-category-box > .head-bar-category-create > .head-bar-title,
+    .category > .category-list-box > .head-bar-category-list > .head-bar-title {
+        font-size: 18px;
+    }
+
+    .category > .add-category-box > .body-category-create > form {
+        padding: 15px;
+    }    
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name {
+        font-size: 16px;
+    }
+
+    .category > .add-category-box > .body-category-create > form .category-image-upload label,
+    .category > .add-category-box > .body-category-create > form > .category-upload > button {
+        font-size: 12px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > thead,
+    .category > .category-list-box > .body-category-list > .category-list > tbody {
+        font-size: 16px;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .head-bar-title {
+        width: 15%;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .search-bar {
+        width: 75%;
     }
 }
 
@@ -346,6 +381,72 @@ header > .right-navbar > .profile-box > p {
     .product > .product-box > .body-list-product > .list-product > tbody > tr > td {
         font-size: 16px;
     }
+
+    .category > .add-category-box > .head-bar-category-create > .head-bar-title,
+    .category > .category-list-box > .head-bar-category-list > .head-bar-title,
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name {
+        font-size: 16px;
+    }
+
+    .category > .add-category-box > .body-category-create > form {
+        padding: 15px 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .image-view-upload {
+        width: 35%;
+    }
+
+    .category > .add-category-box > .body-category-create > form .category-image-upload label,
+    .category > .add-category-box > .body-category-create > form > .category-upload > button {
+        font-size: 12px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > thead,
+    .category > .category-list-box > .body-category-list > .category-list > tbody {
+        font-size: 14px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody img {
+        max-width: 75px;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .head-bar-title {
+        font-weight: 700;
+        font-size: 18px;
+        width: 14%;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .search-bar {
+        display: flex;
+        width: 80%;
+        height: 25px;
+        margin: 15px 20px;
+    }
+    
+    .orders > .orders-box > .body-list-orders > .list-orders > thead td {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody {
+        margin: 10px;
+        padding-top: 20px;
+    }
+    
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td {
+        padding: 5px;
+        align-items: center;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td .detail {
+        padding: 5px;
+    }
+
+    .orders-detail > .orders-detail-box > .body-orders-detail > ul > li {
+        font-size: 16px;
+    }
 }
 
 /* Mobile L */
@@ -394,7 +495,10 @@ header > .right-navbar > .profile-box > p {
     }
 
     .peformance,
-    .product {
+    .product,
+    .category,
+    .orders,
+    .orders-detail {
         width: 100%;
         padding: 0;
         float: none;
@@ -482,6 +586,133 @@ header > .right-navbar > .profile-box > p {
     .product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete i {
         font-size: 10px;
     }
+
+    .category > .add-category-box > .head-bar-category-create > .head-bar-title,
+    .category > .category-list-box > .head-bar-category-list > .head-bar-title,
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name {
+        font-size: 16px;
+    }
+
+    .category > .add-category-box {
+        margin: 20px 0;
+    }
+
+    .category > .add-category-box > .body-category-create > form {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .image-view-upload {
+        margin-left: -30px;
+        margin-bottom: 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload {
+        margin-left: 0;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .image-view-upload {
+        width: 35%;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name {
+        flex-direction: column;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name > .add-category-name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name > p {
+        margin-bottom: 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form .category-image-upload label,
+    .category > .add-category-box > .body-category-create > form > .category-upload > button {
+        font-size: 12px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > thead,
+    .category > .category-list-box > .body-category-list > .category-list > tbody {
+        font-size: 14px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody img {
+        max-width: 75px;
+    }
+
+    .category > .category-list-box > .body-category-list {
+        min-height: 47vh;
+        max-height: max-content;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody button {
+        padding: 5px;
+        width: 30px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody img {
+        max-width: 70px;
+    }
+
+    .orders > .orders-box {
+        width: 100%;
+        min-height: 89vh;
+        margin-top: 20px;
+    }
+
+    .orders > .orders-box > .head-bar-orders {
+        height: 56px;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .head-bar-title {
+        font-weight: 700;
+        font-size: 16px;
+        width: 25%;
+        margin-left: 20px;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .search-bar {
+        width: 60%;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > thead td {
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td {
+        padding: 2px;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .orders > .orders-box > .body-list-orders {
+        margin-left: 5px;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td .detail {
+        padding: 5px;
+    }
+
+    .orders-detail > .orders-detail-box {
+        margin-top: 20px;
+    }
+
+    .orders-detail > .orders-detail-box > .body-orders-detail > ul > li {
+        font-size: 14px;
+    }
+
+    .orders-detail > .orders-detail-box > .body-orders-detail > ul > li .detail-description > li p {
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+    .orders-detail > .orders-detail-box > .head-bar-orders-detail > .head-bar-title {
+        font-size: 18px;
+    }
 }
 
 /* Mobile M & S */
@@ -538,7 +769,10 @@ header > .right-navbar > .profile-box > p {
     }
 
     .peformance,
-    .product {
+    .product,
+    .category,
+    .orders,
+    .orders-detail {
         width: 100%;
         padding: 0;
         float: none;
@@ -621,5 +855,132 @@ header > .right-navbar > .profile-box > p {
     .product > .product-box > .body-list-product > .list-product > tbody > tr > td .edit i,
     .product > .product-box > .body-list-product > .list-product > tbody > tr > td .delete i {
         font-size: 10px;
+    }
+
+    .category > .add-category-box > .head-bar-category-create > .head-bar-title,
+    .category > .category-list-box > .head-bar-category-list > .head-bar-title,
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name {
+        font-size: 16px;
+    }
+
+    .category > .add-category-box {
+        margin: 20px 0;
+    }
+
+    .category > .add-category-box > .body-category-create > form {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .image-view-upload {
+        margin-left: -45px;
+        margin-bottom: 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload {
+        margin-left: 0;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .image-view-upload {
+        width: 35%;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name {
+        flex-direction: column;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name > .add-category-name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form > .category-upload > .category-name > p {
+        margin-bottom: 10px;
+    }
+
+    .category > .add-category-box > .body-category-create > form .category-image-upload label,
+    .category > .add-category-box > .body-category-create > form > .category-upload > button {
+        font-size: 12px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > thead,
+    .category > .category-list-box > .body-category-list > .category-list > tbody {
+        font-size: 14px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody img {
+        max-width: 75px;
+    }
+
+    .category > .category-list-box > .body-category-list {
+        min-height: 47vh;
+        max-height: max-content;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody button {
+        padding: 5px;
+        width: 30px;
+    }
+
+    .category > .category-list-box > .body-category-list > .category-list > tbody img {
+        max-width: 70px;
+    }
+
+    .orders > .orders-box {
+        width: 100%;
+        min-height: 89vh;
+        margin-top: 20px;
+    }
+
+    .orders > .orders-box > .head-bar-orders {
+        height: 56px;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .head-bar-title {
+        font-weight: 700;
+        font-size: 16px;
+        width: 25%;
+        margin-left: 20px;
+    }
+
+    .orders > .orders-box > .head-bar-orders > .search-bar {
+        width: 60%;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > thead td {
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td {
+        padding: 1px;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .orders > .orders-box > .body-list-orders {
+        margin-left: 5px;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td .detail {
+        padding: 5px;
+    }
+
+    .orders-detail > .orders-detail-box {
+        margin-top: 20px;
+    }
+
+    .orders-detail > .orders-detail-box > .body-orders-detail > ul > li {
+        font-size: 12px;
+    }
+
+    .orders-detail > .orders-detail-box > .body-orders-detail > ul > li .detail-description > li p {
+        margin-right: 20px;
+        font-size: 10px;
+    }
+
+    .orders-detail > .orders-detail-box > .head-bar-orders-detail > .head-bar-title {
+        font-size: 16px;
     }
 }
