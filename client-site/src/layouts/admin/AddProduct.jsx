@@ -111,9 +111,6 @@ const AddProduct = () => {
                 </form>
             </div>
         </div>
-        <footer>
-            Admin Server Site &#169; 2022, Tokopaedi
-        </footer>
     </main>
     </>
   )

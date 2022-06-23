@@ -286,6 +286,24 @@ header > .right-navbar > .profile-box > p {
     .orders > .orders-box > .head-bar-orders > .search-bar {
         width: 75%;
     }
+
+    .product-create > .product-create-box > .body-product-create form .title {
+        font-size: 16px;
+    }
+
+    .product-create > .product-create-box > .body-product-create {
+        padding: 10px;
+    }
+
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title,
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span {
+        font-size: 18px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label {
+        font-size: 14px;
+    }
 }
 
 /* Tablet */
@@ -462,6 +480,28 @@ header > .right-navbar > .profile-box > p {
     .customerlist > .customerlist-box > .body-customerlist > .list-customer > tbody tr td {
         font-size: 16px;
     }
+
+    .product-create > .product-create-box > .body-product-create form .title {
+        font-size: 16px;
+    }
+
+    .product-create > .product-create-box > .body-product-create {
+        padding: 10px;
+    }
+
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title,
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span {
+        font-size: 18px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label {
+        font-size: 14px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+        margin-left: 0;
+    }
 }
 
 /* Mobile L */
@@ -514,7 +554,8 @@ header > .right-navbar > .profile-box > p {
     .category,
     .orders,
     .orders-detail,
-    .customerlist {
+    .customerlist,
+    .product-create {
         width: 100%;
         padding: 0;
         float: none;
@@ -754,6 +795,66 @@ header > .right-navbar > .profile-box > p {
     .customerlist > .customerlist-box > .body-customerlist {
         margin-left: 5px;
     }
+
+    .product-create > .product-create-box {
+        margin-top: 20px;
+        min-height: 85vh;
+        height: auto;
+    }
+
+    .product-create > .product-create-box > .body-product-create form .title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create {
+        padding: 0 10px 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+        margin-left: 0;
+    }
+    
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > input,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input,
+    .product-create > .product-create-box > .body-product-create > form > .title, 
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > .title,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > .title{        
+        font-size: 14px;    
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input{        
+        flex-direction: column;   
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+        width: 100%;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        margin-left: -28px;
+        padding: 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload {
+        width: 60%;
+        padding-left: 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > button {
+        margin:10px 5px;
+        width: 153px;
+    }
 }
 
 /* Mobile M & S */
@@ -814,7 +915,8 @@ header > .right-navbar > .profile-box > p {
     .category,
     .orders,
     .orders-detail,
-    .customerlist {
+    .customerlist,
+    .product-create {
         width: 100%;
         padding: 0;
         float: none;
@@ -1049,5 +1151,72 @@ header > .right-navbar > .profile-box > p {
 
     .customerlist > .customerlist-box > .body-customerlist {
         margin-left: 5px;
+    }
+
+    .product-create > .product-create-box {
+        margin-top: 20px;
+        min-height: 85vh;
+        height: auto;
+    }
+
+    .product-create > .product-create-box {
+        margin-top: 20px;
+        min-height: 85vh;
+        height: auto;
+    }
+
+    .product-create > .product-create-box > .body-product-create form .title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create {
+        padding: 0 10px 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+        margin-left: 0;
+    }
+    
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title, 
+    .product-create > .product-create-box > .head-bar-product-create > .head-bar-title span {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > input,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input,
+    .product-create > .product-create-box > .body-product-create > form > .title, 
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left > .title,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > .title{        
+        font-size: 14px;    
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right > input{        
+        flex-direction: column;   
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-left,
+    .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
+        width: 100%;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload button{
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: -30px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > button {
+        margin: 10px 2px;
+        width: 134px;
+    }
+
+    .product-create > .product-create-box > .body-product-create > form > .image-view-upload {
+        flex-direction: column;
+        text-align: center;
     }
 }
