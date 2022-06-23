@@ -127,6 +127,54 @@ const PerformancePage = () => {
                             <td><i className="fa-solid fa-circle" id="expired"></i> Sedang Dikirim</td>
                             <td className='cr'>Kamis, 26 Mei 2022</td>
                         </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="success"></i> Pesanan Diproses</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="pending"></i> Menunggu Kofirmasi</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="failed"></i> Sampai Tujuan</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="expired"></i> Sedang Dikirim</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="success"></i> Pesanan Diproses</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="pending"></i> Menunggu Kofirmasi</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="failed"></i> Sampai Tujuan</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
+                        <tr>
+                            <td>INV-ABCDEF123G</td>
+                            <td>Jhon Doe</td>
+                            <td><i className="fa-solid fa-circle" id="expired"></i> Sedang Dikirim</td>
+                            <td className='cr'>Kamis, 26 Mei 2022</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

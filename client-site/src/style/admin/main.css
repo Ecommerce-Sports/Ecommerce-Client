@@ -188,6 +188,10 @@ header > .right-navbar > .profile-box > p {
     .peformance > .recent-order-box {
         height: 430px;
     }
+    
+    .product > .product-box > .body-list-product {
+        max-height: 680px;
+    }
 }
 
 /* Laptop */
@@ -215,6 +219,10 @@ header > .right-navbar > .profile-box > p {
 
     .peformance > .recent-order-box {
         height: 400px;
+    }
+
+    .product > .product-box > .body-list-product {
+        max-height: 650px;
     }
 
     .product > .product-box > .head-bar-product > .head-bar-title {
@@ -305,6 +313,10 @@ header > .right-navbar > .profile-box > p {
     .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title ,
     .peformance > .recent-order-box > .recent-order-title > p {
         font-size: 14px;
+    }
+
+    .product > .product-box > .body-list-product {
+        max-height: 650px;
     }
 
     .product > .product-box > .head-bar-product > .head-bar-title {
@@ -440,6 +452,10 @@ header > .right-navbar > .profile-box > p {
 
     .product > .product-box > .body-list-product {
         margin: 10px 5px;
+    }
+
+    .product > .product-box > .body-list-product {
+        max-height: none;
     }
 
     .product > .product-box > .body-list-product > .list-product > thead td {
