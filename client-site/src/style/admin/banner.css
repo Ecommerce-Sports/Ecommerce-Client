@@ -122,3 +122,294 @@
     width: 40px;
     cursor: pointer;
 }
+
+/* 4K */
+@media only screen and (max-width: 2560px) and (min-width: 1441px){
+
+}
+
+/* Laptop L */
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+    
+}
+
+/* Laptop */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    header > .left-navbar {
+        width: 80%;
+    }
+
+    header > .right-navbar {
+        width: 20%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        padding: 15px;
+    }   
+    
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title {
+        font-size: 18px;
+    }   
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > .banner-image-upload button{        
+        font-size: 16px;             
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload > button{
+        font-size: 16px;
+        margin-left: 160px; 
+        float: left;                     
+        margin-bottom: 500px;
+        margin-top: -90px;
+    }    
+      
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > button{
+        text-align: center;
+        margin-left: 200px;
+        margin-bottom: 445px;        
+        font-size: 12px;
+        padding: 4px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,  
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload, 
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title {
+        font-size: 16px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        padding: 10px 10px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {        
+        width: 20%;        
+    } 
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload img{
+       width: 100px;
+       height: 100px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form .banner-image-upload label,
+    .banner > .add-banner-box > .body-banner-create > form > .banner-upload > button {
+        font-size: 12px;
+    } 
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > thead,
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody {
+        font-size: 16px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody img {        
+        max-width: 75px;
+    } 
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload > button{
+        font-size: 12px;
+        margin-left: 120px; 
+        float: left;                     
+        margin-bottom: 500px;
+        margin-top: -70px;
+    }    
+      
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > button{
+        text-align: center;
+        margin-left: 100px;        
+        margin-bottom: 400px;
+        font-size: 12px;        
+    }
+    
+}
+
+/* Mobile L */
+@media only screen and (max-width: 425px) and (min-width: 376px) {        
+    body {
+        overflow-y: auto;
+    }
+
+    /* header */
+    header > .left-navbar {
+        width: 60%;
+    }
+
+    header > .right-navbar {
+        width: 40%;
+    }
+
+    header > .right-navbar > .profile-box > p {
+        display: none;
+    }
+
+    /* sidebar */
+    .sidebar, .sidebar.close {
+        width: 0;
+        display: none;
+        float: none;
+    }
+
+    .sidebar > .menu-bar {
+        height: 96%;
+    }
+    
+    .banner{
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,  
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload, 
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title {
+        font-size: 16px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        padding: 10px 10px;
+    }
+    
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {        
+        width: 80%;                
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload img{
+        width: 100px;
+        height: 100px;
+        margin-left: -35px;
+     }
+
+     .banner > .add-banner-box > .body-banner-create > form .banner-image-upload label,
+    .banner > .add-banner-box > .body-banner-create > form > .banner-upload > button {
+        font-size: 12px;        
+    } 
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > thead,
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody {
+        font-size: 16px;
+    }
+    
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody img {        
+        max-width: 100px;
+    } 
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload input{
+        margin-top: 90%;
+    }   
+      
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > button{
+        text-align: center;
+        margin-left: -40px;
+        margin-top: -6px;
+        margin-bottom: 40px;
+        font-size: 10px;
+        /* padding: 4px; */
+    } 
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload button label{ 
+        margin: 0px;
+        padding: auto;        
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload > .banner-image-upload{
+        text-align: center;
+        margin-left: 120px;                      
+        font-size: 10px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload p{
+        margin-left: -100px;
+    }
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload button{
+        margin-bottom: 100%;        
+    }   
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload >.banner-image-upload{        
+        margin-bottom: 16px;                        
+    }
+}
+
+/* Mobile M & S */
+@media only screen and (max-width: 375px) {
+    .banner{
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin: 0 40px;
+    }
+
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title,
+    .banner > .add-banner-box > .body-banner-create > form > .banner-upload > .banner-name {
+        font-size: 16px;
+    }
+
+    .banner > .add-banner-box {
+        margin: 20px 0;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        padding: 10px;        
+        text-align: center;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 20px;
+        height: 120px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action button{
+        margin-left: 40px;        
+    }
+
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload img{
+        width: 100px;
+        height: 100px;
+        margin-left: -35px; 
+        margin-bottom: 10px;
+    }
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload > button{
+        margin-left: -35px;
+        margin-top: -90px;
+    } 
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+   
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload > p button,
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > button {
+        font-size: 12px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > thead,
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody {
+        font-size: 14px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody img {
+        max-width: 75px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list {
+        min-height: 47vh;
+        max-height: max-content;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody button {
+        padding: 5px;
+        width: 30px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody img {
+        max-width: 70px;
+    } 
+
+
+}
