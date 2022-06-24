@@ -114,6 +114,14 @@
     color: darkred;
 }
 
+.orders > .orders-box > .body-list-orders > .list-orders > tbody tr td select {
+    padding: 5px 2px;
+    margin-right: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-color: #61c156;
+}
+
 .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td .detail {
     padding: 5px 10px;
     background-color: #61c156;

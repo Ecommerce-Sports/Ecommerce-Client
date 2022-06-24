@@ -43,7 +43,7 @@ const Order = () => {
                             <td>CUSTOMER</td>
                             <td>STATUS</td>
                             <td>TOTAL</td>
-                            <td>DETAIL</td>
+                            <td>ACTION</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,8 +58,14 @@ const Order = () => {
                                         <p className="status-orders" id="">{e.status}</p>
                                     </td>
                                     <td>Rp. {e.total_pembayaran}</td>
-                                    <td>
-                                    <button onClick={() => navigate(`/admin/detail-order/${e.id}`)} className="detail"><i className="fa-solid fa-list-ul"></i></button>
+                                    <td className='action'>
+                                        <select name="status" id="" className="status-check">
+                                            <option value="confirmation">Menunggu Konfirmasi</option>
+                                            <option value="packaging">Pesanan Diproses</option>
+                                            <option value="delivery">Pesanan Dikirim</option>
+                                            <option value="arrive">Sampai Tujuan</option>
+                                        </select>
+                                        <button onClick={() => navigate(`/admin/detail-order/${e.id}`)} className="detail"><i className="fa-solid fa-list-ul"></i></button>
                                     </td>
                                 </tr>
                             )

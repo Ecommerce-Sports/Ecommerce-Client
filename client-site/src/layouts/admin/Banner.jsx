@@ -67,7 +67,7 @@ const Banner = () => {
                     <div className="image-view-upload">
                         <p><input type="file"  accept="image/*" name="image" id="file"  onChange={uploadImage} style={{ display: "none" }} /></p>
                         <p>
-                            <img src={image} id="output" width="140px" height="140px" className="img-thumbnail" alt="" />
+                            <img src={image} id="output" width="280px" height="140px" className="img-thumbnail" alt="" />
                         </p>
                         <button className="banner-image-upload" disabled="action"><label htmlFor="file" style={{ cursor: "pointer" }}><i className="fa-solid fa-file-arrow-up"></i>Upload Image</label></button>
                     </div>
@@ -76,10 +76,6 @@ const Banner = () => {
                             <i className="fa-solid fa-plus"></i>
                             ADD
                         </button>
-                        {/* <button className="reset-banner-action" type="reset">
-                            <i className="fa-solid fa-arrow-rotate-left"></i>
-                            <p>RESET</p>
-                        </button> */}
                     </div>
                 </form>
             </div>
@@ -111,9 +107,6 @@ const Banner = () => {
                 </table>
             </div>
         </div>
-        <footer>
-            Admin Server Site &#169; 2022, Tokopaedi
-        </footer>
     </main>
     </>
   )

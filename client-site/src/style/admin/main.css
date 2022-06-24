@@ -34,11 +34,6 @@
     border-radius: 20px;
 }
 
-footer {
-    text-align: center;
-    margin: 15px;
-}
-
 body {
     overflow-y: hidden;
 }
@@ -196,6 +191,14 @@ header > .right-navbar > .profile-box > p {
     .category > .add-category-box > .body-category-create > form {
         padding: 20px 0;
     }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        width: 40%;
+    }
+
+    .banner > .banner-list-box > .body-banner-list {
+        height: 46vh;
+    }
 }
 
 /* Laptop */
@@ -287,6 +290,11 @@ header > .right-navbar > .profile-box > p {
         width: 75%;
     }
 
+    .orders > .orders-box > .body-list-orders > .list-orders > thead td,
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td {
+        font-size: 16px;
+    }
+
     .product-create > .product-create-box > .body-product-create form .title {
         font-size: 16px;
     }
@@ -303,6 +311,14 @@ header > .right-navbar > .profile-box > p {
     .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload i, 
     .product-create > .product-create-box > .body-product-create > form > .image-view-upload > .image-upload label {
         font-size: 14px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        width: 50%;
+    }
+
+    .banner > .banner-list-box > .body-banner-list {
+        height: 44vh;
     }
 }
 
@@ -462,6 +478,10 @@ header > .right-navbar > .profile-box > p {
         padding: 5px;
     }
 
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td select {
+        padding: 3px;
+    }
+
     .orders-detail > .orders-detail-box > .body-orders-detail > ul > li {
         font-size: 16px;
     }   
@@ -501,6 +521,42 @@ header > .right-navbar > .profile-box > p {
 
     .product-create > .product-create-box > .body-product-create > form > .detail-product > .detail-product-right {
         margin-left: 0;
+    }
+
+    .banner {
+        padding-top: 20px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        width: 100%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action button {
+        width: 280px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list {
+        height: 40vh;
+    }
+
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title {
+        font-size: 18px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > thead {
+        font-size: 16px;
     }
 }
 
@@ -555,7 +611,8 @@ header > .right-navbar > .profile-box > p {
     .orders,
     .orders-detail,
     .customerlist,
-    .product-create {
+    .product-create,
+    .banner {
         width: 100%;
         padding: 0;
         float: none;
@@ -754,6 +811,17 @@ header > .right-navbar > .profile-box > p {
         padding: 5px;
     }
 
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr .action {
+        display: flex;
+        align-items: center;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td select {
+        padding: 8px 0;
+        font-size: 10px;
+        width: 20px;
+    }
+
     .orders-detail > .orders-detail-box {
         margin-top: 20px;
     }
@@ -855,6 +923,52 @@ header > .right-navbar > .profile-box > p {
         margin:10px 5px;
         width: 153px;
     }
+
+    .banner {
+        padding: 20px 0;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        width: 100%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload >  .banner-image-upload,
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > button {
+        font-size: 14px;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action button {
+        width: 280px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list {
+        min-height: 40vh;
+        height: auto;
+    }
+
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title {
+        font-size: 16px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > thead {
+        font-size: 14px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody img {
+        max-width: 180px;
+    }
 }
 
 /* Mobile M & S */
@@ -916,7 +1030,8 @@ header > .right-navbar > .profile-box > p {
     .orders,
     .orders-detail,
     .customerlist,
-    .product-create {
+    .product-create,
+    .banner {
         width: 100%;
         padding: 0;
         float: none;
@@ -1088,6 +1203,17 @@ header > .right-navbar > .profile-box > p {
         margin-left: 20px;
     }
 
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr .action {
+        display: flex;
+        align-items: center;
+    }
+
+    .orders > .orders-box > .body-list-orders > .list-orders > tbody tr td select {
+        padding: 7px 0;
+        font-size: 10px;
+        width: 20px;
+    }
+
     .orders > .orders-box > .head-bar-orders > .search-bar {
         width: 60%;
     }
@@ -1218,5 +1344,61 @@ header > .right-navbar > .profile-box > p {
     .product-create > .product-create-box > .body-product-create > form > .image-view-upload {
         flex-direction: column;
         text-align: center;
+    }
+
+    .banner {
+        padding: 20px 0;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload {
+        width: 100%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload img {
+        width: 90%;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    .banner > .add-banner-box > .body-banner-create > form > .image-view-upload >  .banner-image-upload,
+    .banner > .add-banner-box > .body-banner-create > form > .add-banner-action > button {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .banner > .banner-list-box > .body-banner-list {
+        min-height: 40vh;
+        height: auto;
+    }
+
+    .banner > .add-banner-box > .head-bar-banner-create > .head-bar-title,
+    .banner > .banner-list-box > .head-bar-banner-list > .head-bar-title {
+        font-size: 16px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > thead {
+        font-size: 12px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody img {
+        max-width: 120px;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody button {
+        padding: 5px;
+        width: auto;
+    }
+
+    .banner > .banner-list-box > .body-banner-list > .banner-list > tbody tr td {
+        padding: 5px;
     }
 }
