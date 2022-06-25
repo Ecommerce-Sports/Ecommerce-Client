@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import {Header, Sidebar} from "../../components/admin";
 import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useNavigate } from 'react-router-dom';
@@ -8,8 +8,21 @@ const PerformancePage = () => {
     const navigate = useNavigate()
     useEffect(()=> {
         if(!localStorage.token) navigate("/login")
-        ScriptNavbar();
+        // ScriptNavbar();
     }, [navigate]);
+
+    useLayoutEffect(() => {
+        const script = document.createElement('script');
+    
+        script.src = "/script/sidebar.js"
+        script.async = true
+        
+        document.body.appendChild(script)
+        
+        return () => {
+            document.body.removeChild(script)
+        }
+    })
 
   return (
     <>
