@@ -1,0 +1,72 @@
+@import url(product-card.css);
+
+.all-product-page {
+    width: 100%;
+    height: 100%;
+}
+
+.all-product-page > .all-product-category {
+    margin: 3vh 13vw;
+    padding: 0 1vw;
+}
+
+.all-product-page > .all-product-category > .category-title {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.all-product-page > .all-product-category > .product-selected-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.all-product-page > .all-product-category > .product-selected-box .category-box {
+    width: 20vw;
+    height: 45vh;
+    margin-top: 10px;
+}
+
+.all-product-page > .all-product-category > .product-selected-box .category-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.all-product-page > .all-product-category > .product-selected-box > .product-box {
+    width: 100%;
+    margin-left: -50px;
+    display: flex;
+    overflow: auto;
+}
+
+.all-product-ready-page {
+    width: 74vw;
+    height: 100%;
+    margin: 3vh 13vw;
+}
+
+.all-product-ready-page > .product > .product-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.all-product-ready-page > .product > .product-title hr {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    height: 3px;
+}
+
+.all-product-ready-page > .product > .product-list {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.all-product-ready-page > .product > .product-more {
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+.setting-page > .setting-box > .setting-body > .setting-payment {
+    width: 100%;
+    height: 100%;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box {
+    height: 12%;
+    display: flex;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title {
+    width: 80%;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+    margin-bottom: 10px;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+    color: grey;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+    width: 20%;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action a button {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    background-color: #61c156;
+    border-color: transparent;
+    border-radius: 7px;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box {
+    height: 88%;
+    width: 100%;
+    overflow: auto;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image {
+    width: 10%;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+    width: 80%;
+    margin: 0 20px;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action {
+    width: 10%;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action button {
+    width: 100%;
+    height: 30px;
+    background-color: darkred;
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+}

@@ -1,0 +1,68 @@
+.setting-page > .setting-box > .setting-body > .setnotification-page {
+    width: 100%;
+    height: 100%;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title {
+    height: 10%;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title p {
+    margin: 10px 0;
+    color: grey;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body {
+    height: 90%;
+    width: 100%;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title p {
+    font-weight: 700;
+    color: black;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+    width: 90%;
+    margin: 0 30px;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+    display: flex;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title i {
+    margin: 0 20px;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action hr {
+    opacity: 50%;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+    width: 92%;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list input {
+    width: 18px;
+    height: 18px;
+}

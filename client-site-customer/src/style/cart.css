@@ -1,0 +1,160 @@
+.cart-page {
+    display: flex;
+    padding: 0 13vw;
+    min-height: 58.6vh;
+    margin-top: 3vh;
+}
+
+.cart-page > .cart-box {
+    width: 75%;
+}
+
+.cart-page > .cart-box > .cart-title > h2 {
+    margin-bottom: 10px;
+}
+
+.cart-page > .cart-box > .cart-title > .cart-selectall {
+    display: flex;
+    align-items: center;
+}
+
+.cart-page > .cart-box > .cart-title > .cart-selectall p {
+    margin-left: 20px;
+}
+
+.cart-page > .cart-box > hr {
+    margin: 10px 0;
+    border-color: #4f9e4f;
+    border-style: solid;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box:hover {
+    background-color: whitesmoke;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > input {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-image-list {
+    margin: 0 25px;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-image-list img {
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list {
+    width: 75%;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list h3 {
+    margin-bottom: 40px;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list p {
+    font-size: 20px;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list {
+    width: auto;
+    display: flex;
+    text-align: center;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list i {
+    cursor: pointer;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list > i {
+    margin: 0 20px;
+    color: darkred;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list > .product-action-add {
+    display: flex;
+    margin-left: 20px;
+}
+
+.cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list > .product-action-add input {
+    width: 40px;
+    margin: 0 15px;
+}
+
+.cart-page > .cost-box {
+    margin-left: 20px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 0 grey;
+    height: max-content;
+    padding: 15px;
+}
+
+.cart-page > .cost-box > .cost-list,
+.cart-page > .cost-box > .cost-total {
+    margin: 15px 0;
+}
+
+.cart-page > .cost-box > .cost-list > .product-list {
+    margin: 5px 0;
+}
+
+.cart-page > .cost-box > .cost-list > .product-list,
+.cart-page > .cost-box > .cost-total {
+    display: flex;
+    width: 100%;
+}
+
+.cart-page > .cost-box > .cost-list > .product-list > .product-name,
+.cart-page > .cost-box > .cost-total > .total {
+    width: 60%;
+}
+
+.cart-page > .cost-box > .cost-list > .product-list > .product-cost,
+.cart-page > .cost-box > .cost-total > .payment {
+    width: 40%;
+    text-align: right;
+}
+
+.cart-page > .cost-box > hr {
+    border-color: #4f9e4f;
+    border-style: solid;
+}
+
+.cart-page > .cost-box > .cost-total > .total,
+.cart-page > .cost-box > .cost-total > .payment {
+    font-weight: 700;
+}
+
+.cart-page > .cost-box > .cost-action button {
+    width: 100%;
+    background-color: #61c156;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.cart-page > .cost-box > .cost-action button:hover {
+    border-color: #61c156;
+    border-style: solid;
+    background-color: white;
+    color: #61c156;
+}

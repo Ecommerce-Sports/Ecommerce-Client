@@ -1,0 +1,76 @@
+.setting-page > .setting-box > .setting-body > .setting-biodata {
+    width: 100%;
+    display: flex;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left {
+    width: 30%;
+    padding: 0 10px; 
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    text-align: center;
+    padding:  15px 20px;
+    color: lightgrey;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box button {
+    margin-top: 10px;
+    width: 95%;
+    height: 40px;
+    border-color: #4f9e4f;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    color: #4f9e4f;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box button i {
+    margin: 0 5px;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box button:hover {
+    background-color: #61c156;
+    color: white;
+    border-color: transparent;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box .note {
+    color: grey;
+    font-size: 16px;
+    margin: 10px;
+    text-align: left;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right {
+    width: 70%;
+    padding: 0 50px;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right div {
+    margin-bottom: 20px;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right h4 {
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+    font-size: 16px;
+    width: 30%;
+    float: left;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #4f9e4f;
+    font-size: 12px;
+    font-weight: 700;
+}

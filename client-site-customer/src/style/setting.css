@@ -1,0 +1,62 @@
+@import url(biodata.css);
+@import url(addresslist.css);
+@import url(paymentsetting.css);
+@import url(setnotification.css);
+
+.setting-page {
+    padding: 0 13vw;
+    min-height: 58.6vh;
+    margin-top: 3vh;
+}
+
+.setting-page > .setting-box {
+    width: 100%;
+    height: 88vh;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 grey;
+}
+
+.setting-page > .setting-box > .setting-head {
+    display: flex;
+    height: 6%;
+}
+
+.setting-page > .setting-box > .setting-head > a {
+    width: 25%;
+    text-decoration: none;
+}
+
+.setting-page > .setting-box > .setting-head > a > .menu-box {
+    display: flex;
+    height: 100%;
+    background-color: white ;
+    align-items: center;
+    border-radius: 5px;
+    color: grey;
+    font-weight: bold;
+}
+
+.setting-page > .setting-box > .setting-head > a:hover > .menu-box {
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: black;
+}
+
+.setting-page > .setting-box > .setting-head > a > .menu-box i {
+    width: 40%;
+    text-align: right;
+}
+
+.setting-page > .setting-box > .setting-head > a > .menu-box p {
+    padding: 0 10px;
+}
+
+.setting-page > .setting-box > hr {
+    color: grey;
+}
+
+.setting-page > .setting-box > .setting-body {
+    padding: 20px;
+    width: 100%;
+    height: 94%;
+}
