@@ -14,7 +14,7 @@ const Order = () => {
     const [search, setSearch] = useState("")
 
     useEffect(()=> {
-        if(!localStorage.token) navigate("/login");
+        if(!localStorage.token) navigate("/admin/login");
         // ScriptNavbar();
         dispatch(fetchOrders(localStorage.token, "invoice", search))
     }, [dispatch, navigate, search]);

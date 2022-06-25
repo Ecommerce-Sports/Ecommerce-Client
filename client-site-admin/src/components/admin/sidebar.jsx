@@ -6,7 +6,7 @@ const Sidebar = () => {
 
     const handleLogout = () => {
         localStorage.clear();
-        navigate("/login")
+        navigate("/admin/login")
     }
 
     // useLayoutEffect(() => {

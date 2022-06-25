@@ -49,7 +49,7 @@ const Category = () => {
     }
 
     useEffect(()=> {
-        if(!localStorage.token) navigate("/login")
+        if(!localStorage.token) navigate("/admin/login")
         // ScriptNavbar()
         dispatch(fetchCategories(localStorage.token))
     }, [dispatch, navigate]);

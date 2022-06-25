@@ -14,7 +14,7 @@ const CustomerList = () => {
     const [search, setSearch] = useState("")
 
     useEffect(()=> {
-        if(!localStorage.token) navigate("/login");
+        if(!localStorage.token) navigate("/admin/login");
         // ScriptNavbar()
         dispatch(fetchCustomerList(localStorage.token, "name", search))
     }, [dispatch, navigate, search]);

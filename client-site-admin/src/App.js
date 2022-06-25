@@ -12,9 +12,6 @@ import {
   CustomerList,
   Banner
 } from "./layouts/admin";
-// import {
-//   Home
-// } from "./layouts/customer";
 import { Provider } from "react-redux";
 import store from './redux/store';
 
@@ -25,11 +22,7 @@ const App = () => {
       <Router>
         <div>
           <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" />
-
-            {/* path Customer */}
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/admin/login" element={<Login />} />
 
             {/* path Admin */}
             <Route path="/admin/product" element={<Product />} />

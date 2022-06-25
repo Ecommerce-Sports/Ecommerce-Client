@@ -23,7 +23,7 @@ const Product = () => {
     }
 
     useEffect(()=> {
-        if(!localStorage.token) navigate("/login")
+        if(!localStorage.token) navigate("/admin/login")
         // ScriptNavbar()
         dispatch(fetchProducts(localStorage.token, "name", search))
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const PerformancePage = () => {
     const navigate = useNavigate()
     useEffect(()=> {
-        if(!localStorage.token) navigate("/login")
+        if(!localStorage.token) navigate("/admin/login")
         // ScriptNavbar();
     }, [navigate]);
 
