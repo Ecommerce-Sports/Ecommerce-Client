@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCategories, addCategory, deleteCategory } from '../../redux/action';
 import { useNavigate } from 'react-router-dom';
@@ -50,7 +50,7 @@ const Category = () => {
 
     useEffect(()=> {
         if(!localStorage.token) navigate("/login")
-        ScriptNavbar()
+        // ScriptNavbar()
         dispatch(fetchCategories(localStorage.token))
     }, [dispatch, navigate]);
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../redux/action";
 import { useNavigate } from "react-router-dom";
@@ -51,7 +51,7 @@ const AddProduct = () => {
     }
 
     useEffect(()=> {
-        ScriptNavbar()
+        // ScriptNavbar()
     }, []);
   return (
     <>

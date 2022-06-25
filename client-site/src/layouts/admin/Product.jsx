@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts, deleteProduct } from '../../redux/action';
@@ -24,10 +24,23 @@ const Product = () => {
 
     useEffect(()=> {
         if(!localStorage.token) navigate("/login")
-        ScriptNavbar()
+        // ScriptNavbar()
         dispatch(fetchProducts(localStorage.token, "name", search))
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search]);
+
+    // useLayoutEffect(() => {
+    //     const script = document.createElement('script');
+    
+    //     script.src = "/script/sidebar.js"
+    //     script.async = true
+        
+    //     document.body.appendChild(script)
+        
+    //     return () => {
+    //         document.body.removeChild(script)
+    //     }
+    // })
 
   return (
     <>

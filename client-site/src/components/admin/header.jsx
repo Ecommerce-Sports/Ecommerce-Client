@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const header = () => {
+const Header = () => {
+  const handleNavbar = () => {
+    var body = document.querySelector('body');
+    var header = document.querySelector('header');
+    var sidebar = body.querySelector('nav');
+    var toggle = header.querySelector('.fa-bars');
+
+    toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('close');
+    });
+  }
+
+  useEffect(() => {
+    handleNavbar()
+  }, [])
+
   return (
     <header>
         <div className="left-navbar">
-            <i className="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars" onClick={handleNavbar}></i>
             <img className="navbar-logo" src="/assets/tokopaedi-text.png" alt="tokopaedi-text" />
         </div>
         <div className="right-navbar">
@@ -18,4 +33,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header

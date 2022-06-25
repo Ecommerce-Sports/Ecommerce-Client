@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -8,6 +8,19 @@ const Sidebar = () => {
         localStorage.clear();
         navigate("/login")
     }
+
+    // useLayoutEffect(() => {
+    //     const script = document.createElement('script');
+    
+    //     script.src = "/script/sidebar.js"
+    //     script.async = true
+        
+    //     document.body.appendChild(script)
+        
+    //     return () => {
+    //         document.body.removeChild(script)
+    //     }
+    // })
 
   return (
     <nav className="sidebar close">

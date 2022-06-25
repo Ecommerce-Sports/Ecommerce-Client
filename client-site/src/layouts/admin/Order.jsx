@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchOrders } from '../../redux/action';
@@ -15,7 +15,7 @@ const Order = () => {
 
     useEffect(()=> {
         if(!localStorage.token) navigate("/login");
-        ScriptNavbar();
+        // ScriptNavbar();
         dispatch(fetchOrders(localStorage.token, "invoice", search))
     }, [dispatch, navigate, search]);
 

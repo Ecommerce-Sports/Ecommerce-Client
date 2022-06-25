@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useNavigate } from 'react-router-dom';
 // import '../../style/admin/main.css';
 
@@ -11,18 +11,18 @@ const PerformancePage = () => {
         // ScriptNavbar();
     }, [navigate]);
 
-    useLayoutEffect(() => {
-        const script = document.createElement('script');
+    // useLayoutEffect(() => {
+    //     const script = document.createElement('script');
     
-        script.src = "/script/sidebar.js"
-        script.async = true
+    //     script.src = "/script/sidebar.js"
+    //     script.async = true
         
-        document.body.appendChild(script)
+    //     document.body.appendChild(script)
         
-        return () => {
-            document.body.removeChild(script)
-        }
-    })
+    //     return () => {
+    //         document.body.removeChild(script)
+    //     }
+    // })
 
   return (
     <>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { getOneOrder } from '../../redux/action';
 import { useDispatch, useSelector } from 'react-redux';
 import '../../style/admin/main.css';
@@ -13,9 +13,9 @@ const DetailOrder = () => {
     const order = useSelector(state => state.order);
 
     useEffect(()=> {
-        ScriptNavbar();
+        // ScriptNavbar();
         dispatch(getOneOrder(id, localStorage.token));
-    }, []);
+    }, [dispatch, id]);
 
     console.log(order, `<<<< order`);
 

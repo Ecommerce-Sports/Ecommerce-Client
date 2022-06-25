@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {Header, Sidebar} from "../../components/admin";
-import { ScriptNavbar } from '../../helper/scriptNavbar';
+// import { ScriptNavbar } from '../../helper/scriptNavbar';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { getOneProducts, changeProduct } from '../../redux/action';
-import api from "../../api/api"; 
 import '../../style/admin/main.css';
 
 const EditProduct = () => {
@@ -52,19 +51,11 @@ const EditProduct = () => {
         navigate("/admin/product")
     }
 
-    // const fetchGetone = () => {
-    //     api.getOne(`admin/product/${id}`, localStorage.token)
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //         console.log(data, `<<<< data`);
-    //     })
-    // }
-
     useEffect(()=> {
-        ScriptNavbar()
+        // ScriptNavbar()
         dispatch(getOneProducts(id, localStorage.token));
         // fetchGetone()
-    }, []);
+    }, [dispatch, id]);
 
   return (
     <>
