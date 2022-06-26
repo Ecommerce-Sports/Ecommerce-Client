@@ -29,12 +29,9 @@ const Login = () => {
     })
     .then((res) => {
       if(res.data.token) {
-        console.log(res, `<<< res`);
         localStorage.setItem('token', res.data.token)
         if(res.data.role === 'admin') {
           navigate("/admin/dashboard")
-        } else {
-          navigate("/")
         }
       }
     })
