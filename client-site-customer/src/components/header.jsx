@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   //side nav bar
   const openNav = () => {
     document.getElementById("mySidenav").style.width = "450px";
     document.getElementsByTagName("main").style.marginRight = "450px";
-  }
+  };
 
   return (
     <header>

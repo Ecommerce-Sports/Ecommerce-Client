@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
-import {Link} from "react-router-dom";
-import '../style/main.css';
+import { Link } from "react-router-dom";
+import "../style/main.css";
 
 const Home = () => {
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight = "0";
-  }
+  };
 
   //checkbox select all
   function toggle(source) {
@@ -89,10 +89,7 @@ const Home = () => {
           </div>
           <div className="featured-product">
             <div className="featured-box">
-              <img
-                src="/assets/properti/featured-img2.jpg"
-                alt="featured"
-              />
+              <img src="/assets/properti/featured-img2.jpg" alt="featured" />
               <div className="featured-description">
                 <p>DRIVER BRIDGESTONE DIAMANA</p>
                 <Link to="/detail-product">
@@ -101,10 +98,7 @@ const Home = () => {
               </div>
             </div>
             <div className="featured-box">
-              <img
-                src="/assets/properti//featured-img1.jpg"
-                alt="featured"
-              />
+              <img src="/assets/properti//featured-img1.jpg" alt="featured" />
               <div className="featured-description">
                 <p>NEW BALANCE</p>
                 <Link to="/detail-product">
@@ -137,7 +131,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png" alt="" />
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>
@@ -153,7 +150,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png" alt=""/>
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>
@@ -169,7 +169,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png"  alt=""/>
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>
@@ -185,7 +188,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png" alt=""/>
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>
@@ -201,7 +207,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png" alt=""/>
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>
@@ -217,7 +226,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png" alt=""/>
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>
@@ -233,7 +245,10 @@ const Home = () => {
             <div className="product-card">
               <div className="card">
                 <div className="imgBx">
-                  <img src="https://assets.codepen.io/4164355/shoes.png" alt=""/>
+                  <img
+                    src="https://assets.codepen.io/4164355/shoes.png"
+                    alt=""
+                  />
                 </div>
                 <div className="contentBx">
                   <h2>Nike Shoes</h2>

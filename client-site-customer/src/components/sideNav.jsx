@@ -1,8 +1,7 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SideNav = () => {
-    
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight = "0";
@@ -37,28 +36,20 @@ const SideNav = () => {
           <p>Pembelian</p>
           <i className="fa-solid fa-truck-fast"></i>
         </Link>
-        <a href="/src/page/product/wishlist-page.html">
+        <Link to="/wishlist">
           <p>Wishlist</p>
           <i className="fa-solid fa-heart-circle-plus"></i>
-        </a>
-        <a href="/src/page/payment/cart-page.html">
-          <p>Keranjang</p>
-          <i className="fa-solid fa-cart-shopping"></i>
-        </a>
-        <a href="/src/page/product/all-product-page.html">
-          <p>Product</p>
-          <i className="fa-solid fa-bag-shopping"></i>
-        </a>
-        <a href="/src/page/setting/edit-profile-page.html">
+        </Link>
+        <Link to="/edit-profile">
           <p>Pengaturan</p>
-          <i className="fa-solid fa-gear"></i>
-        </a>
+          <i class="fa-solid fa-gear"></i>
+        </Link>
       </div>
       <div className="navbar-logout">
-        <a href="/src/page/login/login-page.html">
+        <Link to="/login">
           <p>Keluar</p>
           <i className="fa-solid fa-arrow-right-from-bracket"></i>
-        </a>
+        </Link>
       </div>
     </nav>
   );

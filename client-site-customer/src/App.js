@@ -10,7 +10,10 @@ import {
   AddressList,
   PaymentSetting,
   SetNotification,
-  OrderList
+  OrderList,
+  Wishlist,
+  Login,
+  Register
 } from "./layouts";
 import { Provider } from "react-redux";
 import store from './redux/store';
@@ -22,7 +25,8 @@ const App = () => {
       <Router>
         <div>
           <Routes>
-            {/* <Route path="/admin/login" element={<Login />} /> */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
 
             {/* path Customer */}
             <Route path="/" element={<Home />} />
@@ -35,6 +39,7 @@ const App = () => {
             <Route path="/payment-setting" element={<PaymentSetting />} />
             <Route path="/set-notification" element={<SetNotification />} />
             <Route path="/order-list" element={<OrderList />} />
+            <Route path="/wishlist" element={<Wishlist />} />
           </Routes>
         </div>
       </Router>

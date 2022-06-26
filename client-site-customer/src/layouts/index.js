@@ -8,6 +8,9 @@ import AddressList from "./AddressList";
 import PaymentSetting from "./PaymentSetting";
 import SetNotification from "./SetNotification";
 import OrderList from "./OrderList";
+import Wishlist from "./Wishlist";
+import Login from "./Login";
+import Register from "./Register";
 
 export { 
     Home,
@@ -19,5 +22,8 @@ export {
     AddressList,
     PaymentSetting,
     SetNotification,
-    OrderList
+    OrderList,
+    Wishlist,
+    Login,
+    Register
 };
