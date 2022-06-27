@@ -9,9 +9,9 @@ const SideNav = () => {
 
   return (
     <nav id="mySidenav" className="sidenav">
-      <a className="closebtn" onClick={closeNav}>
+      <button className="closebtn" onClick={closeNav}>
         <i className="fa-solid fa-xmark"></i>
-      </a>
+      </button>
       <div className="nav-profile-box">
         <div className="profile">
           <div className="profile-image">
