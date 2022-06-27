@@ -98,13 +98,14 @@ header > .right-navbar > .profile-box > p {
     position: absolute;
     z-index: 100;
     width: 280px;
-    background-color: #61c156;
+    background-color: white;
+    box-shadow: 0 3px 7px 0 grey;
     display: flex;
     flex-direction: column;
 }
 
 .sidebar, main {
-    height: 93%;
+    height: 94%;
 }
 
 .sidebar > .menu-bar {
@@ -117,7 +118,7 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar > .menu-bar > .menu > .menu-link > .nav-link > a {
     text-decoration: none;
-    color: white;
+    color: #61c156;
     font-size: 24px;
     align-items: center;
     display: flex;
@@ -139,7 +140,7 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar > .bottom-content > li > a {
     text-decoration: none;
-    color: white;
+    color: #61c156;
     font-size: 24px;
     align-items: center;
     display: flex;
