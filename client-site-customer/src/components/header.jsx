@@ -18,7 +18,7 @@ const Header = () => {
       <div className="header-category">
         <div className="category-toggle">
           <button className="dropbtn">
-            Kategori
+            <p>Kategori</p>
             <i className="fa-solid fa-chevron-down"></i>
           </button>
           <div className="dropdown-content">
@@ -105,9 +105,6 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="message-action">
-          <i className="fa-solid fa-envelope"></i>
         </div>
         <div className="cart-action">
           <a href="/src/page/payment/cart-page.html">
