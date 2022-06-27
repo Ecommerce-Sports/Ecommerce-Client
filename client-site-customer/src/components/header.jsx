@@ -17,10 +17,10 @@ const Header = () => {
       </div>
       <div className="header-category">
         <div className="category-toggle">
-          <a href="" className="dropbtn">
-            <p>Kategori</p>
+          <button className="dropbtn">
+            Kategori
             <i className="fa-solid fa-chevron-down"></i>
-          </a>
+          </button>
           <div className="dropdown-content">
             {/* <a href="/src/page/product/product-category-page.html">Street</a> */}
             <Link to="/category">Sepakbola</Link>
