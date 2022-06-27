@@ -1,15 +1,3 @@
-.sidebar.close ~ .category {
-    left: 78px;
-    height: 100%;
-    width: calc(100% - 78px);
-}
-
-.category {
-    width: 85%;
-    float: right;
-    padding: 25px 15px;
-}
-
 .category > .add-category-box {
     min-height: 30vh;
     margin-bottom: 2vh;

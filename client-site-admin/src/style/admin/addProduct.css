@@ -1,15 +1,3 @@
-.sidebar.close ~ .product-create {
-    left: 78px;
-    height: 100%;
-    width: calc(100% - 78px);
-}
-
-.product-create {
-    width: 85%;
-    float: right;
-    padding: 30px 30px 0 30px;
-}
-
 .product-create > .product-create-box {
     box-shadow: 0 3px 7px 0 grey;
     border-radius: 10px;

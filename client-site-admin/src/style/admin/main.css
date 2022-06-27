@@ -97,8 +97,7 @@ header > .right-navbar > .profile-box > p {
 .sidebar {
     position: absolute;
     z-index: 100;
-    float: left;
-    width: 15%;
+    width: 280px;
     background-color: #61c156;
     display: flex;
     flex-direction: column;
@@ -169,6 +168,12 @@ header > .right-navbar > .profile-box > p {
     visibility: hidden ;
 }
 
+main {
+    width: 96%;
+    float: right;
+    padding: 25px 15px;
+}
+
 /* 4K */
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
 
@@ -176,6 +181,10 @@ header > .right-navbar > .profile-box > p {
 
 /* Laptop L */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    main {
+        width: 94%;
+    }
+
     .product > .product-box > .head-bar-product > .create-product > a i {
         margin: auto 0 auto 25%;
     }
@@ -213,6 +222,9 @@ header > .right-navbar > .profile-box > p {
     }
 
     /* Main */
+    main {
+        width: 92%;
+    }
 
     .peformance > .income-box > .income-box-preview > .income-title,
     .peformance > .status-box > .status-box-preview > .status-detail > .status-detail-title ,
@@ -344,6 +356,10 @@ header > .right-navbar > .profile-box > p {
     }
 
     /* main */
+    main {
+        width: 90%;
+    }
+
     .peformance > .income-box > .income-box-preview > .income-detail {
         margin: 15px auto;
         font-size: 24px;
@@ -645,10 +661,6 @@ header > .right-navbar > .profile-box > p {
     .banner {
         width: 80%;
         margin-top: 50px;
-    }
-
-    .peformance {
-        padding-top: 10px;
     }
 
     .peformance > .income-box {

@@ -1,15 +1,3 @@
-.sidebar.close ~ .customerlist {
-    left: 78px;
-    height: 100%;
-    width: calc(100% - 78px);
-}
-
-.customerlist {
-    width: 85%;
-    float: right;
-    padding: 25px 15px;
-}
-
 .customerlist > .customerlist-box {
     box-shadow: 0 3px 7px 0 grey;
     border-radius: 10px;
