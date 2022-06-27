@@ -205,10 +205,20 @@ main {
     .banner > .banner-list-box > .body-banner-list {
         height: 46vh;
     }
+
+    .login-box {
+        left: 38%;
+        top: 35%;
+    }
 }
 
 /* Laptop */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .login-box {
+        left: 33%;
+        top: 35%;
+    }
+
     /* header */
     header > .left-navbar {
         width: 80%;
@@ -329,6 +339,11 @@ main {
 
 /* Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px)  {
+    .login-box {
+        left: 27%;
+        top: 30%;
+    }
+
     /* header */
     header > .left-navbar {
         width: 70%;
@@ -566,6 +581,11 @@ main {
 
     header {
         position: fixed;
+    }
+
+    .login-box {
+        left: 10%;
+        top: 30%;
     }
 
     /* header */
@@ -1026,6 +1046,11 @@ main {
 @media screen and (max-width: 375px) {
     body {
         overflow-y: auto;
+    }
+
+    .login-box {
+        left: 3.5%;
+        top: 25%;
     }
 
     /* header */

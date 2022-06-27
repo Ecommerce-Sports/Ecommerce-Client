@@ -3,14 +3,11 @@
     max-height: 300px;
     box-shadow: 0 4px 8px 0 grey;
     border-radius: 10px;
-    margin: 10px;
     text-align: center;
     padding-top: 10px;
     position: absolute;
-    margin-top: -100px;
-    margin-left: -200px;
-    left: 50%;
-    top: 50%;
+    left: 40%;
+    top: 35%;
 }
 
 .login-box > .title-box{
