@@ -78,7 +78,8 @@ header > .header-category > .category-toggle .dropdown-content {
     background-color: white;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 3px 5px 0 grey;
-    height: 320px;
+    min-height: auto;
+    max-height: 320px;
     width: 140px;
     margin-top: -2px;
     overflow-x: hidden;

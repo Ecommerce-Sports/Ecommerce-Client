@@ -23,7 +23,6 @@ const Header = () => {
             <img className="navbar-logo" src="/assets/tokopaedi-text.png" alt="tokopaedi-text" />
         </div>
         <div className="right-navbar">
-            <i className="fa-regular fa-bell"></i>
             <div className="profile-box">
                 <i className="fa-solid fa-circle" style={{ color: "#61c156" }}></i>
                 <p>Admin</p>

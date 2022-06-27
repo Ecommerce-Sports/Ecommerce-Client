@@ -7,7 +7,7 @@
 .customerlist {
     width: 85%;
     float: right;
-    padding: 30px 30px 0 30px;
+    padding: 25px 15px;
 }
 
 .customerlist > .customerlist-box {

@@ -68,7 +68,7 @@ const Product = () => {
                     <thead>
                         <tr>
                             <td>NO.</td>
-                            <td>IMAGE</td>
+                            <td className='img'>IMAGE</td>
                             <td>NAME</td>
                             <td>CATEGORY</td>
                             <td>ACTION</td>
@@ -79,7 +79,7 @@ const Product = () => {
                             return (
                                 <tr key={e.id}>
                                     <td>{idx + 1}</td>
-                                    <td><img src={e.gambar_produk} alt="Product" /></td>
+                                    <td className='img'><img src={e.gambar_produk} alt="Product" /></td>
                                     <td>{e.nama_produk}</td>
                                     <td>{e.kategori_produk}</td>
                                     <td>

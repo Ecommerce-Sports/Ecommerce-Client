@@ -31,15 +31,15 @@ const PerformancePage = () => {
         <main className="peformance">
             <div className="income-box">
                 <div className="income-box-preview">
-                    <p className="income-title">MONTHLY REVENUE - BULAN</p>
+                    <p className="income-title">MONTHLY INCOME - <span id='monthIncome'>JAN</span></p>
                     <p className="income-detail">Rp <span id=''>0</span></p>
                 </div>
                 <div className="income-box-preview">
-                    <p className="income-title">MONTHLY REVENUE - BULAN</p>
+                    <p className="income-title">ANNUAL INCOME - <span id='yearIncome'>2022</span></p>
                     <p className="income-detail">Rp <span id=''>0</span></p>
                 </div>
                 <div className="income-box-preview">
-                    <p className="income-title">MONTHLY REVENUE - BULAN</p>
+                    <p className="income-title">TOTAL INCOME</p>
                     <p className="income-detail">Rp <span id=''>0</span></p>
                 </div>
             </div>
