@@ -118,7 +118,7 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar > .menu-bar > .menu > .menu-link > .nav-link > a {
     text-decoration: none;
-    color: #61c156;
+    color: #4f9e4f;
     font-size: 24px;
     align-items: center;
     display: flex;
@@ -140,7 +140,7 @@ header > .right-navbar > .profile-box > p {
 
 .sidebar > .bottom-content > li > a {
     text-decoration: none;
-    color: #61c156;
+    color: #4f9e4f;
     font-size: 24px;
     align-items: center;
     display: flex;
@@ -191,11 +191,7 @@ main {
     }
 
     .peformance > .recent-order-box {
-        height: 430px;
-    }
-    
-    .product > .product-box > .body-list-product {
-        max-height: 680px;
+        height: 400px;
     }
 
     .category > .add-category-box > .body-category-create > form {
@@ -238,11 +234,7 @@ main {
     }
 
     .peformance > .recent-order-box {
-        height: 400px;
-    }
-
-    .product > .product-box > .body-list-product {
-        max-height: 650px;
+        height: 370px;
     }
 
     .product > .product-box > .head-bar-product > .head-bar-title {
@@ -337,10 +329,6 @@ main {
 
 /* Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px)  {
-    body {
-        overflow-y: auto;
-    }
-
     /* header */
     header > .left-navbar {
         width: 70%;
@@ -349,20 +337,13 @@ main {
     header > .right-navbar {
         width: 30%;
     }
-
-    /* sidebar */
-
-    .sidebar > .menu-bar {
-        height: 95%;
-    }
-
+    
     /* main */
     main {
         width: 90%;
     }
 
     .peformance > .income-box > .income-box-preview > .income-detail {
-        margin: 15px auto;
         font-size: 24px;
     }
 
@@ -383,7 +364,7 @@ main {
     }
 
     .peformance > .recent-order-box {
-        height: 380px;
+        height: 330px;
     }
 
     .peformance > .status-box > .status-box-preview > i {
