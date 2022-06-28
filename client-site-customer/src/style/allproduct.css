@@ -70,3 +70,44 @@
 .all-product-ready-page > .product > .product-more {
     text-align: center;
 }
+
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .all-product-ready-page > .product > .product-list {
+        grid-template-columns: auto auto;
+    }
+    
+}
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .all-product-ready-page > .product > .product-list {
+        grid-template-columns: auto;
+    }
+    .all-product-page > .all-product-category > .product-selected-box .category-box {
+        width: 50vw;
+        height: 30vh;
+    }
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .all-product-ready-page > .product > .product-list {
+        grid-template-columns: auto;
+    }
+    .all-product-page > .all-product-category > .product-selected-box .category-box {
+        width: 50vw;
+        height: 30vh;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .all-product-ready-page > .product > .product-list {
+        grid-template-columns: auto;
+    }
+    .all-product-page > .all-product-category > .product-selected-box .category-box {
+        width: 40vw;
+        height: 25vh;
+    }
+}
