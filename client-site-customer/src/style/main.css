@@ -1543,7 +1543,6 @@ footer > p {
 
     /* Footer */
     footer > .footer-list {
-        flex-direction: column-reverse;
         padding-bottom: 0;
     }
 
@@ -1564,7 +1563,7 @@ footer > p {
     }
 
     footer > .footer-list > .footer-logo img {
-        width: 150px;
+        width: 100px;
     }
 
     /* Main */
@@ -1998,7 +1997,7 @@ footer > p {
     }
 
     footer > .footer-list > .footer-logo img {
-        width: 150px;
+        width: 100px;
     }
 
     /* Side Nav */
@@ -2442,7 +2441,7 @@ footer > p {
     }
 
     footer > .footer-list > .footer-logo img {
-        width: 150px;
+        width: 100px;
     }
 
     /* Main */
