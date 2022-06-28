@@ -63,10 +63,10 @@ const OrderList = () => {
                   <span id="status">Menunggu Pembayaran</span>
                 </p>
                 <p>
-                  <span id="">17 Jun 2022</span>
+                  <span id="date">17 Jun 2022</span>
                 </p>
                 <p>
-                  <span id="">INV-ABCDEF123G</span>
+                  <span id="invoice">INV-ABCDEF123G</span>
                 </p>
               </div>
               <div className="order-product">
@@ -117,10 +117,10 @@ const OrderList = () => {
                   <span id="status">Pesanan Diproses</span>
                 </p>
                 <p>
-                  <span id="">17 Jun 2022</span>
+                  <span id="date">17 Jun 2022</span>
                 </p>
                 <p>
-                  <span id="">INV-ABCDEF123G</span>
+                  <span id="invoice">INV-ABCDEF123G</span>
                 </p>
               </div>
               <div className="order-product">
@@ -171,10 +171,10 @@ const OrderList = () => {
                   <span id="status">Pesanan Dikirim</span>
                 </p>
                 <p>
-                  <span id="">17 Jun 2022</span>
+                  <span id="date">17 Jun 2022</span>
                 </p>
                 <p>
-                  <span id="">INV-ABCDEF123G</span>
+                  <span id="invoice">INV-ABCDEF123G</span>
                 </p>
               </div>
               <div className="order-product">
@@ -225,10 +225,10 @@ const OrderList = () => {
                   <span id="status">Pesanan Telah Sampai</span>
                 </p>
                 <p>
-                  <span id="">17 Jun 2022</span>
+                  <span id="date">17 Jun 2022</span>
                 </p>
                 <p>
-                  <span id="">INV-ABCDEF123G</span>
+                  <span id="invoice">INV-ABCDEF123G</span>
                 </p>
               </div>
               <div className="order-product">

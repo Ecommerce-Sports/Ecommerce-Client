@@ -731,6 +731,40 @@ footer > p {
     .product-category-page > .product-category > .product-category-list {
         grid-template-columns: auto auto auto auto auto;
     }
+
+    /* Order Page */
+    .orderlist-page {
+        padding: 0 6vw;
+        margin: 2vh 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status i,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        margin: 0 5px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        font-size: 14px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action {
+        position: absolute;
+        right: 7vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button {
+        margin: 0 4px;
+    }
 }
 
 /* Laptop */
@@ -988,6 +1022,40 @@ footer > p {
 
     .product-category-page > .product-category > .product-category-list {
         grid-template-columns: auto auto auto auto;
+    }
+
+    /* Order Page */
+    .orderlist-page {
+        padding: 0 4vw;
+        margin: 2vh 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status i,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        margin: 0 5px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        font-size: 14px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action {
+        position: absolute;
+        right: 6vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button {
+        margin: 0 4px;
     }
 }
 
@@ -1368,6 +1436,43 @@ footer > p {
 
     .product-category-page > .product-category > .product-category-list {
         grid-template-columns: auto auto auto;
+    }
+
+    .orderlist-page {
+        padding: 0 4vw;
+        margin: 2vh 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status i,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        margin: 0 5px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        font-size: 12px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action {
+        position: absolute;
+        right: 6vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button {
+        margin: 0 4px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu > a > div > p {
+        padding-top: 10px;
     }
 }
 
@@ -1755,6 +1860,74 @@ footer > p {
     .product-category-page > .product-category > .product-category-list {
         grid-template-columns: auto auto auto;
     }
+
+    /* Order Page */
+    .orderlist-page {
+        padding: 0 4vw;
+        margin: 2vh 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu {
+        width: 391px;
+        overflow-x: auto;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu a{
+        min-width: 200px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status #status {
+        display: none;
+        width: 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status i,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        margin: 0 5px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        font-size: 12px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product {
+        flex-direction: column;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-detail {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product img {
+        height: 200px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-calculating {
+        border: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action a {
+        width: 100%;
+        margin: 2px 0;
+        text-align: center;
+    }
 }
 
 /* Mobile M */
@@ -2126,6 +2299,74 @@ footer > p {
     .product-category-page > .product-category > .product-category-list {
         grid-template-columns: auto auto;
     }
+
+    /* Order Page */
+    .orderlist-page {
+        padding: 0 4vw;
+        margin: 2vh 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu {
+        width: 345px;
+        overflow-x: auto;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu a{
+        min-width: 200px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status #status {
+        display: none;
+        width: 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status i,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        margin: 0 5px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        font-size: 12px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product {
+        flex-direction: column;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-detail {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product img {
+        height: 150px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-calculating {
+        border: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action a {
+        width: 100%;
+        margin: 2px 0;
+        text-align: center;
+    }
 }
 
 /* Mobile S */
@@ -2493,5 +2734,74 @@ footer > p {
 
     .product-category-page > .product-category > .product-category-list {
         grid-template-columns: auto auto;
+    }
+
+    /* Order Page */
+    .orderlist-page {
+        padding: 0 4vw;
+        margin: 2vh 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu {
+        width: 294px;
+        overflow-x: auto;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu a{
+        min-width: 294px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body {
+        padding: 10px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status #status,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status #invoice {
+        display: none;
+        width: 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status i,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        margin: 0 5px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-status p {
+        font-size: 12px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product {
+        flex-direction: column;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-detail {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product img {
+        height: 150px;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-calculating {
+        border: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button,
+    .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action a {
+        width: 100%;
+        margin: 2px 0;
+        text-align: center;
     }
 }
