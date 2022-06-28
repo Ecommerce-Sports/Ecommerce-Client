@@ -112,6 +112,19 @@
     width: 15%;
 }
 
+.detail-product-page > aside > .product-size > span select {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    border-color: grey;
+}
+
+.detail-product-page > aside > .product-size > span select option {
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .detail-product-page > aside > .product-size > div {
     display: flex;
     width: 85%;
@@ -119,60 +132,7 @@
     text-align: center;
 }
 
-.detail-product-page > aside > .product-size > div span {
-    width: 30px;
-    padding: 8px 0;
-    margin-right: 10px;
-    border-radius: 5px;
-    background-color: lightgrey;
-    font-size: 12px;
-    cursor: pointer;
-}
 
-.detail-product-page > aside > .product-size > div span:hover {
-    background-color: grey;
-    color: white;
-}
-
-.detail-product-page > aside > .product-size > div .or {
-    background-color: transparent;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 0;
-    cursor: default;
-}
-
-.detail-product-page > aside > .product-size > div .or:hover {
-    background-color: transparent;
-    color: black;
-}
-
-.detail-product-page > aside > .product-size > div .input {
-    background-color: transparent;
-    padding: 0;
-}
-
-.detail-product-page > aside > .product-size > div .input input {
-    width: 50px;
-    padding: 5px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: grey;
-    text-align: center;
-}
-
-.detail-product-page > aside > p {
-    margin-bottom: 2vh;
-    font-weight: 600;
-}
-
-.detail-product-page > aside > p #ready {
-    color: #61c156;
-}
-
-.detail-product-page > aside > p #notReady {
-    color: red;
-}
 
 .detail-product-page > aside > .product-choose {
     width: 100%;
@@ -202,7 +162,6 @@
 
 .detail-product-page > aside > .product-detail-action button {
     padding: 15px;
-    margin-right: 10px;
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
@@ -212,10 +171,15 @@
     background-color: #61c156;
     color: white;
     font-weight: 700;
-    padding: 15px 45px;
+    border-color: #61c156;
+    border-style: solid;
+    margin-right: 5px;
+    width: 60%;
 }
 
 .detail-product-page > aside > .product-detail-action .wishlist-button {
     background-color: whitesmoke;
     color: red;
+    border-color: #61c156;
+    border-style: solid;
 }
