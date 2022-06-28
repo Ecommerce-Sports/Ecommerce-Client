@@ -517,12 +517,26 @@ footer > p {
 /* Media Query */
 /* Device XXL Up */
 @media screen and (min-width: 1921px) {
-    
+    /* Login & Register */
+    .login-box {
+        margin: 30vh auto;
+    }
+
+    .register-page {
+        margin: 25vh auto;
+    }
 }
 
 /* Laptop XL / FHD */
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-    
+    /* Login & Register */
+    .login-box {
+        margin: 30vh auto;
+    }
+
+    .register-page {
+        margin: 15vh auto;
+    }
 }
 
 /* Laptop L */
@@ -692,6 +706,15 @@ footer > p {
 
     .detail-product-page > aside > .product-size > p {
         width: 20%;
+    }
+
+    /* Login & Register */
+    .login-box {
+        margin: 30vh auto;
+    }
+
+    .register-page {
+        margin: 15vh auto;
     }
 }
 
@@ -926,6 +949,15 @@ footer > p {
 
     .detail-product-page > .product-detail > .product-comment > .comment-box > .comment-user-description {
         width: 85%;
+    }
+
+    /* Login & Register */
+    .login-box {
+        margin: 30vh auto;
+    }
+
+    .register-page {
+        margin: 15vh auto;
     }
 }
 
@@ -1243,6 +1275,50 @@ footer > p {
 
     .product-footer {
         display: none;
+    }
+
+    /* Login */
+    .login-box,
+    .register-page {
+        width: 100%;
+        max-height: 500px;
+        box-shadow: none;
+    }
+
+    .login-box > .logo-text {
+        margin: 25px 0;
+    }
+
+    .login-box > .form-login {
+        margin-top: 25px;
+    }
+
+    .login-box > .form-login .email,
+    .login-box > .form-login .password,
+    .login-box > .form-login > .login {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 60%;
+    }
+
+    .login-box > .form-login > .login,
+    .register-page .form-group button {
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    /* Register */
+    .register-page .form-group input {
+        padding: 10px;
+        width: 60%;
+    }
+
+    .register-page .form-group button {
+        width: 60%;
+    }
+
+    .register-page .form-group > p {
+        margin-left: 20%;
     }
 }
 
@@ -1572,6 +1648,45 @@ footer > p {
     .product-footer {
         display: none;
     }
+
+    /* Login */
+    .login-box,
+    .register-page {
+        width: 100%;
+        max-height: 500px;
+        box-shadow: none;
+    }
+
+    .login-box > .logo-text {
+        margin: 25px 0;
+    }
+
+    .login-box > .form-login {
+        margin-top: 25px;
+    }
+
+    .login-box > .form-login .email,
+    .login-box > .form-login .password,
+    .login-box > .form-login > .login {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .login-box > .form-login > .login,
+    .register-page .form-group button {
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    /* Register */
+    .register-page .form-group input {
+        padding: 10px;
+    }
+
+    .register-page .form-group > p {
+        margin-left: 10%;
+    }
 }
 
 /* Mobile M */
@@ -1888,6 +2003,45 @@ footer > p {
 
     .product-footer {
         display: none;
+    }
+
+    /* Login */
+    .login-box,
+    .register-page {
+        width: 100%;
+        max-height: 500px;
+        box-shadow: none;
+    }
+
+    .login-box > .logo-text {
+        margin: 25px 0;
+    }
+
+    .login-box > .form-login {
+        margin-top: 25px;
+    }
+
+    .login-box > .form-login .email,
+    .login-box > .form-login .password,
+    .login-box > .form-login > .login {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .login-box > .form-login > .login,
+    .register-page .form-group button {
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    /* Register */
+    .register-page .form-group input {
+        padding: 10px;
+    }
+
+    .register-page .form-group > p {
+        margin-left: 10%;
     }
 }
 
@@ -2206,5 +2360,40 @@ footer > p {
 
     .product-footer {
         display: none;
+    }
+
+    /* Login */
+    .login-box,
+    .register-page {
+        width: 100%;
+        max-height: 500px;
+        box-shadow: none;
+    }
+
+    .login-box > .logo-text {
+        margin: 25px 0;
+    }
+
+    .login-box > .form-login {
+        margin-top: 25px;
+    }
+
+    .login-box > .form-login .email,
+    .login-box > .form-login .password,
+    .login-box > .form-login > .login {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .login-box > .form-login > .login,
+    .register-page .form-group button {
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    /* Register */
+    .register-page .form-group input {
+        padding: 10px;
     }
 }

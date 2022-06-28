@@ -45,7 +45,7 @@ const Login = () => {
               required
             />
           </div>
-          <button className="login">Login</button>
+          <button className="login">Masuk</button>
         </form>
       </main>
     </>
