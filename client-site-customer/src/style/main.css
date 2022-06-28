@@ -525,6 +525,16 @@ footer > p {
     .register-page {
         margin: 25vh auto;
     }
+
+    /* Setting */
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 30%;
+        padding: 15px 0;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        float: left;
+    }
 }
 
 /* Laptop XL / FHD */
@@ -536,6 +546,16 @@ footer > p {
 
     .register-page {
         margin: 15vh auto;
+    }
+
+    /* Setting */
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 30%;
+        padding: 15px 0;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        float: left;
     }
 }
 
@@ -764,6 +784,16 @@ footer > p {
 
     .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button {
         margin: 0 4px;
+    }
+
+    /* Setting */
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 30%;
+        padding: 15px 0;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        float: left;
     }
 }
 
@@ -1056,6 +1086,128 @@ footer > p {
 
     .orderlist-page > .orderlist-box > .orderlist-body > .order-box > .order-product .order-total .order-action button {
         margin: 0 4px;
+    }
+
+    /* Setting */
+    .setting-page {
+        padding: 0 10vw;
+        margin: 2vh 0;
+    }
+
+    .setting-page > .setting-box > .setting-body {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 30%;
+        padding: 15px 0;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left {
+        width: 40%;
+        padding: 0 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box img {
+        width: 90%;
+        height: 250px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box button {
+        width: 90%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right {
+        width: 60%;
+        padding: 10px 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right h4 {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        width: 30%;
+        font-size: 16px;
+        float: left;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right span {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 30%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 22px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        align-items: center;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        width: 50%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image {
+        width: 25%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image img {
+        width: 90%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        width: 70%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .email {
+        width: 30%;
+        text-align: right;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title i,
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        margin: 0 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        width: 90%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list input {
+        width: 10%;
     }
 }
 
@@ -1473,6 +1625,147 @@ footer > p {
 
     .orderlist-page > .orderlist-box > .orderlist-head > .orderlist-menu > a > div > p {
         padding-top: 10px;
+    }
+
+    /* Setting */
+    .setting-page {
+        padding: 0 7vw;
+        margin: 2vh 0;
+    }
+
+    .setting-page > .setting-box > .setting-body {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box p {
+        display: none;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left {
+        width: 100%;
+        padding: 0 2px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box img {
+        width: 40%;
+        height: 250px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box button {
+        width: 40%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right h4 {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        width: 30%;
+        font-size: 16px;
+        float: left;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right span {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 100%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 22px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        align-items: center;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        width: 50%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image {
+        width: 25%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image img {
+        width: 90%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        width: 70%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .email {
+        width: 30%;
+        text-align: right;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title i,
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        margin: 0 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        width: 85%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list input {
+        width: 15%;
     }
 }
 
@@ -1927,6 +2220,142 @@ footer > p {
         margin: 2px 0;
         text-align: center;
     }
+
+    /* Setting */
+    .setting-page {
+        padding: 0 5vw;
+        margin: 2vh 0;
+    }
+
+    .setting-page > .setting-box > .setting-body {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box p {
+        display: none;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left {
+        width: 100%;
+        padding: 0 2px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box img {
+        width: 80%;
+        height: 250px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box button {
+        width: 80%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right h4 {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right span {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 100%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 22px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        align-items: center;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        width: 50%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image {
+        width: 25%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image img {
+        width: 90%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        width: 70%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        font-size: 16px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .email {
+        width: 30%;
+        text-align: right;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title i,
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        margin: 0 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        width: 80%;
+    }
 }
 
 /* Mobile M */
@@ -2366,6 +2795,134 @@ footer > p {
         margin: 2px 0;
         text-align: center;
     }
+
+    /* Setting */
+    .setting-page {
+        padding: 0 5vw;
+        margin: 2vh 0;
+    }
+
+    .setting-page > .setting-box > .setting-body {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box p {
+        display: none;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left {
+        width: 100%;
+        padding: 0 2px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box img {
+        height: 250px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right h4 {
+        font-size: 19px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right span {
+        font-size: 13px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 100%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 15px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 21px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 19px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+        font-size: 15px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action {
+        width: 100%;
+        margin: 0;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action {
+        margin-top: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        font-size: 15px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        width: 70%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        font-size: 15px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .email {
+        width: 30%;
+        text-align: right;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title i,
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        margin: 0 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        width: 80%;
+    }
 }
 
 /* Mobile S */
@@ -2802,5 +3359,133 @@ footer > p {
         width: 100%;
         margin: 2px 0;
         text-align: center;
+    }
+
+    /* Setting */
+    .setting-page {
+        padding: 0 5vw;
+        margin: 2vh 0;
+    }
+
+    .setting-page > .setting-box > .setting-body {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box i {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .setting-page > .setting-box > .setting-head > a > .menu-box p {
+        display: none;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left {
+        width: 100%;
+        padding: 0 2px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-left > .biodata-image-box img {
+        height: 200px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right h4 {
+        font-size: 18px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right span {
+        font-size: 12px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 100%;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box {
+        padding: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 20px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 18px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        flex-direction: column;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-image,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description,
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action {
+        width: 100%;
+        margin: 0;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action {
+        margin-top: 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-description {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        width: 70%;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        font-size: 14px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .email {
+        width: 30%;
+        text-align: right;
+        margin: 0 5px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title i,
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        margin: 0 10px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        width: 75%;
     }
 }

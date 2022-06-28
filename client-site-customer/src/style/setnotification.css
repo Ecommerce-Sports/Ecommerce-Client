@@ -3,17 +3,12 @@
     height: 100%;
 }
 
-.setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title {
-    height: 10%;
-}
-
 .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title p {
     margin: 10px 0;
     color: grey;
 }
 
 .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body {
-    height: 90%;
     width: 100%;
 }
 
