@@ -74,3 +74,119 @@
     font-weight: 700;
     border-radius: 7px;
 }
+
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .setting-page > .setting-box > .setting-body > .setting-payment {
+        width: 93vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 30px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+       font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action a button {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action  {
+        width: 30%;
+    }
+}
+
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .setting-page > .setting-box > .setting-body > .setting-payment {
+        width: 53vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+       font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action a button {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 70px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action  {
+        width: 30%;
+    }
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .setting-page > .setting-box > .setting-body > .setting-payment {
+        width: 47vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 20px;
+     }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+       font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+        width: 30%;
+        height: 5px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action a button {
+        height: 30px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+        margin-top: 70px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action  {
+        width: 30%;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .setting-page > .setting-box > .setting-body > .setting-payment {
+        width: 42vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title h2 {
+        font-size: 18px;
+     }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-title li {
+       font-size: 8px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action {
+        width: 30%;
+        height: 5px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-title-box > .payment-action a button {
+        height: 25px;
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box {
+        display: flex;
+        width: 100%;
+        font-size: 8px;
+        margin-top: 70px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-payment > .payment-list-box > .payment-box > .payment-action  {
+        width: 30%;
+    }
+}

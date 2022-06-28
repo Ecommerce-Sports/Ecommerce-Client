@@ -60,3 +60,67 @@
     width: 100%;
     height: 94%;
 }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .setting-page > .setting-box > .setting-head {
+        height: 10%;
+    }
+    .setting-page > .setting-box > .setting-head > a > .menu-box p {
+        font-size: 15px;
+    }
+}
+
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .setting-page > .setting-box > .setting-head > a > .menu-box > p { 
+        display: none;
+    }
+    .setting-page {
+        padding: 0 9vw;
+    }
+    .setting-page > .setting-box {
+        height: 90vh;
+        width: 350px;
+        left: 5px;
+        border-radius: 0px;
+        float: none;
+    }
+    .setting-page > .setting-box > .setting-head {
+        display: flex;
+        height: 6%;
+    }
+    .setting-page > .setting-box > .setting-body {
+        height: 80vh;
+        width: 300px;
+    }
+   
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .setting-page > .setting-box > .setting-head > a > .menu-box > p { 
+        display: none;
+    }
+    .setting-page > .setting-box {
+        height: 80vh;
+        width: 300px;
+    }
+    .setting-page {
+        padding: 0 9vw;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .setting-page > .setting-box > .setting-head > a > .menu-box > p { 
+        display: none;
+    }
+    .setting-page > .setting-box {
+        height: 80vh;
+        width: 270px;
+    }
+    .setting-page {
+        padding: 0 8vw;
+    }
+}

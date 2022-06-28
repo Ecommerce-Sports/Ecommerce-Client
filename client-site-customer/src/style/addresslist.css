@@ -63,3 +63,96 @@
     text-decoration: none;
     color: #4f9e4f;
 }
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .setting-page > .setting-box > .setting-body > .setting-address {
+        width: 53vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 35%;
+        height: 25px;
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .property {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .status {
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 40px;
+        padding: 5px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 14px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box a {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .setting-page > .setting-box > .setting-body > .setting-address {
+        width: 45vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 40%;
+        height: 25px;
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .property {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .status {
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 40px;
+        padding: 5px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 14px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box a {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .setting-page > .setting-box > .setting-body > .setting-address {
+        width: 40vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
+        width: 50%;
+        height: 25px;
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box p {
+        font-size: 8px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .property {
+        font-size: 8px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .status {
+        font-size: 8px;
+        font-weight: 600;
+        margin-left: 40px;
+        padding: 5px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box .customer-name {
+        font-size: 12px;
+    }
+    .setting-page > .setting-box > .setting-body > .setting-address > .address-list > .address-box a {
+        font-size: 8px;
+        font-weight: 700;
+    }
+}

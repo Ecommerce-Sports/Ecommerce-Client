@@ -66,3 +66,113 @@
     width: 18px;
     height: 18px;
 }
+
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+}
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .setting-page > .setting-box > .setting-body > .setnotification-page {
+        width: 52vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title h2 {
+        font-size: 18px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title p {
+        font-size: 12px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body {
+        margin-top: 20px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        font-size: 12px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title p {
+        width: 50%;
+        font-size: 12px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list {
+        padding: 8px 0;
+    }
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .setting-page > .setting-box > .setting-body > .setnotification-page {
+        width: 42vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title h2 {
+        font-size: 18px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title p {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body {
+        margin-top: 16px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title p {
+        width: 50%;
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list {
+        padding: 8px 0;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list input {
+        width: 18px;
+        height: 12px;
+}
+
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .setting-page > .setting-box > .setting-body > .setnotification-page {
+        width: 38vh;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title h2 {
+        font-size: 18px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-title p {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body {
+        margin-top: 16px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title .transaction {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-title p {
+        width: 50%;
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-title {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list {
+        padding: 8px 0;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list p {
+        font-size: 10px;
+    }
+    .setting-page > .setting-box > .setting-body > .setnotification-page > .setnotification-body > .body-action > .body-action-list input {
+        width: 18px;
+        height: 12px;
+}
+}
