@@ -48,9 +48,7 @@ const DetailProduct = () => {
                   alt="user-profile"
                 />
                 <div className="comment-product-ratting">
-                  <span id="">4</span>
-                  <p> / 5</p>
-                  <i className="fa-solid fa-star"></i>
+                  <p><span id="">4</span> / 5 <i className="fa-solid fa-star"></i></p>
                 </div>
               </div>
               <div className="comment-user-description">
@@ -88,27 +86,23 @@ const DetailProduct = () => {
           </div>
         </div>
         <aside>
-          <h1 id="">SEPATU FORUM LOW</h1>
+          <h1 id="">SEPATU FORUM LOW - WHITE</h1>
           <h2 id="">Rp. 2.999.000</h2>
           <div className="product-size">
             <p>size :</p>
-            <div className="product-size-choose">
-              <span id="">S</span>
-              <span id="">M</span>
-              <span id="">L</span>
-              <span id="">XL</span>
-              <span className="or">/</span>
-              <span className="input">
-                <input type="text" name="product-size-choose" id="" />
-              </span>
-            </div>
-          </div>
-          <p>
-            <span id="notReady" hidden>
-              Tidak Tersedia
+            <span className="input">
+              <select name="size" id="size">
+                <option value="">Pilih ukuran</option>
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="m">M</option>
+              </select>
             </span>
-            <span id="ready">Tersedia</span>
-          </p>
+          </div>
           <div className="product-choose">
             <p>Jumlah :</p>
             <div className="product-detail-choose">
@@ -124,7 +118,7 @@ const DetailProduct = () => {
           <div className="product-detail-action">
             <Link to="/cart">
               <button className="addtocart-button">
-                Masukkan ke keranjang
+              <i class="fa-solid fa-plus"></i> keranjang
               </button>
             </Link>
             <a href="/src/page/product/wishlist-page.html">
@@ -135,7 +129,9 @@ const DetailProduct = () => {
           </div>
         </aside>
       </main>
-      <Footer />
+      <div className="product-footer">
+        <Footer />
+      </div>
     </>
   );
 };

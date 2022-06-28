@@ -1,7 +1,8 @@
 .orderlist-page {
+    width: 100%;
     padding: 0 13vw;
     min-height: 58.6vh;
-    margin-top: 3vh;
+    margin: 3vh 0;
 }
 
 .orderlist-page > .orderlist-box {

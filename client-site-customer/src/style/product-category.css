@@ -1,9 +1,10 @@
 @import url(product-card.css);
 
 .product-category-page {
-    width: 74vw;
+    width: 100%;
     height: 100%;
-    margin: 3vh 13vw;
+    margin: 3vh 0;
+    padding: 0 13vw;
 }
 
 .product-category-page > .product-category > .product-category-title {

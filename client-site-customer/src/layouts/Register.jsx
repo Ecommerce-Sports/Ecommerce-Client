@@ -11,7 +11,7 @@ const Register = () => {
                     <p>Masuk</p>
                 </div>
             </Link>
-            <a href="register-page.html">
+            <a href="/register">
                 <div className="regist">
                     <p>Daftar</p>
                 </div>

@@ -137,7 +137,7 @@ const Home = () => {
                   />
                 </div>
                 <div className="contentBx">
-                  <h2>Nike Shoes</h2>
+                  <h2>Nike Air Jordan</h2>
                   <div className="price">
                     <h2>Rp 399.000</h2>
                   </div>
