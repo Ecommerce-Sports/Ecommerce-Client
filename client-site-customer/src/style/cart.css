@@ -158,3 +158,219 @@
     background-color: white;
     color: #61c156;
 }
+/* 4K */
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    .cart-page{
+        margin-left: -100px;
+    }
+    .cart-page > .cart-box {
+        width: 65%;
+    }
+    .cart-page > .cost-box{
+        width: 35%;;
+    }
+
+}
+
+/* Laptop L */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .cart-page{
+        margin-left: -100px;
+    }
+    .cart-page > .cart-box {
+        width: 65%;
+    }
+    .cart-page > .cost-box{
+        width: 35%;;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cart-page{
+        margin-left: -100px;
+    }
+    .cart-page > .cart-box {
+        width: 65%;
+    }
+    .cart-page > .cost-box{
+        width: 35%;;
+    }
+
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list h3{
+      padding-right: 0px;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .cart-page {
+        display: flex;
+        padding: 0 13vw;
+        min-height: 58.6vh;
+        margin: 3vh -10vw;
+    }    
+    .cart-page > .cart-box {
+        width: 75%;
+    }
+    .cart-page > .cart-box > .cart-title > h2,
+    .cart-page > .cart-box > .cart-title > .cart-selectall p,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > a > h3,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > p
+    {
+        font-size: 16px;
+    }
+    .cart-page > .cost-box > .cost-list > .product-list > .product-name,
+    .cart-page > .cost-box > .cost-total > .total,
+    .cart-page > .cost-box > .cost-list > .product-list > .product-cost,
+    .cart-page > .cost-box > .cost-total > .payment,
+    .cart-page > .cost-box > .cost-title > h3{
+        font-size: 12px;
+    }        
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list{
+        margin-right: -20px;
+    }
+}
+
+/* Mobile L */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .cart-page{
+        height: auto;
+        flex-direction: column;  
+        width: 100%;      
+        padding: 0 4vw;
+    }   
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list {
+        display: flex;
+        width: 100%;
+    }
+    .cart-page > .cart-box > hr {
+        margin: 10px 0;
+        width: 130%;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > a > h3,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > p{
+        font-size: 12px;    
+        width: 100%;    
+        margin: 0 100px 0 0;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list     
+    {
+        width: 50%;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-image-list img{
+        width: 70px;
+    } 
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list{
+       margin: 70px 3px 0px -140px;
+    }   
+    .cart-page > .cost-box{
+        width: 100%;
+        margin-left: 5px;        
+        margin-right: 5px;
+        margin-top: 20px; 
+        font-size: 12px;   
+    }
+    .cart-page > .cart-box > .cart-title > h2,
+    .cart-page > .cart-box > .cart-title > .cart-selectall p
+    {
+        font-size: 16px;
+    }
+
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .cart-page{
+        height: auto;
+        flex-direction: column;  
+        width: 100%;      
+        padding: 0 4vw;
+    }   
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list {
+        display: flex;
+        width: 100%;
+    }
+    .cart-page > .cart-box > hr {
+        margin: 10px 0;
+        width: 130%;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > a > h3,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > p{
+        font-size: 12px;    
+        width: 100%;    
+        margin: 0 100px 0 0;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list     
+    {
+        width: 50%;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-image-list img{
+        width: 70px;
+    } 
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list{
+       margin: 70px 3px 0px -140px;
+    }   
+    .cart-page > .cost-box{
+        width: 100%;
+        margin-left: 5px;        
+        margin-right: 5px;
+        margin-top: 20px; 
+        font-size: 12px;   
+    }
+    .cart-page > .cart-box > .cart-title > h2,
+    .cart-page > .cart-box > .cart-title > .cart-selectall p
+    {
+        font-size: 16px;
+    }
+
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .cart-page{
+        height: auto;
+        flex-direction: column;  
+        width: 100%;      
+        padding: 0 4vw;
+    }   
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list {
+        display: flex;
+        width: 100%;
+    }
+    .cart-page > .cart-box > hr {
+        margin: 10px 0;
+        width: 130%;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > a > h3,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list > p{
+        font-size: 12px;    
+        width: 100%;    
+        margin: 0 100px 0 0;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-detail-list,
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list     
+    {
+        width: 50%;
+    }
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-image-list img{
+        width: 70px;
+    } 
+    .cart-page > .cart-box > .cart-list > .product-list-box > .product-action-list{
+       margin: 70px 3px 0px -140px;
+    }   
+    .cart-page > .cost-box{
+        width: 100%;
+        margin-left: 5px;        
+        margin-right: 5px;
+        margin-top: 20px; 
+        font-size: 12px;   
+    }
+    .cart-page > .cart-box > .cart-title > h2,
+    .cart-page > .cart-box > .cart-title > .cart-selectall p
+    {
+        font-size: 16px;
+    }
+
+}
