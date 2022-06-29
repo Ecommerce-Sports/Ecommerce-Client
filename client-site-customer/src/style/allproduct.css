@@ -3,11 +3,7 @@
 .all-product-page {
     width: 100%;
     height: 100%;
-}
-
-.all-product-page > .all-product-category {
-    margin: 3vh 13vw;
-    padding: 0 1vw;
+    padding: 3vh 13vw;
 }
 
 .all-product-page > .all-product-category > .category-title {
@@ -37,15 +33,20 @@
 
 .all-product-page > .all-product-category > .product-selected-box > .product-box {
     width: 100%;
-    margin-left: -50px;
+    margin-left: -80px;
     display: flex;
     overflow: auto;
+    padding: 10px 0;
+}
+
+.all-product-page > .all-product-category > .product-selected-box > .product-box .product-card {
+    margin: 5px 11px;
 }
 
 .all-product-ready-page {
-    width: 74vw;
+    width: 100%;
     height: 100%;
-    margin: 3vh 13vw;
+    padding: 3vh 13vw;
 }
 
 .all-product-ready-page > .product > .product-title {

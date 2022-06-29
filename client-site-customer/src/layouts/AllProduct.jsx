@@ -14,7 +14,7 @@ const AllProduct = () => {
     <>
       <Header />
       <SideNav />
-      <main className="all-product-page" onClick="closeNav()">
+      <main className="all-product-page" onClick={closeNav}>
         <div className="all-product-category">
           <p className="category-title">Sepakbola</p>
           <div className="product-selected-box">
