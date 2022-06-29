@@ -1,7 +1,6 @@
 .wishlist-page {
-    padding: 0 13vw;
-    min-height: 58.6vh;
-    margin-top: 3vh;
+    padding: 3vh 13vw;
+    min-height: 60vh;
 }
 
 .wishlist-page > .wishlist-box {

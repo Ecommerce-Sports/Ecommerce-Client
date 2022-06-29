@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-list">
         <div className="about-team">
-          <h2>Tokopaedi</h2>
+          <Link to="/">
+            <h2>Tokopaedi</h2>
+          </Link>
           <div className="about-list">
             <a href="#">Tentang Kami</a>
             <a href="#">Team Developer</a>
