@@ -13,7 +13,9 @@ import {
   OrderList,
   Wishlist,
   Login,
-  Register
+  Register,
+  Checkout,
+  Payment
 } from "./layouts";
 import { Provider } from "react-redux";
 import store from './redux/store';
@@ -40,6 +42,8 @@ const App = () => {
             <Route path="/set-notification" element={<SetNotification />} />
             <Route path="/order-list" element={<OrderList />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         </div>
       </Router>

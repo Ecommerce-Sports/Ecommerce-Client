@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
+import "../style/main.css";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
