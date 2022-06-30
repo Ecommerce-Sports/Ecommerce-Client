@@ -23,7 +23,7 @@ const Payment = () => {
                     <input type="radio" name="payment-select" id="" value="" />
                 </div>
                 <div className="payment-box">
-                    <img src="/assets/properti/payment-list-1.jpg" alt="payment-img" />
+                    <img src="/assets/properti/payment-list-2.jpg" alt="payment-img" />
                     <p>Direct Debit <span id="">BANK BCA</span></p>
                     <input type="radio" name="payment-select" id="" value="" />
                 </div>
