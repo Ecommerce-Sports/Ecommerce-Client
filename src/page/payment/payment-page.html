@@ -162,102 +162,44 @@
             </a>
         </div>
     </nav>
-    <main class="cart-page" onclick="closeNav()">
-        <div class="cart-box">
-            <div class="cart-title">
-                <h2>Keranjang</h2>
-                <div class="cart-selectall">
-                    <input type="checkbox" onclick="toggle(this)" id=""/>
-                    <p>Pilih semua</p>
+    <main class="payment-page">
+        <div class="payment-title">
+            <h2>Pembayaran</h2>
+            <button class="back" onclick="window.history.go(-1); return false;"><i class="fa-solid fa-arrow-left-long"></i><p>kembali</p></button>
+        </div>
+        <div class="select-payment">
+            <h4>Metode Pembayaran</h4>
+            <div class="payment-list">
+                <div class="payment-box">
+                    <img src="/src/img/properti/payment-list-1.jpg" alt="payment-img">
+                    <p>Direct Debit <span id="">BANK BRI</span></p>
+                    <input type="radio" name="payment-select" id="" value="">
                 </div>
-            </div>
-            <hr>
-            <div class="cart-list">
-                <div class="product-list-box">
-                    <input type="checkbox" name="foo" value="list1" id="">
-                    <div class="product-image-list">
-                        <img src="/src/img/properti/detail-image.jpg" alt="product-image-list">
-                    </div>
-                    <div class="product-detail-list">
-                        <a href="/src/page/product/detail-product-page.html"><h3 id="">Sepatu Forum Low</h3></a>
-                        <p id="">Rp. 399.000</p>
-                    </div>
-                    <div class="product-action-list">
-                        <i class="fa-solid fa-trash"></i>
-                        <p>|</p>
-                        <div class="product-action-add">
-                            <i class="fa-solid fa-minus"></i>
-                            <input type="text" name="product-action-add" id="">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-list-box">
-                    <input type="checkbox" name="foo" value="list1" id="">
-                    <div class="product-image-list">
-                        <img src="/src/img/properti/detail-image.jpg" alt="product-image-list">
-                    </div>
-                    <div class="product-detail-list">
-                        <a href="/src/page/product/detail-product-page.html"><h3 id="">Sepatu Forum Low</h3></a>
-                        <p id="">Rp. 399.000</p>
-                    </div>
-                    <div class="product-action-list">
-                        <i class="fa-solid fa-trash"></i>
-                        <p>|</p>
-                        <div class="product-action-add">
-                            <i class="fa-solid fa-minus"></i>
-                            <input type="text" name="product-action-add" id="">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-list-box">
-                    <input type="checkbox" name="foo" value="list1" id="">
-                    <div class="product-image-list">
-                        <img src="/src/img/properti/detail-image.jpg" alt="product-image-list">
-                    </div>
-                    <div class="product-detail-list">
-                        <a href="/src/page/product/detail-product-page.html"><h3 id="">Sepatu Forum Low</h3></a>
-                        <p id="">Rp. 399.000</p>
-                    </div>
-                    <div class="product-action-list">
-                        <i class="fa-solid fa-trash"></i>
-                        <p>|</p>
-                        <div class="product-action-add">
-                            <i class="fa-solid fa-minus"></i>
-                            <input type="text" name="product-action-add" id="">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                    </div>
+                <div class="payment-box">
+                    <img src="/src/img/properti/payment-list-2.jpg" alt="payment-img">
+                    <p>Direct Debit <span id="">BANK BCA</span></p>
+                    <input type="radio" name="payment-select" id="" value="">
                 </div>
             </div>
         </div>
-        <div class="cost-box">
-            <div class="cost-title">
-                <h3>Ringkasan Pemesanan</h3>
+        <hr>
+        <div class="detail-payment">
+            <h4>Ringkasan Pembayaran</h4>
+            <div class="total-product">
+                <p class="product"><span id="">2</span> barang</p>
+                <p class="payment">Rp. <span id="">798.000</span></p>
             </div>
-            <div class="cost-list">
-                <div class="product-list">
-                    <p class="product-name" id="">Nama barang (x<span id="">1</span>)</p>
-                    <p class="product-cost">Rp. 999.000</p>
-                </div>
-                <div class="product-list">
-                    <p class="product-name" id="">Nama barang (x<span id="">1</span>)</p>
-                    <p class="product-cost">Rp. 999.000</p>
-                </div>
-                <div class="product-list">
-                    <p class="product-name" id="">Nama barang (x<span id="">1</span>)</p>
-                    <p class="product-cost">Rp. 999.000</p>
-                </div>
+            <div class="total-courier">
+                <p class="courier" id="">JNE Express</p>
+                <p class="payment">Rp. <span id="">19.000</span></p>
             </div>
-            <hr>
-            <div class="cost-total">
-                <p class="total">Total</p>
-                <p class="payment">Rp. 999.000</p>
+        </div>
+        <div class="payment-action">
+            <div class="payment-total">
+                <p class="title">Total</p>
+                <p class="total-pay">Rp. <span id="">814.000</span></p>
             </div>
-            <div class="cost-action">
-                <a href="/src/page/payment/checkout-page.html"><button class="buy" id="">Beli</button></a>
-            </div>
+            <button class="pay" id=""><i class="fa-solid fa-shield"></i>Bayar</button>
         </div>
     </main>
     <footer>
