@@ -46,6 +46,40 @@ const Checkout = () => {
                     </div>
                 </div>
                 <div className="address-action">
+                <div className="address-loc">
+                        <div className="province">
+                            <p>Provinsi</p>
+                            <select>
+                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Provinsi --</option>
+                                <option value={"Jawa Barat"}>Jawa Barat</option>
+                                <option value={"Jawa Timur"}>Jawa Timur</option>
+                            </select>
+                        </div>
+                        <div className="city">
+                            <p>Kabupaten / Kota</p>
+                            <select>
+                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Kota --</option>
+                                <option value={"Bandung"}>Bandung</option>
+                                <option value={"Surabaya"}>Surabaya</option>
+                            </select>
+                        </div>
+                        <div className="districts">
+                            <p>Kecamatan</p>
+                            <select>
+                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Kecamatan --</option>
+                                <option value={"Sukolilo"}>Sukolilo</option>
+                                <option value={"Wonokromo"}>Wonokromo</option>
+                            </select>
+                        </div>
+                        <div className="village">
+                            <p>Desa / Kelurahan</p>
+                            <select>
+                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Kelurahan --</option>
+                                <option value={"Deketagung"}>Deketagung</option>
+                                <option value={"Gundih"}>Gundih</option>
+                            </select>
+                        </div>
+                    </div>
                     <button className="dropbtn" onclick="myFunction()">Pilih Alamat<i className="fa fa-caret-down"></i></button>
                       <div className="dropdown-content" id="myDropdown">
                         <a href="">
@@ -139,9 +173,8 @@ const Checkout = () => {
                 <p className="total">Total</p>
                 <p className="payment-total">Rp. <span id="">817.000</span></p>
             </div>
-            <a href="/src/page/payment/payment-page.html">
-                <button className="payment-btn"><i className="fa-solid fa-money-bill-wave"></i> Pilih Pembayaran</button>
-            </a>
+            <button className="payment-btn"><i className="fa-solid fa-money-bill-wave"></i> Pilih Pembayaran</button>
+            <button className="done-btn" style={{ cursor: "not-allowed", opacity: "50%" }} disabled>Selesai</button>
         </aside>
         </main>
         <Footer />
