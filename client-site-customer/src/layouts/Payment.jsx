@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
+import { useDispatch, useSelector } from 'react-redux';
+import { getOneUser } from '../redux/action';
+import { useNavigate } from 'react-router-dom';
 import "../style/main.css";
 
 const Payment = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const user = useSelector(state => state.user);
+    let email = localStorage.email;
+
+    useEffect(()=> {
+        dispatch(getOneUser(email, localStorage.token))
+    }, [])
+
   return (
     <>
         <Header />
@@ -33,18 +45,41 @@ const Payment = () => {
         <div className="detail-payment">
             <h4>Ringkasan Pembayaran</h4>
             <div className="total-product">
-                <p className="product"><span id="">2</span> barang</p>
-                <p className="payment">Rp. <span id="">798.000</span></p>
+                <p className="product"><span id="">{user && user.Carts[0].order ? user.Carts[0].order.length : 0}</span> barang</p>
+                <p className="payment">
+                    <span id="">
+                    {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                        return hargaAwal + hargaSekarang.total_harga
+                    }, 0)
+                    : 0}
+                    </span>
+                </p>
             </div>
             <div className="total-courier">
-                <p className="courier" id="">JNE Express</p>
-                <p className="payment">Rp. <span id="">19.000</span></p>
+                <p className="courier" id="">
+                    {sessionStorage.kurir}
+                </p>
+                <p className="payment">
+                    <span id="">
+                    {/* {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                            return hargaAwal + hargaSekarang.total_harga + sessionStorage.ongkir
+                        }, 0)
+                    : null} */}
+                    </span>
+                </p>
             </div>
         </div>
         <div className="payment-action">
             <div className="payment-total">
                 <p className="title">Total</p>
-                <p className="total-pay">Rp. <span id="">814.000</span></p>
+                <p className="total-pay">
+                    <span id="">
+                    {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                            return hargaAwal + hargaSekarang.total_harga + Number(sessionStorage.ongkir)
+                        }, 0)
+                    : null}
+                    </span>
+                </p>
             </div>
             <button className="pay" id=""><i className="fa-solid fa-shield"></i>Bayar</button>
         </div>

@@ -19,12 +19,12 @@ const SetNotification = () => {
                 <p>Biodata Diri</p>
               </div>
             </Link>
-            <Link to="/address-list">
+            {/* <Link to="/address-list">
               <div className="menu-box">
                 <i className="fa-solid fa-map-location-dot"></i>
                 <p>Daftar Alamat</p>
               </div>
-            </Link>
+            </Link> */}
             <Link to="/payment-setting">
               <div className="menu-box">
                 <i className="fa-solid fa-money-bill-wave"></i>
@@ -57,34 +57,34 @@ const SetNotification = () => {
                   </div>
                   <hr />
                   <div className="body-action-list">
-                    <p>Menunggu Pembayaran</p>
-                    <input type="checkbox" name="agree" id="" checked />
-                  </div>
-                  <hr />
-                  <div className="body-action-list">
                     <p>Menunggu Konfirmasi</p>
                     <input type="checkbox" name="agree" id="" checked />
                   </div>
                   <hr />
                   <div className="body-action-list">
+                    <p>Menunggu Pembayaran</p>
+                    <input type="checkbox" name="agree" id="" />
+                  </div>
+                  <hr />
+                  <div className="body-action-list">
                     <p>Pesanan Diproses</p>
-                    <input type="checkbox" name="agree" id="" checked />
+                    <input type="checkbox" name="agree" id="" />
                   </div>
                   <hr />
                   <div className="body-action-list">
                     <p>Pesanan Dikirim</p>
-                    <input type="checkbox" name="agree" id="" checked />
+                    <input type="checkbox" name="agree" id="" />
                   </div>
                   <hr />
                   <div className="body-action-list">
                     <p>Pesanan Tiba</p>
-                    <input type="checkbox" name="agree" id="" checked />
+                    <input type="checkbox" name="agree" id="" />
                   </div>
                   <hr />
-                  <div className="body-action-list">
+                  {/* <div className="body-action-list">
                     <p>Pengingat</p>
-                    <input type="checkbox" name="agree" id="" checked />
-                  </div>
+                    <input type="checkbox" name="agree" id=""  />
+                  </div> */}
                   <hr />
                 </div>
               </div>

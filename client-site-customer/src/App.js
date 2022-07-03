@@ -43,9 +43,9 @@ const App = () => {
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/edit-profile/:id" element={<EditProfilePopUp />} />
             <Route path="/detail-product/:id" element={<DetailProduct />} />
             <Route path="/category/:id" element={<Category />} />
-            <Route path="/editprofilepopup" element={<EditProfilePopUp />} />
           </Routes>
         </div>
       </Router>

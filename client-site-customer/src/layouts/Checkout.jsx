@@ -9,6 +9,7 @@ import "../style/main.css";
 import { formatRupiah } from '../utils/formatRupiah';
 
 const Checkout = () => {
+    const url = `http://localhost:3000`;
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const user = useSelector(state => state.user);
@@ -18,21 +19,38 @@ const Checkout = () => {
     })
     const [alamatAsal, setAlamatAsal] = useState({
         provinsi: null,
-        kota: null,
-        provinsiName: "",
-        kotaName: "",
+        kota: null
     })
     const [alamatTujuan, setAlamatTujuan] = useState({
         provinsi: null,
-        kota: null,
-        provinsiName: "",
-        kotaName: "",
+        kota: null
     })
-    const [ongkir, setOngkir] = useState(0)
-
-    const url = `http://localhost:3000`;
-
+    const [ongkir, setOngkir] = useState(0);
+    const [kurir, setKurir] = useState("");
+    const [pilihanKurir, setPilihanKurir] = useState([]);
+    const [disabled, setDisabled] = useState(true);
+    // const [disabledCourier, setDisabledCourier] = useState(true);
     let email = localStorage.email;
+
+    const handleCourier = (e) => {
+        setKurir(e.target.value);
+        fetch(`${url}/rajaongkir/ongkos/${alamatAsal.kota}/${alamatTujuan.kota}/20/${e.target.value}`)
+            .then(resp => resp.json())
+            .then((data) => {
+                console.log(data, `<<<<<< data`);
+                setPilihanKurir(data.rajaongkir.results.costs)
+            })
+    }
+
+    const handlePilihanCourier = () => {
+
+    }
+
+    const tpPagePayment = () => {
+        navigate("/payment")
+        sessionStorage.setItem('ongkir', ongkir)
+        sessionStorage.setItem('kurir', kurir)
+    }
 
     useEffect(() => {
         dispatch(getOneUser(email, localStorage.token));
@@ -63,8 +81,15 @@ const Checkout = () => {
             getKota();
         }
 
+        const handleDisabledCourier = () => {
+            if(alamatAsal.provinsi !== null && alamatAsal.kota !== null && alamatTujuan.provinsi !== null && alamatTujuan.kota !== null) {
+                setDisabled(false)
+            }
+        }
+
         getProvinsi();
-    }, [dispatch, alamatAsal.provinsi])
+        handleDisabledCourier();
+    }, [dispatch, alamatAsal.provinsi, alamatAsal.kota, alamatTujuan.provinsi, alamatTujuan.kota])
 
     console.log(user, `<<<<<, user`);
 
@@ -203,10 +228,25 @@ const Checkout = () => {
                     </div> */}
                 <div className='kurir-select'>
                     <p>Kurir</p>
-                    <select>
+                    <select disabled={disabled} value={kurir} onChange={handleCourier}>
                         <option>Pilih Kurir</option>
-                        <option>JNE Express</option>
-                        <option>JNT Reguller</option>
+                        <option value="jne">JNE</option>
+                        <option value="jnt">JNT</option>
+                        <option value="tiki">TIKI</option>
+                        <option value="pos">Pos Indonesia</option>
+                    </select>
+                    <p>Pilihan</p>
+                    <select onChange={handlePilihanCourier}>
+                        <option>Pilih Pilihan Paket</option>
+                        {pilihanKurir && pilihanKurir.length > 0
+                        ?
+                            pilihanKurir.map((e, idx) => {
+                                return (
+                                    <option key={idx} value="jne">{e.service}</option>
+                                )
+                            })
+                        : null
+                        }
                     </select>
                 </div>
                 </div>
@@ -214,13 +254,13 @@ const Checkout = () => {
             <hr />
             <div className="checkout-product">
                 <h4>Produk yang ingin dibeli</h4>
-                {user && user.Carts[0].order.length > 0
+                {user && user.Carts && user.Carts[0].order.length > 0
                 ?
                     user.Carts[0].order.map((e) => {
                         return (
                             <div key={e.id} className="product-box">
                                 <div className="product-image">
-                                    <img src={e.gambar_produk} alt="product-image" />
+                                    <img src={e.gambar_produk} alt="product" />
                                 </div>
                                 <div className="product-description">
                                     <p id="name">{e.nama_barang}</p>
@@ -267,17 +307,18 @@ const Checkout = () => {
         <aside className="payment-box">
             <h4>Ringkasan belanja</h4>
             <div className="total-product">
-                <p className="product"><span id="">{user.Carts[0].order.length}</span> barang</p>
+                <p className="product"><span id="">{user && user.Carts[0].order ? user.Carts[0].order.length : 0}</span> barang</p>
                 <p className="payment">
                     <span id="">
-                        {user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                        {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
                             return hargaAwal + hargaSekarang.total_harga
-                        }, 0)}
+                        }, 0)
+                        : 0}
                     </span>
                 </p>
             </div>
             <div className="total-courier">
-                <p className="courier" id="">JNE Express</p>
+                <p className="courier" id="">{kurir}</p>
                 <p className="payment">
                     <span id="">
                         {formatRupiah(ongkir)}
@@ -289,13 +330,14 @@ const Checkout = () => {
                 <p className="total">Total</p>
                 <p className="payment-total">
                     <span id="">
-                    {user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                    {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
                             return hargaAwal + hargaSekarang.total_harga + ongkir
-                        }, 0)}
+                        }, 0)
+                    : null}
                     </span>
                 </p>
             </div>
-            <button className="payment-btn"><i className="fa-solid fa-money-bill-wave"></i> Pilih Pembayaran</button>
+            <button onClick={tpPagePayment} className="payment-btn"><i className="fa-solid fa-money-bill-wave"></i> Pilih Pembayaran</button>
             <button className="done-btn" style={{ cursor: "not-allowed", opacity: "50%" }} disabled>Selesai</button>
         </aside>
         </main>

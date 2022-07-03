@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { getOneUser } from '../redux/action';
+import { useNavigate } from 'react-router-dom';
 import "../style/main.css";
 
 const EditProfile = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const user = useSelector(state => state.user);
+
+  let email = localStorage.email;
+
+  useEffect(()=> {
+    dispatch(getOneUser(email, localStorage.token))
+  }, [dispatch, email])
+
+  console.log(user, `<<<<< user`);
+
   return (
     <>
       <Header />
@@ -19,12 +34,12 @@ const EditProfile = () => {
                 <p>Biodata Diri</p>
               </div>
             </Link>
-            <Link to="/address-list">
+            {/* <Link to="/address-list">
               <div className="menu-box">
                 <i className="fa-solid fa-map-location-dot"></i>
                 <p>Daftar Alamat</p>
               </div>
-            </Link>
+            </Link> */}
             <Link to="/payment-setting">
               <div className="menu-box">
                 <i className="fa-solid fa-money-bill-wave"></i>
@@ -80,39 +95,39 @@ const EditProfile = () => {
                   <h4>Biodata Diri</h4>
                   <div className="list-body">
                     <p style={{ textDecoration: "none" }}>Nama</p>
-                    <span id="">Muhammad Alfin</span>
+                    <span id="">{user.nama_depan} {user.nama_belakang}</span>
                     <br />
                     <br />
                     <p>Tanggal Lahir</p>
-                    <span id="">32 Desember 1999</span>
+                    <span id="">{user.tanggal_lahir.slice(0, 10)}</span>
                     <br />
                     <br />
                     <p>Jenis Kelamin</p>
-                    <span id="">Laki-laki</span>
+                    <span id="">{user.jenis_kelamin}</span>
                   </div>
                 </div>
                 <div className="biodata-contact">
                   <h4>Kontak</h4>
                   <div className="list-body">
                     <p>Username</p>
-                    <span id="">finpangestu</span>
+                    <span id="">{user.username}</span>
                     <br />
                     <br />
                     <p>Email</p>
-                    <span id="">muhammadalfinpangestu@gmail.com</span>
+                    <span id="">{user.email}</span>
                     <br />
                     <br />
                     <p>Telepon</p>
-                    <span id="">085123456789</span>
+                    <span id="">{user.no_telepon}</span>
                   </div>
                 </div>
-                <div className="biodata-account">
+                {/* <div className="biodata-account">
                   <h4>Kata Sandi</h4>
                   <div className="list-body">
                     <p>Kata Sandi</p>
                     <span id="">***********</span>
                   </div>
-                </div>
+                </div> */}
                 <div className="biodata-career">
                   <h4>Karir</h4>
                   <div className="list-body">
@@ -120,12 +135,12 @@ const EditProfile = () => {
                     <span id="">3D Modelling</span>
                     <br />
                     <br />
-                    <p>Pendapatan</p>
-                    <span id="">Rp. 24.000.000</span> /bulan
+                    {/* <p>Pendapatan</p>
+                    <span id="">Rp. 24.000.000</span> /bulan */}
                   </div>
                 </div>
                 <div className="biodata-action">
-                  <button id="">Edit Profil</button>
+                  <button onClick={()=> navigate(`/edit-profile/${user.id}`)} id="">Edit Profil</button>
                 </div>
               </div>
             </div>

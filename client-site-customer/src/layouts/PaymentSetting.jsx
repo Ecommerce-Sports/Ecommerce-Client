@@ -19,12 +19,12 @@ const PaymentSetting = () => {
                 <p>Biodata Diri</p>
               </div>
             </Link>
-            <Link to="/address-list">
+            {/* <Link to="/address-list">
               <div className="menu-box">
                 <i className="fa-solid fa-map-location-dot"></i>
                 <p>Daftar Alamat</p>
               </div>
-            </Link>
+            </Link> */}
             <Link to="/payment-setting">
               <div className="menu-box">
                 <i className="fa-solid fa-money-bill-wave"></i>
