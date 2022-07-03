@@ -7,9 +7,11 @@ import { getOneCart, changeCart, deleteCart } from '../redux/action';
 // import { Link } from "react-router-dom";
 import "../style/main.css";
 import { formatRupiah } from "../utils/formatRupiah";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const cart = useSelector(state => state.cart);
   let email = localStorage.email;
 
@@ -23,8 +25,11 @@ const Cart = () => {
   }
 
   const handleDeleteProduct = (id) => {
-    console.log(id, `<<<<< id`);
     dispatch(deleteCart(cart.id, localStorage.token))
+  }
+
+  const toPageCheckout = () => {
+    navigate("/checkout")
   }
 
   useEffect(()=> {
@@ -108,19 +113,19 @@ const Cart = () => {
             <p className="total">Total</p>
             <p className="payment">
               {cart && Object.keys(cart).length > 0 
-              ? cart.order.reduce((e)=> {
-                return e.total_harga + e.total_harga
-              })
-              : null
+              ? cart.order.reduce((hargaAwal, hargaSekarang)=> {
+                return hargaAwal + hargaSekarang.total_harga
+              }, 0)
+              : 0
               }
             </p>
           </div>
           <div className="cost-action">
-            <a href="#">
-              <button className="buy" id="">
+            {/* <a href="#"> */}
+              <button onClick={toPageCheckout} className="buy" id="">
                 Beli
               </button>
-            </a>
+            {/* </a> */}
           </div>
         </div>
       </main>

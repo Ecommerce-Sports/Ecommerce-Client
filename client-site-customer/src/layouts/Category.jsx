@@ -4,14 +4,19 @@ import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
 import { useDispatch, useSelector } from 'react-redux';
 import { getOneCategory } from '../redux/action';
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { formatRupiah } from "../utils/formatRupiah";
 import "../style/main.css";
 
 const Category = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const category = useSelector(state => state.category);
   let {id} = useParams();
+
+  const toPageDetail = (id) => {
+    navigate(`/detail-product/${id}`)
+  }
 
   useEffect(() => {
     dispatch(getOneCategory(id, localStorage.token));
@@ -42,8 +47,8 @@ const Category = () => {
                       <div className="price">
                         <h2>{formatRupiah(e.harga_produk)}</h2>
                       </div>
-                      <a href="/src/page/product/detail-product-page.html">
-                        <button type="submit">Buy Now</button>
+                      <a>
+                        <button onClick={()=> toPageDetail(e.id)} type="submit">Buy Now</button>
                       </a>
                     </div>
                   </div>

@@ -116,7 +116,6 @@ import {
       try {
         const response = await api.post("cart", payload, token);
         if (response) {
-          console.log(response, `<<<< resp`);
           dispatch({ type: ADD_CART, payload: response.data });
         }
       } catch (error) {
@@ -156,7 +155,6 @@ import {
       try {
         const response = await api.delete(`cart/${id}`, token);
         if (response) {
-          console.log(response, `<<<< resp`);
           dispatch({ type: DELETE_CART });
           // dispatch(fetchCart(token));
         }

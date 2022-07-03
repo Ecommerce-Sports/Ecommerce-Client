@@ -31,7 +31,7 @@ const DetailProduct = () => {
         email: email,
         order: [
             {
-                id: carts[carts.length - 1].id + 1,
+                id: carts.length > 0 ? carts[carts.length - 1].id + 1 : 1,
                 nama_barang: product.nama_produk,
                 gambar_produk: product.gambar_produk,
                 size: size,
