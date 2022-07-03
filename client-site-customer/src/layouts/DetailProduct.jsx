@@ -118,7 +118,7 @@ const DetailProduct = () => {
           <div className="product-detail-action">
             <Link to="/cart">
               <button className="addtocart-button">
-              <i class="fa-solid fa-plus"></i> keranjang
+              <i className="fa-solid fa-plus"></i> keranjang
               </button>
             </Link>
             <a href="/src/page/product/wishlist-page.html">

@@ -32,7 +32,7 @@ const SideNav = () => {
           <div className="profile-detail">
             <h2 id="">{user.nama_belakang} {user.nama_belakang}</h2>
             <p>
-              Join Date : <span id="">{user.createdAt.slice(0, 10)}</span>
+              Join Date : <span id="">{Object.keys(user).length > 0 ? user.createdAt.slice(0, 10) : null}</span>
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ const SideNav = () => {
         </Link>
         <Link to="/edit-profile">
           <p>Pengaturan</p>
-          <i class="fa-solid fa-gear"></i>
+          <i className="fa-solid fa-gear"></i>
         </Link>
       </div>
       <div className="navbar-logout">

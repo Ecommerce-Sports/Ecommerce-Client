@@ -18,11 +18,13 @@ const Header = () => {
     navigate(`/category/${e.id}`)
   }
 
+  const toPageCart = () => {
+    navigate("/cart")
+  }
+
   useEffect(()=> {
     dispatch(fetchCategories(localStorage.token));
   }, [dispatch])
-
-  // console.log(categories, `<<<<< categories`);
 
   return (
     <header>
@@ -118,10 +120,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="cart-action">
-          <a href="/src/page/payment/cart-page.html">
+        <div onClick={toPageCart} className="cart-action">
+          {/* <a href="/src/page/payment/cart-page.html"> */}
             <i className="fa-solid fa-cart-shopping"></i>
-          </a>
+          {/* </a> */}
         </div>
       </div>
       <div className="header-profile">

@@ -38,26 +38,26 @@ const Home = () => {
     dispatch(fetchProducts(localStorage.token));
 
     //banner slides
-    let slideIndex = 0;
-
-    const showSlides = () => {
-      let i;
-      const slides = document.getElementsByClassName("banner-image");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000);
-    };
-
-    showSlides(); 
+      setTimeout(()=> {
+        let slideIndex = 0;
+  
+        const showSlides = () => {
+          let i;
+          const slides = document.getElementsByClassName("banner-image");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 5000);
+        };
+  
+        showSlides();
+      }, 500)
   }, [dispatch]);
-
-  console.log(banners, `<<< banners`); 
   
   return (
     <>
@@ -67,13 +67,13 @@ const Home = () => {
         <div className="banner">
           {/* looping banner */}
           <div className="banner-home-box">
-            {banners.map((e) => {
+            {banners && banners.length > 0 ? banners.map((e) => {
               return (
                 <div key={e.id} className="banner-image fade">
                   <img src={e.gambar_banner} alt="banner" />
                 </div>
               )
-            })}
+            }) : null}
           </div>
           <div className="banner-description">
             <div className="banner-text">
