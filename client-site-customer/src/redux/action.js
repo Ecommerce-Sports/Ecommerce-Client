@@ -156,7 +156,7 @@ import {
         const response = await api.delete(`cart/${id}`, token);
         if (response) {
           dispatch({ type: DELETE_CART });
-          // dispatch(fetchCart(token));
+          dispatch(fetchCart(token));
         }
       } catch (error) {
         console.log(error, `<<< error delete cart`);
