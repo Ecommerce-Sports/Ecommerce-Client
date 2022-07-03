@@ -3020,19 +3020,6 @@ footer > p {
         font-size: 20px;
     }
 
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropbtn i {
-        margin-left: 37%;
-    }
-
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropdown-content {
-        width: 90%;
-        max-width: 89%;
-    }
-
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropdown-content a .address-box .customer-name {
-        font-size: 18px;
-    }
-
     .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc {
         flex-direction: column;
     }
@@ -3040,6 +3027,18 @@ footer > p {
     .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc div {
         padding: 5px 0;
         width: 100%;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action .address-label {
+        display: none;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc div label {
+        display: block;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action > .kurir-select {
+        padding: 0;
     }
 
     .checkout-page > .checkout-box > .checkout-product > .product-box {
@@ -3890,19 +3889,6 @@ footer > p {
         font-size: 20px;
     }
 
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropbtn i {
-        margin-left: 35%;
-    }
-
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropdown-content {
-        width: 90%;
-        max-width: 89%;
-    }
-
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropdown-content a .address-box .customer-name {
-        font-size: 18px;
-    }
-
     .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc {
         flex-direction: column;
     }
@@ -3910,6 +3896,18 @@ footer > p {
     .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc div {
         padding: 5px 0;
         width: 100%;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action .address-label {
+        display: none;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc div label {
+        display: block;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action > .kurir-select {
+        padding: 0;
     }
 
     .checkout-page > .checkout-box > .checkout-product > .product-box {
@@ -4757,19 +4755,6 @@ footer > p {
         font-size: 20px;
     }
 
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropbtn i {
-        margin-left: 30%;
-    }
-
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropdown-content {
-        width: 90%;
-        max-width: 89%;
-    }
-
-    .checkout-page > .checkout-box > .checkout-address > .address-action .dropdown-content a .address-box .customer-name {
-        font-size: 18px;
-    }
-
     .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc {
         flex-direction: column;
     }
@@ -4777,6 +4762,18 @@ footer > p {
     .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc div {
         padding: 5px 0;
         width: 100%;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action .address-label {
+        display: none;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action .address-loc div label {
+        display: block;
+    }
+
+    .checkout-page > .checkout-box > .checkout-address > .address-action > .kurir-select {
+        padding: 0;
     }
 
     .checkout-page > .checkout-box > .checkout-product > .product-box {
@@ -4845,7 +4842,7 @@ footer > p {
         margin-top: 10px;
     }
 
-    /* Edit PRofile Pop Up */
+    /* Edit Profile Pop Up */
     .edit-profile {
         top: 2%;
         left: 0;

@@ -1,10 +1,69 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React, { useState, useEffect } from 'react';
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
+import { useDispatch, useSelector } from 'react-redux';
+import { getOneUser } from '../redux/action';
 import "../style/main.css";
+import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
+    const dispatch = useDispatch();
+    // eslint-disable-next-line no-unused-vars
+    const navigate = useNavigate();
+    const user = useSelector(state => state.user);
+    const [alamat, setAlamat] = useState({
+        provinsi: [],
+        kota: [],
+    })
+    const [alamatAsal, setAlamatAsal] = useState({
+        provinsi: null,
+        kota: null,
+    })
+    const [alamatTujuan, setAlamatTujuan] = useState({
+        provinsi: null,
+        kota: null,
+    })
+
+    const url = `http://localhost:3000`;
+
+    let email = localStorage.email;
+
+    useEffect(() => {
+        dispatch(getOneUser(email, localStorage.token));
+
+        const getProvinsi = () => {
+            fetch(`${url}/rajaongkir/provinsi`)
+            .then(resp => resp.json())
+            .then((data) => {
+                setAlamat({
+                    ...alamat,
+                    provinsi: data.rajaongkir.results
+                })
+            })
+        }
+        
+        if(alamatAsal.provinsi) {
+            const getKota = () => {
+                fetch(`${url}/rajaongkir/kota/${alamatAsal.provinsi}`)
+                .then(resp => resp.json())
+                .then((data) => {
+                    console.log(data, `<<<<, data`);
+                    setAlamat({
+                        ...alamat,
+                        kota: data.rajaongkir.results
+                    })
+                })
+            }
+            getKota();
+        }
+
+        getProvinsi();
+    }, [dispatch, alamatAsal.provinsi, email, url, alamat])
+
+    console.log(user, `<<<<<, user`);
+
     /*
     Script Dropdown untuk myFunction di address-action
     
@@ -20,20 +79,7 @@ const Checkout = () => {
             }
         }
     }
-
     */
-    function myFunction() {
-        document.getElementById("myDropdown").classNameList.toggle("show");
-    
-        window.onclick = (e) => {
-            if (!e.target.matches('.dropbtn')) {
-                const myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classNameList.contains('show')) {
-                    myDropdown.classNameList.remove('show');
-                }
-            }
-        }
-    }
     
   return (
     <>
@@ -52,60 +98,92 @@ const Checkout = () => {
                     <div className="address-list">
                         <div className="address-box">
                             <p><span className="property" id="">Rumah</span><span className="status" id="">Utama</span></p>
-                            <p><span className="customer-name" id="">Username</span></p>
-                            <p><span className="phone" id="">08512456789</span></p>
-                            <p><span className="address" id="">Jl Mawar GG Melati no 17, Sukolilo, Wonokromo, Kota Surabaya, Jawa Timur</span></p>
+                            <p><span className="customer-name" id="">{user.nama_depan} {user.nama_belakang}</span></p>
+                            <p><span className="phone" id="">{user.no_telepon}</span></p>
+                            <p>
+                                <span className="address" id="">
+
+                                </span>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div className="address-action">
+                <div className="address-label">
+                    <label>Alamat Asal</label>
+                    <label>Alamat Tujuan</label>
+                </div> 
                 <div className="address-loc">
-                        <div className="province">
-                            <p>Provinsi</p>
-                            <select>
-                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Provinsi --</option>
-                                <option value={"Jawa Barat"}>Jawa Barat</option>
-                                <option value={"Jawa Timur"}>Jawa Timur</option>
-                            </select>
-                        </div>
-                        <div className="city">
-                            <p>Kabupaten / Kota</p>
-                            <select>
-                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Kota --</option>
-                                <option value={"Bandung"}>Bandung</option>
-                                <option value={"Surabaya"}>Surabaya</option>
-                            </select>
-                        </div>
-                        <div className="districts">
-                            <p>Kecamatan</p>
-                            <select>
-                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Kecamatan --</option>
-                                <option value={"Sukolilo"}>Sukolilo</option>
-                                <option value={"Wonokromo"}>Wonokromo</option>
-                            </select>
-                        </div>
-                        <div className="village">
-                            <p>Desa / Kelurahan</p>
-                            <select>
-                                <option value={"bisa diisi sama kek isinya"}>-- Pilih Kelurahan --</option>
-                                <option value={"Deketagung"}>Deketagung</option>
-                                <option value={"Gundih"}>Gundih</option>
-                            </select>
-                        </div>
+                {/* Kota Asal */}
+                    <div className="province">
+                        <label className='mob-view'>Alamat Asal</label>
+                        <p>Provinsi</p>
+                        <select value={alamatAsal.provinsi} onChange={(e) => setAlamatAsal({ ...alamatAsal, provinsi: e.target.value })} >
+                            <option >Pilih Provinsi</option>
+                            {alamat.provinsi.length > 0
+                            ? alamat.provinsi.map((e) => {
+                                return (
+                                    <option value={e.province_id}>{e.province}</option>
+                                )
+                            })
+                            : null
+                            }
+                        </select>
                     </div>
-                    <button className="dropbtn" onclick="myFunction()">Pilih Alamat<i className="fa fa-caret-down"></i></button>
-                      <div className="dropdown-content" id="myDropdown">
-                            <div className="address-box">
-                                <p><span className="property" id="">Rumah</span></p>
-                                <p><span className="customer-name" id="">Username</span></p>
-                                <p><span className="address" id="">Jl Mawar GG Melati no 17, Sukolilo, Wonokromo, Kota Surabaya, Jawa Timur</span></p>
-                            </div>
-                            <div className="address-box">
-                                <p><span className="property" id="">Rumah</span></p>
-                                <p><span className="customer-name" id="">Username</span></p>
-                                <p><span className="address" id="">Jl Mawar GG Melati no 17, Sukolilo, Wonokromo, Kota Surabaya, Jawa Timur</span></p>
-                            </div>
-                      </div>
+                    <div className="city">
+                        <p>Kabupaten / Kota</p>
+                        <select value={alamatAsal.kota} onChange={(e) => setAlamatAsal({ ...alamatAsal, kota: e.target.value })} >
+                            <option >Pilih Kota / Kabupaten</option>
+                            {alamat.kota.length > 0
+                            ? alamat.kota.map((e) => {
+                                return (
+                                    <option value={e.city_id}>{e.city_name}</option>
+                                )
+                            })
+                            : null
+                            }
+                        </select>
+                    </div>
+
+                    {/* Kota Tujuan */}
+                    <div className="province">
+                        <label className='mob-view'>Alamat Asal</label>
+                        <p>Provinsi</p>
+                        <select value={alamatTujuan.provinsi} onChange={(e) => setAlamatTujuan({ ...alamatTujuan, provinsi: e.target.value })} >
+                            <option >Pilih Provinsi</option>
+                            {alamat.provinsi.length > 0
+                            ? alamat.provinsi.map((e) => {
+                                return (
+                                    <option value={e.province_id}>{e.province}</option>
+                                )
+                            })
+                            : null
+                            }
+                        </select>
+                    </div>
+                    <div className="city">
+                        <p>Kabupaten / Kota</p>
+                        <select value={alamatTujuan.kota} onChange={(e) => setAlamatTujuan({ ...alamatTujuan, kota: e.target.value })} >
+                            <option >Pilih Kota / Kabupaten</option>
+                            {alamat.kota.length > 0
+                            ? alamat.kota.map((e) => {
+                                return (
+                                    <option value={e.city_id}>{e.city_name}</option>
+                                )
+                            })
+                            : null
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div className='kurir-select'>
+                    <p>Kurir</p>
+                    <select>
+                        <option>Pilih Kurir</option>
+                        <option>JNE Express</option>
+                        <option>JNT Reguller</option>
+                    </select>
+                </div>
                 </div>
             </div>
             <hr />
@@ -137,32 +215,6 @@ const Checkout = () => {
                     <div className="mobile-view" />
                     <div className="product-price">
                         <p id="">Rp. <span id="">399.000</span></p>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div className="checkout-courier">
-                <h4>Pilih pengiriman <span>( pilih salah satu )</span></h4>
-                <div className="courier-list">
-                    <div className="courier-box">
-                        <input type="checkbox" name="" id="" />
-                        <div className="courier-info">
-                            <p className="courier-name" id="">JNE Express</p>
-                            <p className="courier-estimate" id="">Estimasi tiba 2 - 4 Jul</p>
-                        </div>
-                        <div className="courier-payment">
-                            <p className="payment">Rp. <span id="">19.000</span></p>
-                        </div>
-                    </div>
-                    <div className="courier-box">
-                        <input type="checkbox" name="" id="" />
-                        <div className="courier-info">
-                            <p className="courier-name" id="">JNT Reguler</p>
-                            <p className="courier-estimate" id="">Estimasi tiba 2 - 4 Jul</p>
-                        </div>
-                        <div className="courier-payment">
-                            <p className="payment">Rp. <span id="">19.000</span></p>
-                        </div>
                     </div>
                 </div>
             </div>
