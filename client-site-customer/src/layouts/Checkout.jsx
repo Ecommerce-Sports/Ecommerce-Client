@@ -116,9 +116,14 @@ const Checkout = () => {
                     </div>
                 </div>
                 <div className="address-action">
+                <div className="address-label">
+                    <label>Alamat Asal</label>
+                    <label>Alamat Tujuan</label>
+                </div> 
                 <div className="address-loc">
                 {/* Kota Asal */}
                     <div className="province">
+                        <label className='mob-view'>Alamat Asal</label>
                         <p>Provinsi</p>
                         <select value={alamatAsal.provinsi} onChange={(e) => setAlamatAsal({ ...alamatAsal, provinsi: e.target.value })} >
                             <option >Pilih Provinsi</option>
@@ -149,6 +154,7 @@ const Checkout = () => {
 
                     {/* Kota Tujuan */}
                     <div className="province">
+                        <label className='mob-view'>Alamat Asal</label>
                         <p>Provinsi</p>
                         <select value={alamatTujuan.provinsi} onChange={(e) => setAlamatTujuan({ ...alamatTujuan, provinsi: e.target.value })} >
                             <option >Pilih Provinsi</option>
@@ -195,6 +201,14 @@ const Checkout = () => {
                         </div>
                     </a>
                     </div> */}
+                <div className='kurir-select'>
+                    <p>Kurir</p>
+                    <select>
+                        <option>Pilih Kurir</option>
+                        <option>JNE Express</option>
+                        <option>JNT Reguller</option>
+                    </select>
+                </div>
                 </div>
             </div>
             <hr />
@@ -291,4 +305,4 @@ const Checkout = () => {
   )
 }
 
-export default Checkout
+export default Checkout;

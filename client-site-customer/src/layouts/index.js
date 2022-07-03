@@ -13,6 +13,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Checkout from "./Checkout";
 import Payment from "./Payment";
+import EditProfilePopUp from "./EditProfilePopUp";
 
 export { 
     Home,
@@ -29,5 +30,6 @@ export {
     Login,
     Register,
     Checkout,
-    Payment
+    Payment,
+    EditProfilePopUp
 };
