@@ -101,7 +101,7 @@ header > .header-category > .category-toggle .dropdown-content::-webkit-scrollba
     display: none;
 }
 
-header > .header-category > .category-toggle .dropdown-content a {
+header > .header-category > .category-toggle .dropdown-content > div {
     color: #4f9e4f;
     text-decoration: none;
     display: block;
@@ -109,7 +109,7 @@ header > .header-category > .category-toggle .dropdown-content a {
     padding: 15px 10px;
 }
 
-header > .header-category > .category-toggle .dropdown-content a:hover {
+header > .header-category > .category-toggle .dropdown-content > div:hover {
     background-color: whitesmoke;
     color: #4f9e4f;
     border-radius: 5px;
