@@ -4,8 +4,9 @@ import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
 import { useDispatch, useSelector } from 'react-redux';
 import { getOneUser } from '../redux/action';
-import "../style/main.css";
 import { useNavigate } from 'react-router-dom';
+import "../style/main.css";
+import { formatRupiah } from '../utils/formatRupiah';
 
 const Checkout = () => {
     const dispatch = useDispatch();
@@ -18,11 +19,16 @@ const Checkout = () => {
     const [alamatAsal, setAlamatAsal] = useState({
         provinsi: null,
         kota: null,
+        provinsiName: "",
+        kotaName: "",
     })
     const [alamatTujuan, setAlamatTujuan] = useState({
         provinsi: null,
         kota: null,
+        provinsiName: "",
+        kotaName: "",
     })
+    const [ongkir, setOngkir] = useState(0)
 
     const url = `http://localhost:3000`;
 
@@ -100,7 +106,10 @@ const Checkout = () => {
                             <p><span className="phone" id="">{user.no_telepon}</span></p>
                             <p>
                                 <span className="address" id="">
-
+                                    {/* {alamatAsal.provinsiName ? `Provinsi Asal: ${alamatAsal.provinsiName}` : null}
+                                    {alamatAsal.kotaName ? `Kota Asal: ${alamatAsal.kotaName}` : null}
+                                    {alamatTujuan.provinsiName ? `Tujuan: ${alamatAsal.provinsiName}` : null}
+                                    {alamatTujuan.provinsiName ? `Tujuan: ${alamatTujuan.provinsiName}` : null} */}
                                 </span>
                             </p>
                         </div>
@@ -116,7 +125,7 @@ const Checkout = () => {
                             {alamat.provinsi.length > 0
                             ? alamat.provinsi.map((e) => {
                                 return (
-                                    <option value={e.province_id}>{e.province}</option>
+                                    <option key={e.province_id} value={e.province_id}>{e.province}</option>
                                 )
                             })
                             : null
@@ -130,7 +139,7 @@ const Checkout = () => {
                             {alamat.kota.length > 0
                             ? alamat.kota.map((e) => {
                                 return (
-                                    <option value={e.city_id}>{e.city_name}</option>
+                                    <option key={e.city_id} value={e.city_id}>{e.city_name}</option>
                                 )
                             })
                             : null
@@ -146,7 +155,7 @@ const Checkout = () => {
                             {alamat.provinsi.length > 0
                             ? alamat.provinsi.map((e) => {
                                 return (
-                                    <option value={e.province_id}>{e.province}</option>
+                                    <option key={e.province_id} value={e.province_id}>{e.province}</option>
                                 )
                             })
                             : null
@@ -160,7 +169,7 @@ const Checkout = () => {
                             {alamat.kota.length > 0
                             ? alamat.kota.map((e) => {
                                 return (
-                                    <option value={e.city_id}>{e.city_name}</option>
+                                    <option key={e.city_id} value={e.city_id}>{e.city_name}</option>
                                 )
                             })
                             : null
@@ -169,7 +178,7 @@ const Checkout = () => {
                     </div>
                 </div>
                 
-                <button className="dropbtn" onclick="myFunction()">Pilih Alamat<i className="fa fa-caret-down"></i></button>
+                {/* <button className="dropbtn" onclick="myFunction()">Pilih Alamat<i className="fa fa-caret-down"></i></button>
                     <div className="dropdown-content" id="myDropdown">
                     <a href="">
                         <div className="address-box">
@@ -185,43 +194,37 @@ const Checkout = () => {
                             <p><span className="address" id="">Jl Mawar GG Melati no 17, Sukolilo, Wonokromo, Kota Surabaya, Jawa Timur</span></p>
                         </div>
                     </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <hr />
             <div className="checkout-product">
                 <h4>Produk yang ingin dibeli</h4>
-                <div className="product-box">
-                    <div className="product-image">
-                        <img src="/assets/properti/detail-image.jpg" alt="product-image" />
-                    </div>
-                    <div className="product-description">
-                        <p id="name">ADIDAS FORUM LOW - WHITE</p>
-                        <p id="size">size : <span id="">40</span></p>
-                        <p id="amount">jumlah : <span>1</span> barang</p>
-                    </div>
-                    <div className="mobile-view" />
-                    <div className="product-price">
-                        <p id="">Rp. <span id="">399.000</span></p>
-                    </div>
-                </div>
-                <div className="product-box">
-                    <div className="product-image">
-                        <img src="/assets/properti/detail-image.jpg" alt="product-image" />
-                    </div>
-                    <div className="product-description">
-                        <p id="name">ADIDAS FORUM LOW - WHITE</p>
-                        <p id="size">size : <span id="">40</span></p>
-                        <p id="amount">jumlah : <span>1</span> barang</p>
-                    </div>
-                    <div className="mobile-view" />
-                    <div className="product-price">
-                        <p id="">Rp. <span id="">399.000</span></p>
-                    </div>
-                </div>
+                {user && user.Carts[0].order.length > 0
+                ?
+                    user.Carts[0].order.map((e) => {
+                        return (
+                            <div key={e.id} className="product-box">
+                                <div className="product-image">
+                                    <img src={e.gambar_produk} alt="product-image" />
+                                </div>
+                                <div className="product-description">
+                                    <p id="name">{e.nama_barang}</p>
+                                    <p id="size">size : <span id="">{e.size}</span></p>
+                                    <p id="amount">jumlah : <span>{e.total}</span> barang</p>
+                                </div>
+                                <div className="mobile-view" />
+                                <div className="product-price">
+                                    <p id=""><span id="">{formatRupiah(e.total_harga)}</span></p>
+                                </div>
+                            </div>
+                        )
+                    })
+                : null
+                }
             </div>
             <hr />
-            <div className="checkout-courier">
+            {/* <div className="checkout-courier">
                 <h4>Pilih pengiriman <span>( pilih salah satu )</span></h4>
                 <div className="courier-list">
                     <div className="courier-box">
@@ -245,22 +248,38 @@ const Checkout = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
         <aside className="payment-box">
             <h4>Ringkasan belanja</h4>
             <div className="total-product">
-                <p className="product"><span id="">2</span> barang</p>
-                <p className="payment">Rp. <span id="">798.000</span></p>
+                <p className="product"><span id="">{user.Carts[0].order.length}</span> barang</p>
+                <p className="payment">
+                    <span id="">
+                        {user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                            return hargaAwal + hargaSekarang.total_harga
+                        }, 0)}
+                    </span>
+                </p>
             </div>
             <div className="total-courier">
                 <p className="courier" id="">JNE Express</p>
-                <p className="payment">Rp. <span id="">19.000</span></p>
+                <p className="payment">
+                    <span id="">
+                        {formatRupiah(ongkir)}
+                    </span>
+                </p>
             </div>
             <hr />
             <div className="total-shop">
                 <p className="total">Total</p>
-                <p className="payment-total">Rp. <span id="">817.000</span></p>
+                <p className="payment-total">
+                    <span id="">
+                    {user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                            return hargaAwal + hargaSekarang.total_harga + ongkir
+                        }, 0)}
+                    </span>
+                </p>
             </div>
             <button className="payment-btn"><i className="fa-solid fa-money-bill-wave"></i> Pilih Pembayaran</button>
             <button className="done-btn" style={{ cursor: "not-allowed", opacity: "50%" }} disabled>Selesai</button>
