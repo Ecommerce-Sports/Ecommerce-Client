@@ -1,11 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { getOneUser } from '../redux/action';
 
 const SideNav = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const user = useSelector(state => state.user);
+
+  let email = localStorage.email;
+
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight = "0";
   };
+
+  useEffect(()=> {
+    dispatch(getOneUser(email, localStorage.token));
+  }, [dispatch, email])
 
   return (
     <nav id="mySidenav" className="sidenav">
@@ -18,9 +30,9 @@ const SideNav = () => {
             <img src="/assets/properti/profile-picture.png" alt="profile" />
           </div>
           <div className="profile-detail">
-            <h2 id="">Username</h2>
+            <h2 id="">{user.nama_belakang} {user.nama_belakang}</h2>
             <p>
-              Join Date : <span id="">18 Feb 2022</span>
+              Join Date : <span id="">{Object.keys(user).length > 0 ? user.createdAt.slice(0, 10) : null}</span>
             </p>
           </div>
         </div>
@@ -42,7 +54,7 @@ const SideNav = () => {
         </Link>
         <Link to="/edit-profile">
           <p>Pengaturan</p>
-          <i class="fa-solid fa-gear"></i>
+          <i className="fa-solid fa-gear"></i>
         </Link>
       </div>
       <div className="navbar-logout">
