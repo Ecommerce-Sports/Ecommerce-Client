@@ -109,18 +109,18 @@ const Home = () => {
               <img src="/assets/properti/featured-img2.jpg" alt="featured" />
               <div className="featured-description">
                 <p>DRIVER BRIDGESTONE DIAMANA</p>
-                <Link to="/detail-product">
+                {/* <Link to="/detail-product">
                   <button type="button">Buy now</button>
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="featured-box">
               <img src="/assets/properti//featured-img1.jpg" alt="featured" />
               <div className="featured-description">
                 <p>NEW BALANCE</p>
-                <Link to="/detail-product">
+                {/* <Link to="/detail-product">
                   <button type="button">Buy now</button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

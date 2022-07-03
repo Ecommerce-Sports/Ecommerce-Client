@@ -25,3 +25,4 @@ export const FETCH_CART = "FETCH_CART";
 export const ADD_CART = "ADD_CART"; 
 export const GET_ONE_CART = "GET_ONE_CART";
 export const CHANGE_CART = "CHANGE_CART"; 
+export const DELETE_CART = "DELETE_CART"; 

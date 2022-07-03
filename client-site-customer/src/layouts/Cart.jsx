@@ -3,7 +3,7 @@ import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
 import { useDispatch, useSelector } from 'react-redux';
-import { getOneCart, changeCart } from '../redux/action';
+import { getOneCart, changeCart, deleteCart } from '../redux/action';
 // import { Link } from "react-router-dom";
 import "../style/main.css";
 import { formatRupiah } from "../utils/formatRupiah";
@@ -20,6 +20,11 @@ const Cart = () => {
 
   const handleMinusQty = (id) => {
     console.log(id, `<<<<< id`);
+  }
+
+  const handleDeleteProduct = (id) => {
+    console.log(id, `<<<<< id`);
+    dispatch(deleteCart(cart.id, localStorage.token))
   }
 
   useEffect(()=> {
@@ -62,7 +67,7 @@ const Cart = () => {
                       <p id="">{formatRupiah(e.harga)}</p>
                     </div>
                     <div className="product-action-list">
-                      <i className="fa-solid fa-trash"></i>
+                      <i onClick={()=> handleDeleteProduct(e.id)} className="fa-solid fa-trash"></i>
                       <div className="product-action-add">
                         <i onClick={()=>handleMinusQty(e.id)} className="fa-solid fa-minus" style={{ marginRight: "5px" }}></i>
                         <p>||</p>
@@ -108,9 +113,6 @@ const Cart = () => {
               })
               : null
               }
-              {/* {var total = [1, 2, 3, 4, 5].reduce(function (previous, current) {
-                  return previous + current;
-              }, 0);} */}
             </p>
           </div>
           <div className="cost-action">

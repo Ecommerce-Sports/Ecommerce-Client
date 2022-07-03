@@ -25,7 +25,8 @@ import {
   FETCH_CART,
   ADD_CART,
   GET_ONE_CART,
-  CHANGE_CART
+  CHANGE_CART,
+  DELETE_CART
 } from "../utils/constants";
 
 const initState = {
@@ -103,6 +104,10 @@ const reducer = (state = initState, action) => {
       return {
         ...state,
         carts: [...state.carts, action.payload],
+      };
+    case DELETE_CART:
+      return {
+        ...state,
       };
 
     // CATEGORY

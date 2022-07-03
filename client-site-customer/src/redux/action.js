@@ -25,7 +25,8 @@ import {
     FETCH_CART,
     GET_ONE_CART,
     CHANGE_CART,
-    ADD_CART
+    ADD_CART,
+    DELETE_CART
   } from "../utils/constants";
   // import swal from 'sweetalert';
   import api from "../api/api";
@@ -146,6 +147,21 @@ import {
         }
       } catch (error) {
         console.log(error, `<<< error edit cart`);
+      }
+    };
+  };
+
+  export const deleteCart = (id, token) => {
+    return async (dispatch) => {
+      try {
+        const response = await api.delete(`cart/${id}`, token);
+        if (response) {
+          console.log(response, `<<<< resp`);
+          dispatch({ type: DELETE_CART });
+          // dispatch(fetchCart(token));
+        }
+      } catch (error) {
+        console.log(error, `<<< error delete cart`);
       }
     };
   };
