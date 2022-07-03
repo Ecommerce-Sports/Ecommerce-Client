@@ -1,0 +1,60 @@
+.edit-profile {
+    z-index: 105;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    width: 30vw;
+    box-shadow: 0 3px 7px 0 grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.edit-profile > h4 {
+    margin: 10px 0 5px 0;
+}
+
+.edit-profile > p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.edit-profile > input {
+    width: 100%;
+    padding: 5px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.edit-profile button {
+    width: 49%;
+    margin: 20px 0;
+    padding: 6px 0;
+    font-weight: 600;
+    color: white;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile > .submitEdit {
+    background-color: #61c156;
+    margin-right: 2%;
+}
+
+.edit-profile > .submitEdit:hover {
+    background-color: white;
+    color: #61c156;
+    border-color: #61c156;
+}
+
+.edit-profile > .cancelEdit {
+    background-color: darkred;
+}
+
+.edit-profile > .cancelEdit:hover {
+    background-color: white;
+    color: darkred;
+    border-color: darkred;
+}

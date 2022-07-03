@@ -95,20 +95,16 @@ const Checkout = () => {
                     </div>
                     <button className="dropbtn" onclick="myFunction()">Pilih Alamat<i className="fa fa-caret-down"></i></button>
                       <div className="dropdown-content" id="myDropdown">
-                        <a href="">
                             <div className="address-box">
                                 <p><span className="property" id="">Rumah</span></p>
                                 <p><span className="customer-name" id="">Username</span></p>
                                 <p><span className="address" id="">Jl Mawar GG Melati no 17, Sukolilo, Wonokromo, Kota Surabaya, Jawa Timur</span></p>
                             </div>
-                        </a>
-                        <a href="">
                             <div className="address-box">
                                 <p><span className="property" id="">Rumah</span></p>
                                 <p><span className="customer-name" id="">Username</span></p>
                                 <p><span className="address" id="">Jl Mawar GG Melati no 17, Sukolilo, Wonokromo, Kota Surabaya, Jawa Timur</span></p>
                             </div>
-                        </a>
                       </div>
                 </div>
             </div>
@@ -196,4 +192,4 @@ const Checkout = () => {
   )
 }
 
-export default Checkout
+export default Checkout;

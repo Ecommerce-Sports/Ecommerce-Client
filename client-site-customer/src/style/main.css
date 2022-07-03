@@ -9,6 +9,7 @@
 @import url(orderlist.css);
 @import url(checkout.css);
 @import url(payment.css);
+@import url(editprofilepopup.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -1358,6 +1359,13 @@ footer > p {
     .payment-page {
         padding: 2vh 5vw;
     }
+
+    /* Edit Profile Pop Up */
+    .edit-profile {
+        top: 4%;
+        left: 30%;
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 866px) and (max-width: 1024px) {
@@ -2199,6 +2207,13 @@ footer > p {
 
     .payment-page > .payment-action > button {
         width: 30%;
+    }
+
+    /* Edit Profile Pop Up */
+    .edit-profile {
+        top: 4%;
+        left: 25%;
+        width: 50%;
     }
 }
 
@@ -3095,6 +3110,22 @@ footer > p {
         width: 100%;
         margin-top: 10px;
     }
+
+    /* Edit Profile Pop Up */
+    .edit-profile {
+        top: 2%;
+        left: 0;
+        width: 100%;
+    }
+
+    .edit-profile button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .edit-profile > .submitEdit {
+        margin-top: 20px;
+    }
 }
 
 /* Mobile M */
@@ -3946,6 +3977,22 @@ footer > p {
         width: 100%;
         margin-top: 10px;
     }
+
+    /* Edit Profile Pop Up */
+    .edit-profile {
+        top: 2%;
+        left: 0;
+        width: 100%;
+    }
+
+    .edit-profile button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .edit-profile > .submitEdit {
+        margin-top: 20px;
+    }
 }
 
 /* Mobile S */
@@ -4796,5 +4843,21 @@ footer > p {
     .payment-page > .payment-action > button {
         width: 100%;
         margin-top: 10px;
+    }
+
+    /* Edit PRofile Pop Up */
+    .edit-profile {
+        top: 2%;
+        left: 0;
+        width: 100%;
+    }
+
+    .edit-profile button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .edit-profile > .submitEdit {
+        margin-top: 20px;
     }
 }

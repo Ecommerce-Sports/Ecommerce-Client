@@ -61,9 +61,7 @@ const Cart = () => {
                       />
                     </div>
                     <div className="product-detail-list">
-                      <a href="/src/page/product/detail-product-page.html">
                         <h3 id="">{e.nama_barang}</h3>
-                      </a>
                       <p id="">{formatRupiah(e.harga)}</p>
                     </div>
                     <div className="product-action-list">

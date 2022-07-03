@@ -77,7 +77,7 @@ const EditProfile = () => {
               </div>
               <div className="biodata-right">
                 <div className="biodata-customer">
-                  <h4>Ubah Biodata Diri</h4>
+                  <h4>Biodata Diri</h4>
                   <div className="list-body">
                     <p style={{ textDecoration: "none" }}>Nama</p>
                     <span id="">Muhammad Alfin</span>
@@ -92,7 +92,7 @@ const EditProfile = () => {
                   </div>
                 </div>
                 <div className="biodata-contact">
-                  <h4>Ubah Kontak</h4>
+                  <h4>Kontak</h4>
                   <div className="list-body">
                     <p>Username</p>
                     <span id="">finpangestu</span>
@@ -107,14 +107,14 @@ const EditProfile = () => {
                   </div>
                 </div>
                 <div className="biodata-account">
-                  <h4>Ubah Kata Sandi</h4>
+                  <h4>Kata Sandi</h4>
                   <div className="list-body">
                     <p>Kata Sandi</p>
                     <span id="">***********</span>
                   </div>
                 </div>
                 <div className="biodata-career">
-                  <h4>Ubah Karir</h4>
+                  <h4>Karir</h4>
                   <div className="list-body">
                     <p>Pekerjaan</p>
                     <span id="">3D Modelling</span>
