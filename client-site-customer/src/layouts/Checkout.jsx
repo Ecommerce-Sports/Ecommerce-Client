@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
@@ -10,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
     const dispatch = useDispatch();
-    // eslint-disable-next-line no-unused-vars
     const navigate = useNavigate();
     const user = useSelector(state => state.user);
     const [alamat, setAlamat] = useState({
@@ -60,7 +58,7 @@ const Checkout = () => {
         }
 
         getProvinsi();
-    }, [dispatch, alamatAsal.provinsi, email, url, alamat])
+    }, [dispatch, alamatAsal.provinsi])
 
     console.log(user, `<<<<<, user`);
 
