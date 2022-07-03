@@ -1,7 +1,42 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value)
+  }
+
+  const handleSubmitLogin = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+    axios({
+      method: 'post',
+      url: 'http://localhost:3000/user/login',
+      data: {
+        email: email,
+        password: password
+      }
+    })
+    .then((res) => {
+      if(res.data.token) {
+        localStorage.setItem('token', res.data.token)
+        localStorage.setItem('email', res.data.email)
+        if(res.data.role === 'customer') {
+          navigate(`/?email=${res.data.email}`)
+        }
+      }
+    })
+  }
+
   return (
     <>
       <main className="login-box">
@@ -25,15 +60,17 @@ const Login = () => {
         <div className="slogan-line">
           <p className="slogan-text">SPORT AS YOUR LIFE</p>
         </div>
-        <form className="form-login" action="../home-page.html" method="post">
+        <form onSubmit={handleSubmitLogin} className="form-login" action="../home-page.html" method="post">
           <div className="form-goup">
             <input
               className="email"
               type="email"
               name="email"
               placeholder="Email *"
-              id=""
+              id="email"
               required
+              value={email} 
+              onChange={handleEmail}
             />
             <br />
             <input
@@ -41,8 +78,9 @@ const Login = () => {
               type="password"
               name="password"
               placeholder="Password *"
-              id=""
+              id="password"
               required
+              value={password} onChange={handlePassword}
             />
           </div>
           <button className="login">Masuk</button>

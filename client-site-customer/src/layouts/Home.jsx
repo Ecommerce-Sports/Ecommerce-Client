@@ -3,9 +3,16 @@ import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBanner, fetchProducts } from '../redux/action';
+import { formatRupiah } from "../utils/formatRupiah";
 import "../style/main.css";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const banners = useSelector(state => state.banners);
+  const products = useSelector(state => state.products);
+
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight = "0";
@@ -26,6 +33,10 @@ const Home = () => {
   }
 
   useEffect(() => {
+    // ambil data dari api
+    dispatch(fetchBanner(localStorage.token));
+    dispatch(fetchProducts(localStorage.token));
+
     //banner slides
     let slideIndex = 0;
 
@@ -43,27 +54,26 @@ const Home = () => {
       setTimeout(showSlides, 5000);
     };
 
-    showSlides();
-  }, []);
+    showSlides(); 
+  }, [dispatch]);
+
+  console.log(banners, `<<< banners`); 
+  
   return (
     <>
       <Header />
       <SideNav />
       <main className="body-home-page" onClick={closeNav}>
         <div className="banner">
+          {/* looping banner */}
           <div className="banner-home-box">
-            <div className="banner-image fade">
-              <img src="/assets/properti/banner-01.png" alt="banner" />
-            </div>
-            <div className="banner-image fade">
-              <img src="/assets/properti/banner-02.jpg" alt="banner" />
-            </div>
-            <div className="banner-image fade">
-              <img src="/assets/properti/banner-03.png" alt="banner" />
-            </div>
-            <div className="banner-image fade">
-              <img src="/assets/properti/banner-04.jpeg" alt="banner" />
-            </div>
+            {banners.map((e) => {
+              return (
+                <div key={e.id} className="banner-image fade">
+                  <img src={e.gambar_banner} alt="banner" />
+                </div>
+              )
+            })}
           </div>
           <div className="banner-description">
             <div className="banner-text">
@@ -128,139 +138,31 @@ const Home = () => {
             <hr />
           </div>
           <div className="product-list">
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Air Jordan</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
+            {products.map((e, idx) => {
+              if(idx < 5) {
+                return (
+                  <div key={idx} className="product-card">
+                    <div className="card">
+                      <div className="imgBx">
+                        <img
+                          src={e.gambar_produk}
+                          alt=""
+                        />
+                      </div>
+                      <div className="contentBx">
+                        <h2>{e.nama_produk}</h2>
+                        <div className="price">
+                          <h2>{formatRupiah(e.harga_produk)}</h2>
+                        </div>
+                        <Link to="/detail-product">
+                          <button type="submit">Buy Now</button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Shoes</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
-                  </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Shoes</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
-                  </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Shoes</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
-                  </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Shoes</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
-                  </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Shoes</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
-                  </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="product-card">
-              <div className="card">
-                <div className="imgBx">
-                  <img
-                    src="https://assets.codepen.io/4164355/shoes.png"
-                    alt=""
-                  />
-                </div>
-                <div className="contentBx">
-                  <h2>Nike Shoes</h2>
-                  <div className="price">
-                    <h2>Rp 399.000</h2>
-                  </div>
-                  <Link to="/detail-product">
-                    <button type="submit">Buy Now</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+                )
+              }
+            })}
           </div>
           <div className="product-more">
             <Link to="/all-product">More</Link>

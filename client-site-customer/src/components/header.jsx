@@ -1,12 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCategories } from '../redux/action';
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const categories = useSelector(state => state.categories);
+
   //side nav bar
   const openNav = () => {
     document.getElementById("mySidenav").style.width = "450px";
     document.getElementsByTagName("main").style.marginRight = "450px";
   };
+
+  const handleToCategoryPage = (e) => {
+    navigate(`/category/${e.id}`)
+  }
+
+  useEffect(()=> {
+    dispatch(fetchCategories(localStorage.token));
+  }, [dispatch])
+
+  // console.log(categories, `<<<<< categories`);
 
   return (
     <header>
@@ -22,15 +38,11 @@ const Header = () => {
             <i className="fa-solid fa-chevron-down"></i>
           </button>
           <div className="dropdown-content">
-            {/* <a href="/src/page/product/product-category-page.html">Street</a> */}
-            <Link to="/category">Sepakbola</Link>
-            {/* <a href="/src/page/product/product-category-page.html">Futsal</a>
-            <a href="/src/page/product/product-category-page.html">Basket</a>
-            <a href="/src/page/product/product-category-page.html">
-              Bulu Tangkis
-            </a>
-            <a href="/src/page/product/product-category-page.html">Golf</a>
-            <a href="/src/page/product/product-category-page.html">Voli</a> */}
+            {categories.map((e) => {
+              return (
+                <div onClick={()=> handleToCategoryPage(e)} key={e.id}>{e.nama_kategori}</div> 
+              )
+            })}
           </div>
         </div>
       </div>

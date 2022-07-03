@@ -19,11 +19,11 @@ import {
 } from "./layouts";
 import { Provider } from "react-redux";
 import store from './redux/store';
-
+ 
 const App = () => {
   return(
     <>
-    {/* <Provider store={store}> */}
+    <Provider store={store}>
       <Router>
         <div>
           <Routes>
@@ -32,7 +32,6 @@ const App = () => {
 
             {/* path Customer */}
             <Route path="/" element={<Home />} />
-            <Route path="/category" element={<Category />} />
             <Route path="/all-product" element={<AllProduct />} />
             <Route path="/detail-product" element={<DetailProduct />} />
             <Route path="/cart" element={<Cart />} />
@@ -44,10 +43,11 @@ const App = () => {
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/category/:id" element={<Category />} />
           </Routes>
         </div>
       </Router>
-      {/* </Provider> */}
+      </Provider>
     </>
   )
 };
