@@ -14,6 +14,7 @@ import Register from "./Register";
 import Checkout from "./Checkout";
 import Payment from "./Payment";
 import EditProfilePopUp from "./EditProfilePopUp";
+import PayInfo from "./PayInfo";
 
 export { 
     Home,
@@ -31,5 +32,6 @@ export {
     Register,
     Checkout,
     Payment,
-    EditProfilePopUp
+    EditProfilePopUp,
+    PayInfo
 };
