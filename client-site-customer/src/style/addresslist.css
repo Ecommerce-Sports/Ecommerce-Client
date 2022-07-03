@@ -19,7 +19,7 @@
 }
 
 .setting-page > .setting-box > .setting-body > .setting-address > .address-list {
-    height: 96%;
+    height: 100%;
     overflow: auto;
     margin-right: -20px;
 }

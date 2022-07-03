@@ -142,7 +142,7 @@ const EditProfile = () => {
                     <br />
                     <br />
                     <p>Pendapatan</p>
-                    <span id="">Rp. 24.000.000</span>/bulan
+                    <span id="">Rp. 24.000.000</span> /bulan
                     <a href="#" id="">
                       Ubah
                     </a>

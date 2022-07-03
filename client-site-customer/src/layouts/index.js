@@ -11,6 +11,8 @@ import OrderList from "./OrderList";
 import Wishlist from "./Wishlist";
 import Login from "./Login";
 import Register from "./Register";
+import Checkout from "./Checkout";
+import Payment from "./Payment";
 
 export { 
     Home,
@@ -25,5 +27,7 @@ export {
     OrderList,
     Wishlist,
     Login,
-    Register
+    Register,
+    Checkout,
+    Payment
 };
