@@ -81,16 +81,10 @@ const EditProfile = () => {
                   <div className="list-body">
                     <p style={{ textDecoration: "none" }}>Nama</p>
                     <span id="">Muhammad Alfin</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                     <br />
                     <br />
                     <p>Tanggal Lahir</p>
                     <span id="">32 Desember 1999</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                     <br />
                     <br />
                     <p>Jenis Kelamin</p>
@@ -102,23 +96,14 @@ const EditProfile = () => {
                   <div className="list-body">
                     <p>Username</p>
                     <span id="">finpangestu</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                     <br />
                     <br />
                     <p>Email</p>
                     <span id="">muhammadalfinpangestu@gmail.com</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                     <br />
                     <br />
                     <p>Telepon</p>
                     <span id="">085123456789</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                   </div>
                 </div>
                 <div className="biodata-account">
@@ -126,9 +111,6 @@ const EditProfile = () => {
                   <div className="list-body">
                     <p>Kata Sandi</p>
                     <span id="">***********</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                   </div>
                 </div>
                 <div className="biodata-career">
@@ -136,17 +118,14 @@ const EditProfile = () => {
                   <div className="list-body">
                     <p>Pekerjaan</p>
                     <span id="">3D Modelling</span>
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                     <br />
                     <br />
                     <p>Pendapatan</p>
                     <span id="">Rp. 24.000.000</span> /bulan
-                    <a href="#" id="">
-                      Ubah
-                    </a>
                   </div>
+                </div>
+                <div className="biodata-action">
+                  <button id="">Edit Profil</button>
                 </div>
               </div>
             </div>

@@ -1837,6 +1837,10 @@ footer > p {
         font-size: 14px;
     }
 
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action {
+        text-align: center;
+    }
+
     .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
         width: 100%;
     }
@@ -2714,6 +2718,10 @@ footer > p {
         font-size: 14px;
     }
 
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action button {
+        width: 100%;
+    }
+
     .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
         width: 100%;
     }
@@ -3569,6 +3577,10 @@ footer > p {
         font-size: 13px;
     }
 
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action button {
+        width: 100%;
+    }
+
     .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {
         width: 100%;
     }
@@ -4403,6 +4415,10 @@ footer > p {
 
     .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right span {
         font-size: 12px;
+    }
+
+    .setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action button {
+        width: 100%;
     }
 
     .setting-page > .setting-box > .setting-body > .setting-address > .address-action a button {

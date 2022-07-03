@@ -73,3 +73,28 @@
     font-size: 12px;
     font-weight: 700;
 }
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action {
+    width: 100%;
+    text-align: left;
+    margin: 50px 0;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action button {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #61c156;
+    border-color: transparent;
+    border-style: solid;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.setting-page > .setting-box > .setting-body > .setting-biodata > .biodata-right .biodata-action button:hover {
+    background-color: white;
+    color: #4f9e4f;
+    border-color: #4f9e4f;
+}
