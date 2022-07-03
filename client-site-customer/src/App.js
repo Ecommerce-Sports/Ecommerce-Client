@@ -17,6 +17,7 @@ import {
   Checkout,
   Payment,
   EditProfilePopUp,
+  PayInfo,
 } from "./layouts";
 import { Provider } from "react-redux";
 import store from './redux/store';
@@ -45,7 +46,8 @@ const App = () => {
             <Route path="/payment" element={<Payment />} />
             <Route path="/edit-profile/:id" element={<EditProfilePopUp />} />
             <Route path="/detail-product/:id" element={<DetailProduct />} />
-            <Route path="/category/:id" element={<Category />} />
+            <Route path="/category/:id" element={<Category />} />``
+            <Route path="/payinfo" element={<PayInfo />} />
           </Routes>
         </div>
       </Router>

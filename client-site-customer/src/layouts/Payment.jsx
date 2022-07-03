@@ -3,19 +3,27 @@ import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
 import { useDispatch, useSelector } from 'react-redux';
-import { getOneUser } from '../redux/action';
+import { getOneUser, deleteCart, getOneCart } from '../redux/action';
 import { useNavigate } from 'react-router-dom';
+import { formatRupiah } from '../utils/formatRupiah';
 import "../style/main.css";
 
 const Payment = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const user = useSelector(state => state.user);
+    const cart = useSelector(state => state.cart);
     let email = localStorage.email;
+
+    const toPageSuccess = () => {
+        navigate("/payinfo");
+        dispatch(deleteCart(cart.id, localStorage.token))
+    }
 
     useEffect(()=> {
         dispatch(getOneUser(email, localStorage.token))
-    }, [])
+        dispatch(getOneCart(email, localStorage.token))
+    }, [dispatch, email])
 
   return (
     <>
@@ -61,10 +69,7 @@ const Payment = () => {
                 </p>
                 <p className="payment">
                     <span id="">
-                    {/* {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
-                            return hargaAwal + hargaSekarang.total_harga + sessionStorage.ongkir
-                        }, 0)
-                    : null} */}
+                        {formatRupiah(43000)}
                     </span>
                 </p>
             </div>
@@ -74,14 +79,18 @@ const Payment = () => {
                 <p className="title">Total</p>
                 <p className="total-pay">
                     <span id="">
-                    {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                    {/* {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
                             return hargaAwal + hargaSekarang.total_harga + Number(sessionStorage.ongkir)
+                        }, 0)
+                    : null} */}
+                    {user && user.Carts[0].order ? user.Carts[0].order.reduce((hargaAwal, hargaSekarang)=> {
+                            return hargaAwal + hargaSekarang.total_harga + 43000
                         }, 0)
                     : null}
                     </span>
                 </p>
             </div>
-            <button className="pay" id=""><i className="fa-solid fa-shield"></i>Bayar</button>
+            <button onClick={toPageSuccess} className="pay" id=""><i className="fa-solid fa-shield"></i>Bayar</button>
         </div>
         </main>
         <Footer />

@@ -38,13 +38,14 @@ const Checkout = () => {
             .then(resp => resp.json())
             .then((data) => {
                 console.log(data, `<<<<<< data`);
-                setPilihanKurir(data.rajaongkir.results.costs)
+                setPilihanKurir(data.rajaongkir.results)
+                setOngkir(data.rajaongkir.results[0].costs[0].cost[0].value)
             })
     }
 
-    const handlePilihanCourier = () => {
+    // const handlePilihanCourier = () => {
 
-    }
+    // }
 
     const tpPagePayment = () => {
         navigate("/payment")
@@ -80,6 +81,20 @@ const Checkout = () => {
             }
             getKota();
         }
+        if(alamatTujuan.provinsi) {
+            const getKota = () => {
+                fetch(`${url}/rajaongkir/kota/${alamatTujuan.provinsi}`)
+                .then(resp => resp.json())
+                .then((data) => {
+                    console.log(data, `<<<<, data`);
+                    setAlamat({
+                        ...alamat,
+                        kota: data.rajaongkir.results
+                    })
+                })
+            }
+            getKota();
+        }
 
         const handleDisabledCourier = () => {
             if(alamatAsal.provinsi !== null && alamatAsal.kota !== null && alamatTujuan.provinsi !== null && alamatTujuan.kota !== null) {
@@ -89,9 +104,11 @@ const Checkout = () => {
 
         getProvinsi();
         handleDisabledCourier();
-    }, [dispatch, alamatAsal.provinsi, alamatAsal.kota, alamatTujuan.provinsi, alamatTujuan.kota])
+    }, [dispatch, alamatAsal.provinsi, alamatTujuan.provinsi, alamatTujuan.kota])
 
     console.log(user, `<<<<<, user`);
+    console.log(pilihanKurir, `<<<<<, pilihanKurir`);
+    console.log(ongkir, `<<<<<, ongkir`);
 
     /*
     Script Dropdown untuk myFunction di address-action
@@ -235,19 +252,19 @@ const Checkout = () => {
                         <option value="tiki">TIKI</option>
                         <option value="pos">Pos Indonesia</option>
                     </select>
-                    <p>Pilihan</p>
+                    {/* <p>Pilihan</p>
                     <select onChange={handlePilihanCourier}>
                         <option>Pilih Pilihan Paket</option>
                         {pilihanKurir && pilihanKurir.length > 0
                         ?
                             pilihanKurir.map((e, idx) => {
                                 return (
-                                    <option key={idx} value="jne">{e.service}</option>
+                                    <option key={idx} value={e.service}>{e.service}</option>
                                 )
                             })
                         : null
                         }
-                    </select>
+                    </select> */}
                 </div>
                 </div>
             </div>
@@ -321,7 +338,8 @@ const Checkout = () => {
                 <p className="courier" id="">{kurir}</p>
                 <p className="payment">
                     <span id="">
-                        {formatRupiah(ongkir)}
+                        {/* {formatRupiah(ongkir)} */}
+                        {formatRupiah(43000)}
                     </span>
                 </p>
             </div>
@@ -338,7 +356,7 @@ const Checkout = () => {
                 </p>
             </div>
             <button onClick={tpPagePayment} className="payment-btn"><i className="fa-solid fa-money-bill-wave"></i> Pilih Pembayaran</button>
-            <button className="done-btn" style={{ cursor: "not-allowed", opacity: "50%" }} disabled>Selesai</button>
+            {/* <button className="done-btn" style={{ cursor: "not-allowed", opacity: "50%" }} disabled>Selesai</button> */}
         </aside>
         </main>
         <Footer />

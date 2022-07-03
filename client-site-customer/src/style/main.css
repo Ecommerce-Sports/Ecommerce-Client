@@ -10,6 +10,7 @@
 @import url(checkout.css);
 @import url(payment.css);
 @import url(editprofilepopup.css);
+@import url(payinfo.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -2215,6 +2216,20 @@ footer > p {
         left: 25%;
         width: 50%;
     }
+
+    /* Pay Info Page */
+    .pay-info {
+        width: 100%;
+        height: 54.6vh;
+        text-align: center;
+    }
+
+    .pay-info > .info-box {
+        width: 100%;
+        height: auto;
+        top: 5vh;
+        left: 0;
+    }
 }
 
 /* Tablet L */
@@ -3125,6 +3140,20 @@ footer > p {
     .edit-profile > .submitEdit {
         margin-top: 20px;
     }
+
+    /* Pay Info Page */
+    .pay-info {
+        width: 100%;
+        height: 64.3vh;
+        text-align: center;
+    }
+
+    .pay-info > .info-box {
+        width: 100%;
+        height: auto;
+        top: 20%;
+        left: 0;
+    }
 }
 
 /* Mobile M */
@@ -3991,6 +4020,24 @@ footer > p {
     .edit-profile > .submitEdit {
         margin-top: 20px;
     }
+
+    /* Pay Info Page */
+    .pay-info {
+        width: 100%;
+        height: 50.7vh;
+        text-align: center;
+    }
+
+    .pay-info > .info-box {
+        width: 100%;
+        height: auto;
+        top: 15vh;
+        left: 0;
+    }
+
+    .pay-info > .info-box i {
+        font-size: 84px;
+    }
 }
 
 /* Mobile S */
@@ -4856,5 +4903,23 @@ footer > p {
 
     .edit-profile > .submitEdit {
         margin-top: 20px;
+    }
+
+    /* Pay Info Page */
+    .pay-info {
+        width: 100%;
+        height: 50.7vh;
+        text-align: center;
+    }
+
+    .pay-info > .info-box {
+        width: 100%;
+        height: auto;
+        top: 15vh;
+        left: 0;
+    }
+
+    .pay-info > .info-box i {
+        font-size: 72px;
     }
 }
