@@ -1,6 +1,6 @@
 import {
     FETCH_PRODUCT,
-    // GET_ONE_PRODUCT,
+    GET_ONE_PRODUCT,
     // ADD_PRODUCT,
     // CHANGE_PRODUCT,
     // DELETE_PRODUCT,
@@ -20,7 +20,12 @@ import {
     // DELETE_BANNER
 
     FETCH_USER,
-    GET_ONE_USER
+    GET_ONE_USER,
+
+    FETCH_CART,
+    GET_ONE_CART,
+    CHANGE_CART,
+    ADD_CART
   } from "../utils/constants";
   // import swal from 'sweetalert';
   import api from "../api/api";
@@ -33,36 +38,36 @@ import {
           dispatch({ type: FETCH_PRODUCT, payload: response.data });
         }
       } catch (error) {
+        console.log(error, `<<<<<<<<< error fetch products`);
+      }
+    };
+  };
+  
+  export const getOneProducts = (id, token) => {
+    return async (dispatch) => {
+      try {
+        const response = await api.get(`admin/product/${id}`, token);
+        if (response) {
+          dispatch({ type: GET_ONE_PRODUCT, payload: response.data });
+        }
+      } catch (error) {
         console.log(error, `<<<<<<<<< error`);
       }
     };
   };
   
-//   export const getOneProducts = (id, token) => {
-//     return async (dispatch) => {
-//       try {
-//         const response = await api.get(`admin/product/${id}`, token);
-//         if (response) {
-//           dispatch({ type: GET_ONE_PRODUCT, payload: response.data });
-//         }
-//       } catch (error) {
-//         console.log(error, `<<<<<<<<< error`);
-//       }
-//     };
-//   };
-  
-//   export const addProduct = (payload, token) => {
-//     return async (dispatch) => {
-//       try {
-//         const response = await api.post("admin/product", payload, token);
-//         if (response) {
-//           dispatch({ type: ADD_PRODUCT, payload: response.data });
-//         }
-//       } catch (error) {
-//         console.log(error, `<<< error add product`);
-//       }
-//     };
-//   };
+  // export const addProduct = (payload, token) => {
+  //   return async (dispatch) => {
+  //     try {
+  //       const response = await api.post("admin/product", payload, token);
+  //       if (response) {
+  //         dispatch({ type: ADD_PRODUCT, payload: response.data });
+  //       }
+  //     } catch (error) {
+  //       console.log(error, `<<< error add product`);
+  //     }
+  //   };
+  // };
   
 //   export const changeProduct = (payload, id, token) => {
 //     return async (dispatch) => {
@@ -91,6 +96,61 @@ import {
 //     };
 //   };
 
+// CART
+  export const fetchCart = (token) => {
+    return async (dispatch) => {
+      try {
+        const response = await api.get("cart", token);
+        if (response) {
+          dispatch({ type: FETCH_CART, payload: response.data });
+        }
+      } catch (error) {
+        console.log(error, `<<<<<<<<< error fetch cart`);
+      }
+    };
+  };
+
+  export const addCart = (payload, token) => {
+    return async (dispatch) => {
+      try {
+        const response = await api.post("cart", payload, token);
+        if (response) {
+          console.log(response, `<<<< resp`);
+          dispatch({ type: ADD_CART, payload: response.data });
+        }
+      } catch (error) {
+        console.log(error, `<<< error add cart`);
+      }
+    };
+  };
+
+  export const getOneCart = (email, token) => {
+    return async (dispatch) => {
+      try {
+        const response = await api.get(`cart/${email}`, token);
+        if (response) {
+          dispatch({ type: GET_ONE_CART, payload: response.data });
+        }
+      } catch (error) {
+        console.log(error, `<<<<<<<<< error get one cart`);
+      }
+    };
+  };
+
+  export const changeCart = (payload, id, token) => {
+    return async (dispatch) => {
+      try {
+        const response = await api.put(`cart/${id}`, payload, token);
+        if (response) {
+          dispatch({ type: CHANGE_CART, payload: response.data });
+        }
+      } catch (error) {
+        console.log(error, `<<< error edit cart`);
+      }
+    };
+  };
+
+  // USER
   export const fetchUser = (token) => {
     return async (dispatch) => {
       try {
@@ -99,7 +159,7 @@ import {
           dispatch({ type: FETCH_USER, payload: response.data });
         }
       } catch (error) {
-        console.log(error, `<<<<<<<<< error`);
+        console.log(error, `<<<<<<<<< error fetch user`);
       }
     };
   };
@@ -112,7 +172,7 @@ import {
           dispatch({ type: GET_ONE_USER, payload: response.data });
         }
       } catch (error) {
-        console.log(error, `<<<<<<<<< error`);
+        console.log(error, `<<<<<<<<< error get one user`);
       }
     };
   };
@@ -125,7 +185,7 @@ import {
           dispatch({ type: FETCH_CATEGORY, payload: response.data });
         }
       } catch (error) {
-        console.log(error, `<<<<<<<<< error`);
+        console.log(error, `<<<<<<<<< error fetch category`);
       }
     };
   };
@@ -138,7 +198,7 @@ import {
           dispatch({ type: GET_ONE_CATEGORY, payload: response.data });
         }
       } catch (error) {
-        console.log(error, `<<<<<<<<< error`);
+        console.log(error, `<<<<<<<<< error get one category`);
       }
     };
   };

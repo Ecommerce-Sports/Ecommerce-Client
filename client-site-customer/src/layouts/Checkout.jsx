@@ -22,6 +22,19 @@ const Checkout = () => {
     }
 
     */
+    function myFunction() {
+        document.getElementById("myDropdown").classNameList.toggle("show");
+    
+        window.onclick = (e) => {
+            if (!e.target.matches('.dropbtn')) {
+                const myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classNameList.contains('show')) {
+                    myDropdown.classNameList.remove('show');
+                }
+            }
+        }
+    }
+    
   return (
     <>
         <Header />

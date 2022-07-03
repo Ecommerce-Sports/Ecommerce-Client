@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
+import { useDispatch, useSelector } from 'react-redux';
+import { getOneCart, changeCart } from '../redux/action';
+// import { Link } from "react-router-dom";
 import "../style/main.css";
-import { Link } from "react-router-dom";
+import { formatRupiah } from "../utils/formatRupiah";
 
 const Cart = () => {
+  const dispatch = useDispatch();
+  const cart = useSelector(state => state.cart);
+  let email = localStorage.email;
+
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight = "0";
   };
+
+  const handleMinusQty = (id) => {
+    console.log(id, `<<<<< id`);
+  }
+
+  useEffect(()=> {
+    dispatch(getOneCart(email, localStorage.token))
+  }, [dispatch, email])
+
+  console.log(cart, `<<<< cart`);
+
   return (
     <>
       <Header />
@@ -25,108 +43,75 @@ const Cart = () => {
           </div>
           <hr />
           <div className="cart-list">
-            <div className="product-list-box">
-              <input type="checkbox" name="foo" value="list1" id="" />
-              <div className="product-image-list">
-                <img
-                  src="/assets/properti/detail-image.jpg"
-                  alt="product-list"
-                />
-              </div>
-              <div className="product-detail-list">
-                <a href="/src/page/product/detail-product-page.html">
-                  <h3 id="">Sepatu Forum Low</h3>
-                </a>
-                <p id="">Rp. 399.000</p>
-              </div>
-              <div className="product-action-list">
-                <i className="fa-solid fa-trash"></i>
-                <p>|</p>
-                <div className="product-action-add">
-                  <i className="fa-solid fa-minus"></i>
-                  <input type="text" name="product-action-add" id="" />
-                  <i className="fa-solid fa-plus"></i>
-                </div>
-              </div>
-            </div>
-            <div className="product-list-box">
-              <input type="checkbox" name="foo" value="list1" id="" />
-              <div className="product-image-list">
-                <img
-                  src="/assets/properti/detail-image.jpg"
-                  alt="product-list"
-                />
-              </div>
-              <div className="product-detail-list">
-                <a href="/src/page/product/detail-product-page.html">
-                  <h3 id="">Sepatu Forum Low</h3>
-                </a>
-                <p id="">Rp. 399.000</p>
-              </div>
-              <div className="product-action-list">
-                <i className="fa-solid fa-trash"></i>
-                <p>|</p>
-                <div className="product-action-add">
-                  <i className="fa-solid fa-minus"></i>
-                  <input type="text" name="product-action-add" id="" />
-                  <i className="fa-solid fa-plus"></i>
-                </div>
-              </div>
-            </div>
-            <div className="product-list-box">
-              <input type="checkbox" name="foo" value="list1" id="" />
-              <div className="product-image-list">
-                <img
-                  src="/assets/properti/detail-image.jpg"
-                  alt="product-list"
-                />
-              </div>
-              <div className="product-detail-list">
-                <a href="/src/page/product/detail-product-page.html">
-                  <h3 id="">Sepatu Forum Low</h3>
-                </a>
-                <p id="">Rp. 399.000</p>
-              </div>
-              <div className="product-action-list">
-                <i className="fa-solid fa-trash"></i>
-                <p>|</p>
-                <div className="product-action-add">
-                  <i className="fa-solid fa-minus"></i>
-                  <input type="text" name="product-action-add" id="" />
-                  <i className="fa-solid fa-plus"></i>
-                </div>
-              </div>
-            </div>
+            {cart && Object.keys(cart).length > 0 
+            ?
+              cart.order.map((e) => {
+                return (
+                  <div key={e.id} className="product-list-box">
+                    <input type="checkbox" name="foo" value="list1" id="" />
+                    <div className="product-image-list">
+                      <img
+                        src={e.gambar_produk}
+                        alt="product-list"
+                      />
+                    </div>
+                    <div className="product-detail-list">
+                      <a href="/src/page/product/detail-product-page.html">
+                        <h3 id="">{e.nama_barang}</h3>
+                      </a>
+                      <p id="">{formatRupiah(e.harga)}</p>
+                    </div>
+                    <div className="product-action-list">
+                      <i className="fa-solid fa-trash"></i>
+                      <div className="product-action-add">
+                        <i onClick={()=>handleMinusQty(e.id)} className="fa-solid fa-minus" style={{ marginRight: "5px" }}></i>
+                        <p>||</p>
+                        {/* <input type="text" name="product-action-add" id="" /> */}
+                        <i className="fa-solid fa-plus" style={{ marginLeft: "5px" }}></i>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            : null
+            }
           </div>
         </div>
+
         <div className="cost-box">
           <div className="cost-title">
             <h3>Ringkasan Pemesanan</h3>
           </div>
           <div className="cost-list">
-            <div className="product-list">
-              <p className="product-name" id="">
-                Nama barang (x<span id="">1</span>)
-              </p>
-              <p className="product-cost">Rp. 999.000</p>
-            </div>
-            <div className="product-list">
-              <p className="product-name" id="">
-                Nama barang (x<span id="">1</span>)
-              </p>
-              <p className="product-cost">Rp. 999.000</p>
-            </div>
-            <div className="product-list">
-              <p className="product-name" id="">
-                Nama barang (x<span id="">1</span>)
-              </p>
-              <p className="product-cost">Rp. 999.000</p>
-            </div>
+          {cart && Object.keys(cart).length > 0 
+          ?
+            cart.order.map((e) => {
+              return(
+                <div key={e.id} className="product-list">
+                  <p className="product-name" id="">
+                    {e.nama_barang} (x<span id="">{e.total}</span>)
+                  </p>
+                  <p className="product-cost">{formatRupiah(e.harga * e.total)}</p>
+                </div>
+              )
+            })
+          : null
+          }
           </div>
           <hr />
           <div className="cost-total">
             <p className="total">Total</p>
-            <p className="payment">Rp. 999.000</p>
+            <p className="payment">
+              {cart && Object.keys(cart).length > 0 
+              ? cart.order.reduce((e)=> {
+                return e.total_harga + e.total_harga
+              })
+              : null
+              }
+              {/* {var total = [1, 2, 3, 4, 5].reduce(function (previous, current) {
+                  return previous + current;
+              }, 0);} */}
+            </p>
           </div>
           <div className="cost-action">
             <a href="#">

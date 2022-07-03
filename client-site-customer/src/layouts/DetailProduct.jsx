@@ -1,15 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { getOneProducts, getOneUser, fetchCart, addCart } from '../redux/action';
+import { formatRupiah } from "../utils/formatRupiah";
 import "../style/main.css";
 
 const DetailProduct = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const product = useSelector(state => state.product);
+  const user = useSelector(state => state.user);
+  const carts = useSelector(state => state.carts);
+  const [jumlahBarang, setJumlahBarang] = useState(0)
+  const [size, setSize] = useState("")
+  let {id} = useParams()
+  
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByTagName("main").style.marginRight = "0";
   };
+
+  let email = localStorage.email;
+
+  const addToCart = () => {
+    let payload = {
+        UserId: user.id,
+        email: email,
+        order: [
+            {
+                id: carts[carts.length - 1].id + 1,
+                nama_barang: product.nama_produk,
+                gambar_produk: product.gambar_produk,
+                size: size,
+                kategori: product.CategoryId,
+                total: jumlahBarang,
+                harga: product.harga_produk,
+                total_harga: product.harga_produk * jumlahBarang
+            }
+        ]
+    }
+    dispatch(addCart(payload, localStorage.token));
+    navigate("/cart")
+    console.log(payload, `<<<< payload`);
+  }
+
+  const handleSize = (e) => {
+    setSize(e.target.value)
+  }
+
+  useEffect(()=> {
+    dispatch(getOneProducts(id, localStorage.token));
+    dispatch(getOneUser(email, localStorage.token));
+    dispatch(fetchCart(localStorage.token));
+  }, [dispatch, email, id])
+
+  console.log(product, `<<<<< product`);
+  console.log(user, `<<<<< user`);
+  // console.log(carts[carts.length - 1].id + 1, `<<<<< carts`);
+  console.log(id, `<<< id`);
+  
+
   return (
     <>
       <Header />
@@ -17,21 +70,15 @@ const DetailProduct = () => {
       <main className="detail-product-page" onClick={closeNav}>
         <div className="product-detail">
           <div className="detail-image">
-            <img src="/assets/properti/detail-image.jpg" alt="detail" />
+            <img src={product.gambar_produk} alt="detail" />
           </div>
           <div className="product-description">
             <h2>Deskripsi</h2>
             <p id="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {product.deskripsi}
             </p>
           </div>
-          <div className="product-response">
+          {/* <div className="product-response">
             <h2>Ulasan</h2>
             <div className="product-rating">
               <span id="">4.9</span>
@@ -83,15 +130,15 @@ const DetailProduct = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <aside>
-          <h1 id="">SEPATU FORUM LOW - WHITE</h1>
-          <h2 id="">Rp. 2.999.000</h2>
+          <h1 id="">{product.nama_produk}</h1>
+          <h2 id="">{formatRupiah(product.harga_produk)}</h2>
           <div className="product-size">
             <p>size :</p>
             <span className="input">
-              <select name="size" id="size">
+              <select value={size} onChange={handleSize} name="size" id="size">
                 <option value="">Pilih ukuran</option>
                 <option value="34">34</option>
                 <option value="36">36</option>
@@ -106,26 +153,28 @@ const DetailProduct = () => {
           <div className="product-choose">
             <p>Jumlah :</p>
             <div className="product-detail-choose">
-              <button className="min-button">
+              {/* <button onClick={handleMinusQty}>-</button> */}
+              <button onClick={() => setJumlahBarang(jumlahBarang - 1)} className="min-button">
                 <i className="fa-solid fa-minus"></i>
               </button>
-              <input type="text" name="product-detail-choose" id="" />
-              <button className="plus-button">
+              {jumlahBarang}
+              {/* <input type="number" value={jumlahBarang} onChange={handleValue} name="product-detail-choose" id="" /> */}
+              <button onClick={() => setJumlahBarang(jumlahBarang + 1)} className="plus-button">
                 <i className="fa-solid fa-plus"></i>
               </button>
             </div>
           </div>
           <div className="product-detail-action">
-            <Link to="/cart">
-              <button className="addtocart-button">
-              <i className="fa-solid fa-plus"></i> keranjang
+            {/* <Link to="/cart"> */}
+              <button onClick={addToCart} className="addtocart-button">
+                <i className="fa-solid fa-plus"></i> keranjang
               </button>
-            </Link>
-            <a href="/src/page/product/wishlist-page.html">
+            {/* </Link> */}
+            {/* <a href="/src/page/product/wishlist-page.html">
               <button className="wishlist-button">
                 <i className="fa-solid fa-heart-circle-plus"></i>
               </button>
-            </a>
+            </a> */}
           </div>
         </aside>
       </main>

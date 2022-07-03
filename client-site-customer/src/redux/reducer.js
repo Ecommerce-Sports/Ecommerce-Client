@@ -1,6 +1,6 @@
 import {
   FETCH_PRODUCT,
-  // GET_ONE_PRODUCT,
+  GET_ONE_PRODUCT,
   // ADD_PRODUCT,
   // CHANGE_PRODUCT,
   // DELETE_PRODUCT,
@@ -20,7 +20,12 @@ import {
   // DELETE_BANNER,
 
   FETCH_USER,
-  GET_ONE_USER
+  GET_ONE_USER,
+
+  FETCH_CART,
+  ADD_CART,
+  GET_ONE_CART,
+  CHANGE_CART
 } from "../utils/constants";
 
 const initState = {
@@ -33,7 +38,9 @@ const initState = {
   customerList: [],
   banners: [],
   users: [],
-  user: {}
+  user: {},
+  carts: [],
+  cart: {}
 };
 
 const reducer = (state = initState, action) => {
@@ -44,11 +51,11 @@ const reducer = (state = initState, action) => {
         ...state,
         products: action.payload,
       };
-    // case GET_ONE_PRODUCT:
-    //   return {
-    //     ...state,
-    //     product: action.payload,
-    //   };
+    case GET_ONE_PRODUCT:
+      return {
+        ...state,
+        product: action.payload,
+      };
     // case ADD_PRODUCT:
     //   return {
     //     ...state
@@ -74,6 +81,28 @@ const reducer = (state = initState, action) => {
       return {
         ...state,
         user: action.payload,
+      };
+
+    // CART
+    case FETCH_CART:
+      return {
+        ...state,
+        carts: action.payload,
+      };
+    case ADD_CART:
+      return {
+        ...state,
+        carts: [...state.carts, action.payload],
+      };
+    case GET_ONE_CART:
+      return {
+        ...state,
+        cart: action.payload,
+      };
+    case CHANGE_CART:
+      return {
+        ...state,
+        carts: [...state.carts, action.payload],
       };
 
     // CATEGORY

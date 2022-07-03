@@ -27,6 +27,7 @@ const Login = () => {
       }
     })
     .then((res) => {
+      console.log(res, `<<<< res`);
       if(res.data.token) {
         localStorage.setItem('token', res.data.token)
         localStorage.setItem('email', res.data.email)

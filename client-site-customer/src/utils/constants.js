@@ -20,3 +20,8 @@ export const DELETE_BANNER = "DELETE_BANNER";
 
 export const FETCH_USER = "FETCH_USER"; 
 export const GET_ONE_USER = "GET_ONE_USER";
+
+export const FETCH_CART = "FETCH_CART"; 
+export const ADD_CART = "ADD_CART"; 
+export const GET_ONE_CART = "GET_ONE_CART";
+export const CHANGE_CART = "CHANGE_CART"; 

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../components/header";
 import SideNav from "../components/sideNav";
 import Footer from "../components/footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBanner, fetchProducts } from '../redux/action';
 import { formatRupiah } from "../utils/formatRupiah";
@@ -10,6 +10,7 @@ import "../style/main.css";
 
 const Home = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const banners = useSelector(state => state.banners);
   const products = useSelector(state => state.products);
 
@@ -30,6 +31,12 @@ const Home = () => {
   function loadFile(event) {
     const image = document.getElementById("output");
     image.src = URL.createObjectURL(event.target.files[0]);
+  }
+
+  const toPageDetail = (id) => {
+    // e.preventDefault();
+    console.log(id, `<<< id`);
+    navigate(`/detail-product/${id}`)
   }
 
   useEffect(() => {
@@ -142,7 +149,7 @@ const Home = () => {
               if(idx < 5) {
                 return (
                   <div key={idx} className="product-card">
-                    <div className="card">
+                    <div onClick={()=> toPageDetail(e.id)} className="card">
                       <div className="imgBx">
                         <img
                           src={e.gambar_produk}
@@ -155,7 +162,7 @@ const Home = () => {
                           <h2>{formatRupiah(e.harga_produk)}</h2>
                         </div>
                         <Link to="/detail-product">
-                          <button type="submit">Buy Now</button>
+                          <button onClick={()=> toPageDetail(e.id)} type="submit">Buy Now</button>
                         </Link>
                       </div>
                     </div>
