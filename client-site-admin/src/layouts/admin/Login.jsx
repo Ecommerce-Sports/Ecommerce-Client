@@ -30,8 +30,9 @@ const Login = () => {
     .then((res) => {
       if(res.data.token) {
         localStorage.setItem('token', res.data.token)
+        localStorage.setItem('email', res.data.email)
         if(res.data.role === 'admin') {
-          navigate("/admin/dashboard")
+          navigate(`/admin/dashboard?email=${res.data.email}`)
         }
       }
     })

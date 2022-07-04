@@ -12,7 +12,7 @@ const AddProduct = () => {
     const [image, setImage] = useState(null);
     const [submitForm, setSubmitForm] = useState({
         nama_produk: "",
-        kategori_produk: "",
+        CategoryId: null,
         stok: 0,
         bahan: "",
         harga_produk: 0,
@@ -35,7 +35,6 @@ const AddProduct = () => {
         })
         .then((res) => res.json())
         .then((data) => {
-            console.log(data, `<<<< data`);
             setSubmitForm({
                 ...submitForm,
                 gambar_produk: data.image
@@ -45,7 +44,6 @@ const AddProduct = () => {
 
     const handleAddProduct = (e) => {
         e.preventDefault();
-        console.log(submitForm, `<<< submitForm`);
         dispatch(addProduct(submitForm, localStorage.token));
         navigate("/admin/product")
     }
@@ -81,7 +79,7 @@ const AddProduct = () => {
                     <div className="detail-product">
                         <div className="detail-product-left">
                             <p className="title">CATEGORY</p>
-                            <input className="product-category" type="text" onChange={(e)=> setSubmitForm({ ...submitForm, kategori_produk: e.target.value})} name="product-category" id="" placeholder="Ex. Football" />
+                            <input className="product-category" type="number" onChange={(e)=> setSubmitForm({ ...submitForm, CategoryId: Number(e.target.value)})} name="product-category" id="" placeholder="Ex. Football" />
                             <p className="title">PRICE</p>
                             <input className="product-price" type="number" onChange={(e)=> setSubmitForm({ ...submitForm, harga_produk: Number(e.target.value)})} name="product-price" id="" placeholder="Ex. 5000000" />
                         </div>

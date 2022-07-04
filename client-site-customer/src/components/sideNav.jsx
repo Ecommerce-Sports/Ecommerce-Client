@@ -59,7 +59,7 @@ const SideNav = () => {
       </div>
       <div className="navbar-logout">
         <Link to="/login">
-          <p>Keluar</p>
+          <p onClick={()=> localStorage.clear()}>Keluar</p>
           <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </Link>
       </div>

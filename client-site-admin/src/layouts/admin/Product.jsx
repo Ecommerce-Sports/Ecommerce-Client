@@ -70,7 +70,7 @@ const Product = () => {
                             <td>NO.</td>
                             <td className='img'>IMAGE</td>
                             <td>NAME</td>
-                            <td>CATEGORY</td>
+                            {/* <td>CATEGORY</td> */}
                             <td>ACTION</td>
                         </tr>
                     </thead>
@@ -81,7 +81,7 @@ const Product = () => {
                                     <td>{idx + 1}</td>
                                     <td className='img'><img src={e.gambar_produk} alt="Product" /></td>
                                     <td>{e.nama_produk}</td>
-                                    <td>{e.kategori_produk}</td>
+                                    {/* <td>{e.kategori_produk}</td> */}
                                     <td>
                                         <button onClick={()=> toEditpage(e)} className="edit"><i className="fa-solid fa-pen"></i></button>
                                         <button onClick={()=> handleDeleteProduct(e)} className="delete"><i className="fa-solid fa-trash"></i></button>

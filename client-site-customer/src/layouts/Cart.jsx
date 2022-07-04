@@ -33,6 +33,9 @@ const Cart = () => {
   }
 
   useEffect(()=> {
+    if(!localStorage.token) {
+      navigate('/login')
+    }
     dispatch(getOneCart(email, localStorage.token))
   }, [dispatch, email])
 
