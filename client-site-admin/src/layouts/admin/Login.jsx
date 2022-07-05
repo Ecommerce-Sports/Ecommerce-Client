@@ -22,7 +22,7 @@ const Login = () => {
     axios({
       method: 'post',
       // url: 'http://localhost:3000/user/login',
-      url: 'https://ecommerce-sports-server.herokuapp.com//user/login',
+      url: 'https://ecommerce-sports-server.herokuapp.com/user/login',
       data: {
         email: email,
         password: password
