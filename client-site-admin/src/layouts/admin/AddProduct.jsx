@@ -29,7 +29,11 @@ const AddProduct = () => {
         let formData = new FormData();
         formData.append("photo", uploaded);
     
-        fetch("http://localhost:3000/upload", {
+        // fetch("http://localhost:3000/upload", {
+        //     method: "POST",
+        //     body: formData,
+        // })
+        fetch("https://ecommerce-sports-server.herokuapp.com/upload", {
             method: "POST",
             body: formData,
         })
