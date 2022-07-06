@@ -1,5 +1,6 @@
 import axios from 'axios';
-const baseUrl = `http://localhost:3000`;
+// const baseUrl = `http://localhost:3000`;
+const baseUrl = `https://ecommerce-sports-server.herokuapp.com`;
 
 const app = {
     get: async (url, token, params, filter) => {

@@ -9,7 +9,8 @@ import "../style/main.css";
 import { formatRupiah } from '../utils/formatRupiah';
 
 const Checkout = () => {
-    const url = `http://localhost:3000`;
+    // const url = `http://localhost:3000`;
+    const url = `https://ecommerce-sports-server.herokuapp.com`;
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const user = useSelector(state => state.user);
